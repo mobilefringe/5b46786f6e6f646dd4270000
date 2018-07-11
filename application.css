@@ -208,9 +208,10 @@ a {
 .social_box{
     padding:22px 30px;
     background: $primary;
-    height:235px;
-    width:235px;
-    display:inline-block;
+    height: 235px;
+    width: 235px;
+    position: relative;
+    display: inline-block;
     float: left;
     color:#FFFFFF;
     font-weight:bold;
