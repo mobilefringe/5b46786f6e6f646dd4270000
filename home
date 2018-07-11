@@ -88,7 +88,12 @@
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
-            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours)   
+            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours);
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
             show_content();
             
             if($.cookie("popup_viewed") != "true"){
