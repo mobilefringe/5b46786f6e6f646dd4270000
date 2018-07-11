@@ -1,7 +1,10 @@
 {
-	"app": {
-		"name": "i18next",
-		"privacy_policy": "Politique de confidentialité"
+	"header": {
+	    "todays_hours": "Today's Hours",
+	    "check_hours": "View Holiday Hours"
+	},
+	"footer": {
+	    
 	},
 	"nav": {
 		"stores": "Stores",
