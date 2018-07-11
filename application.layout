@@ -182,6 +182,10 @@
                         </span>
                     </p>
                     <a href="/hours" class="holiday_hours_home soft_hidden_phone">Check for Holiday Hours</a>
+                    <div class="btn-group pull-right">
+	  						<a href="?locale=en" style="color:#1D1D1D" class="btn" id="set_lang_en">English</a>
+	  						<a href="?locale=fr" style="color:#1D1D1D" class="btn" id="set_lang_fr">Français</a>
+						</div>
                 </div>
                 <div class="col-md-4 col-xs-4 text-center">
                     <a href="/">
