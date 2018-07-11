@@ -389,6 +389,12 @@ h4 {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.home_banner {
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+    text-align: center;
+}
 .hero_banner{
     background-color:#000;
     background-image: url(//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1505847059000/hero_banner_image_preferred.jpg);
