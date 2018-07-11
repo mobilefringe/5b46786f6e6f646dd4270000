@@ -85,6 +85,9 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner',banners);
+            
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
