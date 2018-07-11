@@ -1,7 +1,11 @@
 {
 	"header": {
 	    "todays_hours": "Today's Hours",
-	    "check_hours": "View Holiday Hours"
+	    "check_hours": "View Holiday Hours",
+	    "locale": {
+			"english": "EN",
+			"french": "FR"
+		}
 	},
 	"footer": {
 	    
@@ -20,11 +24,7 @@
 		    "promotions": "Promotions",
 			"hours": "Hours",
 			"directions": "Directions",
-			"services": "Services",
-		},
-		"locale": {
-			"english": "English",
-			"french": "Français"
+			"services": "Services"
 		}
 	},
 	"days_of_week": {
