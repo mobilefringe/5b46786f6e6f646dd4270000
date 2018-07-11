@@ -292,6 +292,7 @@
             </div>
         </div>
     </section>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
     <script>
         jQuery(document).ready(function($){
             $.getJSON("//billingsbridge.mallmaverick.com/api/v3/billings/messages.json").done(function(data){
