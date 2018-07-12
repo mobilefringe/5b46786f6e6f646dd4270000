@@ -8,7 +8,8 @@
 		}
 	},
 	"footer": {
-	    
+	    "newsletter_title": "Subscribe to Receive Our Updates",
+	    "newsletter_submit": "Sign Up"
 	},
 	"nav": {
 	    "menu": "Menu",
