@@ -72,7 +72,7 @@
         function renderAll (){
             var banner_repo = getRepoDetailsByName("Directory Banner").images;
             if (banner_repo) {
-                
+                console.log(banner_repo)
             }
             var stores = getStoresList(); 
             renderStoreList('#store_list_container','#store_list_template', stores, "A", "L");
