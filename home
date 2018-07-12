@@ -67,7 +67,7 @@
                                 <span class="hours_today">{{h}}</span>
                             </script>
                         </div>
-                        <p class="hours_link">See More Hours</p>
+                        <p class="hours_link" data-i18n="home.hours_link"></p>
                     </a>
                 </div>
                 <div id="feature_6" class="position_relative"></div>
