@@ -47,8 +47,6 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
-                var prop_details = getPropertyDetails();
-                renderAddress('#address_container', '#address_template', prop_details);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
