@@ -36,10 +36,8 @@
 		"6": "Saturday"
 	},
 	"home": {
-		"welcome": "Welcome to ",
-		"home_hours": "Open today until ",
-		"centre_hours_title": "Centre Hours",
-		"view_hours": "View All Hours"
+		"insta": "SUIS NOUS SUR INSTAGRAM",
+		"hours": "Heures de magasinage"
 	},
 	"pages": {
 	    "stores_title": "Store Directory",
