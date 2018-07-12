@@ -40,7 +40,13 @@
 	    "header_tagline": "EXPLORE • ENJOY • SHOP",
 	    "mobile_menu": "Tap For More Options",
 	    "stores": "Shops & Services",
-	    "map": "Centre Map"
+	    "map": "Centre Map",
+	    "news": "News",
+	    "events": "Events",
+	    "deals": "Deals",
+	    "careers": "Careers",
+	    "guest_services": "Guest Services",
+	    "gift_cards": "Gift Cards"
 	},
 	"stores": {
 	    "title": "Store Directory",
