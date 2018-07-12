@@ -22,7 +22,7 @@
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
             <option value="/contact-us" data-i18n="inside_page.contact"></option>
             <option value="/hours" data-i18n="inside_page.hours"></option>
-            <option value="/directions-and-parking" data-i18n="inside_page.directions"></option>
+            <option value="/about-us" data-i18n="inside_page.about"></option>
         </select>
     </h5>
 </div>
