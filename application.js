@@ -201,7 +201,8 @@ function renderHomeHours(container, template, collection){
                 val.day = moment().format("ddd");
                 val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
             } else if(Cookies.get('current_locale') == "fr-CA"){
-                val.day = moment().format("ddd");
+                // val.day = moment().format("ddd");
+                val.day = moment().locale('fr-ca').format("ddd");
                 val.h = val.day + " " + open_time.format("H") + "h" + open_time.format("mm") + " - " + close_time.format("H") + "h" + close_time.format("mm");
             }
         } else {
