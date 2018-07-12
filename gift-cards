@@ -5,7 +5,7 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-6">
-            <h5><a href="/guest-services" data-i18n="inside_page.services"></a></h5>
+            <h5><a href="/guest-services" data-i18n="inside_page.guest_services"></a></h5>
         </div>
         <div class="col-md-6">
             <h5 class="active_heading" data-i18n="inside_page.gift_cards"></h5>
