@@ -10,7 +10,8 @@
 	"footer": {
 	    "newsletter_title" : "Abonnez-vous pour recevoir nos mises à jour",
 	    "newsletter_submit" : "Signer",
-	    "social_title" : "Social"
+	    "social_title" : "Social",
+	    "social_subtitle" : "Suivez-nous sur les médias sociaux pour les nouvelles et les activités"
 	},
 	"nav": {
 	    "menu": "Menu",
