@@ -14,7 +14,6 @@
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
-            <option value="/stores" data-i18n="inside_page.stores"></option>
             <option value="/map" data-i18n="inside_page.map"></option>
         </select>
     </h5>
