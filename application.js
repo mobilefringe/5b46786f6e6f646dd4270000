@@ -194,12 +194,15 @@ function renderHomeHours(container, template, collection){
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+            var open_time_fr = moment(val.open_time).locale('fr-ca');
+            var close_time_fr = moment(val.close_time).locale('fr-ca');
+
             if(Cookies.get('current_locale') == "en-CA"){
                 val.day = moment().format("ddd");
                 val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
             } else if(Cookies.get('current_locale') == "fr-CA"){
                 val.day = moment().format("ddd");
-                val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
+                val.h = val.day + " " + open_time.format("H") + "h" + open_time.format("mm") + " - " + close_time.format("H") + "h" + close_time.format("mm");
             }
         } else {
             if(Cookies.get('current_locale') == "en-CA"){
