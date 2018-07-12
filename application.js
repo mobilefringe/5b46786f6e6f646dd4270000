@@ -188,7 +188,6 @@ function renderHomeHours(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);    
     $.each( item_list , function( key, val ) {
-        val.day = moment().format("ddd");
         var d = moment();
         val.month = moment().month();
         val.weekday = moment().date();
@@ -196,11 +195,12 @@ function renderHomeHours(container, template, collection){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
             if(Cookies.get('current_locale') == "en-CA"){
+                val.day = moment().format("ddd");
                 val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
             } else if(Cookies.get('current_locale') == "fr-CA"){
+                val.day = moment().format("ddd");
                 val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
             }
-            
         } else {
             if(Cookies.get('current_locale') == "en-CA"){
                 val.h = "Closed";
