@@ -195,9 +195,18 @@ function renderHomeHours(container, template, collection){
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-            val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
+            if(Cookies.get('current_locale') == "en-CA"){
+                val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
+            } else if(Cookies.get('current_locale') == "fr-CA"){
+                val.h = val.day + " " + open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
+            }
+            
         } else {
-            val.h = "Closed";
+            if(Cookies.get('current_locale') == "en-CA"){
+                val.h = "Closed";
+            } else if(Cookies.get('current_locale') == "fr-CA"){
+                val.h = "Fermé";    
+            }
             $('.hours_dot').css("background", "#cd1629");
         }
         var rendered = Mustache.render(template_html,val);
