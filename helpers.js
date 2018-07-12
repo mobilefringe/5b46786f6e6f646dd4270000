@@ -303,36 +303,6 @@ function getDay(day_of_week){
     return day;
 }
 
-function sortByKey(array, key) {
-    return array.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-    });
-}
-function sortByWebDate(a, b){
-       
-    var aDate = a.show_on_web_date;
-    var bDate = b.show_on_web_date;
-
-    return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
-}
-
-function dateToString(dateString){
-    var datePart = dateString.split('T');
-    var dateItem = datePart[0].split('-');
-    var dateFormat = new Date(dateItem[0], dateItem[1]-1, dateItem[2]);
-  
-    return dateFormat.toDateString();
-}
-
-function sortByDate(a, b){
-       
-    var aDate = a.publish_date;
-    var bDate = b.publish_date;
-
-    return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
-}
-
 function load_more(num){
     var n = parseInt(num);
     for(i = n; i < n + 3; i++){
