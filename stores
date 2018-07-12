@@ -73,6 +73,10 @@
             var banner_repo = getRepoDetailsByName("Directory Banner").images;
             if (banner_repo) {
                 console.log(banner_repo)
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    console.log(banner_image)
+                }
             }
             var stores = getStoresList(); 
             renderStoreList('#store_list_container','#store_list_template', stores, "A", "L");
