@@ -1,7 +1,7 @@
 {
 	"header": {
-	    "todays_hours": "Today's Hours",
-	    "check_hours": "View Holiday Hours",
+	    "todays_hours": "Heures d'aujourd'hui",
+	    "check_hours": "Voir les heures de vacances",
 	    "locale": {
 			"english": "EN",
 			"french": "FR"
