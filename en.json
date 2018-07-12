@@ -86,7 +86,10 @@
 	    
 	},
 	"hours": {
-	    
+	    "title": "Centre Hours",
+	    "regular_hours": "Regular Hours",
+	    "reduced_hours": "Reduced Hours of Operation",
+	    "closed_hours": "Holiday Closures"
 	},
 	"general": {
 		"search_placeholder": "Search Site",
