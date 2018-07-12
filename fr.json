@@ -1,17 +1,13 @@
 {
 	"header": {
 	    "todays_hours" : "Heures d'aujourd'hui",
-	    "check_hours" : "Voir les heures de vacances",
-	    "locale": {
-			"english" : "EN",
-			"french" : "FR"
-		}
+	    "check_hours" : "Voir les heures de vacances"
 	},
 	"footer": {
-	    "newsletter_title" : "Abonnez-vous pour recevoir nos mises à jour",
-	    "newsletter_submit" : "Signer",
-	    "social_title" : "Social",
-	    "social_subtitle" : "Suivez-nous sur les médias sociaux pour les nouvelles et les activités"
+	    "newsletter_title": "Abonnez-vous pour recevoir nos mises à jour",
+	    "newsletter_submit": "Signer",
+	    "social_title": "Social",
+	    "social_subtitle": "Suivez-nous sur les médias sociaux pour les nouvelles et les activités"
 	},
 	"nav": {
 	    "menu": "Menu",
