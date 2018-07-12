@@ -112,8 +112,21 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/news" data-i18n="nav.subnav.guest_services"></a></li>
-                        <li><a href="/events" data-i18n="nav.subnav.gift_cards"></a></li>
+                        <li><a href="/guest-services" data-i18n="nav.subnav.guest_services"></a></li>
+                        <li><a href="/gift-cards" data-i18n="nav.subnav.gift_cards"></a></li>
+					</ul>
+                </li>
+                <li>
+                    <a href="#"  class="submenu_expander">
+                        <span data-i18n="nav.about"></span>
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
+                    </a>
+                    <ul class="sub_menu hidden_now">
+                        <li><a href="/contact-us" data-i18n="nav.subnav.contact"></a></li>
+                        <li><a href="/hours" data-i18n="nav.subnav.hours"></a></li>
+                        <li><a href="/about-us" data-i18n="nav.subnav.about"></a></li>
+                        <li><a href="/directions-and-parking" data-i18n="nav.subnav.directions"></a></li>
 					</ul>
                 </li>
      <!--           <li>-->
