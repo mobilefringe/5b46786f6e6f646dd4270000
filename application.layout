@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <a href="#" class="submenu_expander open">
-                        <span data-i18n="header.todays_hours"></span>
+                        <span data-i18n="nav.stores"></span>
                         <img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: none;">
 						<img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: inline;">
                     </a>
