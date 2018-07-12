@@ -72,13 +72,12 @@
         function renderAll (){
             var banner_repo = getRepoDetailsByName("Directory Banner").images;
             if (banner_repo) {
-                console.log(banner_repo)
                 var banner_image = banner_repo[0].image_url;
                 if (banner_image) {
-                    console.log(banner_image)
                     $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
                 }
             }
+            
             var stores = getStoresList(); 
             renderStoreList('#store_list_container','#store_list_template', stores, "A", "L");
             renderStoreList('#store_list_container2','#store_list_template', stores, "M", "Z");
@@ -110,6 +109,7 @@
             } else {
                 $('#coming_soon_stores').hide();
             }
+            
             show_content();
         }
         
