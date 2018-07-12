@@ -58,6 +58,12 @@
 	    "store_phone": "Phone",
 	    "store_website": "Website"
 	},
+	"map": {
+	    "title": "Centre Map",
+	    "find_store": "Find A Store",
+	    "scroll_up": "Scroll Up",
+	    "scroll_down": "Scroll Down"
+	},
 	"pages": {
 	    "stores_title": "Store Directory",
 	    "stores_category": "Categories",
