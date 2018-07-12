@@ -89,8 +89,8 @@
 						<img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: inline;">
                     </a>
                     <ul class="sub_menu">
-						<li><a href="/stores">Directory</a></li>
-						<li><a href="/map">Centre Map</a></li>
+						<li><a href="/stores" data-i18n="nav.subnav.directory">Directory</a></li>
+						<li><a href="/map" data-i18n="nav.subnav.map">Centre Map</a></li>
 					</ul>
                 </li>
                 <li>
