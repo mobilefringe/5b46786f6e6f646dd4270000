@@ -13,13 +13,13 @@
 	"nav": {
 	    "menu": "Menu",
 		"stores": "Magasins",
-		"events_promos": "Events & Promotions",
-		"visit": "Plan Your Visit",
-		"guest_services": "Guest Services",
+		"events_promos": "Événements et promotions",
+		"visit": "Visite",
+		"guest_services": "les services",
 		"about_us": "About Us",
 		"subnav": {
-			"directory": "Directory",
-	        "centre_map": "Centre Map",
+			"directory": "Directoire",
+	        "centre_map": "Carte du Centre",
 			"events": "Events",
 		    "promotions": "Promotions",
 			"hours": "Hours",
