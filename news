@@ -1,0 +1,77 @@
+<div class="jobs_banner text-center">
+    <h3>News</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5 class="active_heading" data-i18n="inside_page.news"></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/events" data-i18n="inside_page.events"></a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/promotions" data-i18n="inside_page.deals"></a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/jobs" data-i18n="inside_page.careers"></a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/news" data-i18n="inside_page.news"></option>
+            <option value="/events" data-i18n="inside_page.events"></option>
+            <option value="/promotions" data-i18n="inside_page.deals"></option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="jobs_container">
+                    <script id="jobs_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item cats_row job_list_item" data-cat="{{cat_list}}">
+                            <div class="col-md-12">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <span class="promo_store">{{store_name}}</span>
+                                    <span class="promo_store">{{job_type}}</span>
+                                    <span class="promo_dates">{{published_on}}</span>
+                                </p>
+                                <div class="promo_list_desc hidden_phone">{{description_short}}</div>
+                                <a class="read_more" href="/jobs/{{slug}}">View job info</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var jobs = getJobsList().sortBy(function(o){ return o.name});
+            var published_jobs = [];
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    published_jobs.push(val)
+                } 
+            });
+            if(published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', jobs, "Billings Bridge Shopping Centre");
+            } else {
+                $('#no_jobs').show()
+            }
+            show_content();
+        }
+		loadMallDataCached(renderAll); 
+    })
+</script>
