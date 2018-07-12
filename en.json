@@ -51,7 +51,9 @@
 	    "new_stores": "New Stores",
 	    "coming_soon": "Coming Soon",
 	    "category": "Categories",
-	    "categories_all": "All"
+	    "categories_all": "All",
+	    "store_phone": "Phone",
+	    "store_website": "Website"
 	},
 	"pages": {
 	    "stores_title": "Store Directory",
