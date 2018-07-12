@@ -2,26 +2,26 @@
     <h3 data-i18n="inside_page.leasing"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
-<div class="store_list_head main_container">
-    <div class="row hidden_phone">
-        <div class="col-md-4">
-            <h5><a href="/contact_us">CONTACT US</a></h5>
-        </div>
-        <div class="col-md-4">
-            <h5 class="active_heading">LEASING</h5>
-        </div>
-        <div class="col-md-4">
-            <h5><a href="/privacy_policy">PRIVACY POLICY</a></h5>
-        </div>
-    </div>
-    <h5 class="text-center tap_here show_phone">
-        <select id="option_selector" class="link_selector">
-            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/contact_us">Contact Us</option>
-            <option value="/privacy_policy">Privacy Policy</option>
-        </select>
-    </h5>
-</div>
+<!--<div class="store_list_head main_container">-->
+<!--    <div class="row hidden_phone">-->
+<!--        <div class="col-md-4">-->
+<!--            <h5><a href="/contact_us">CONTACT US</a></h5>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <h5 class="active_heading">LEASING</h5>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <h5><a href="/privacy_policy">PRIVACY POLICY</a></h5>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <h5 class="text-center tap_here show_phone">-->
+<!--        <select id="option_selector" class="link_selector">-->
+<!--            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>-->
+<!--            <option value="/contact_us">Contact Us</option>-->
+<!--            <option value="/privacy_policy">Privacy Policy</option>-->
+<!--        </select>-->
+<!--    </h5>-->
+<!--</div>-->
 <div class="margin_20"></div>
 <div class="content_container main_container mobile_padding pages_text">
     <div class="margin_25_across">
