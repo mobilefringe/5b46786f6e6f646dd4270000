@@ -1,34 +1,30 @@
 {
-	"app": {
-		"name": "i18next",
-		"privacy_policy": "Politique de confidentialité"
+	"header": {
+	    "todays_hours": "Today's Hours",
+	    "check_hours": "View Holiday Hours",
+	    "locale": {
+			"english": "EN",
+			"french": "FR"
+		}
+	},
+	"footer": {
+	    
 	},
 	"nav": {
+	    "menu": "Menu",
 		"stores": "Stores",
-		"gift_cards": "Gift Cards",
-		"events_promotions": "What's On",
-		"events": "",
-		"promotions": "What's On",
-		"our_services": "Our Services",
-		"jobs": "Jobs",
+		"events_promos": "Events & Promotions",
+		"visit": "Plan Your Visit",
+		"guest_services": "Guest Services",
 		"about_us": "About Us",
 		"subnav": {
-			"store_directory": "Store Directory",
-			"centre_map": "Centre Map",
-			"new_stores": "New Stores",
+			"directory": "Directory",
+	        "centre_map": "Centre Map",
 			"events": "Events",
-			"promotions": "Promotions",
-			"our_services": "Our Services",
-			"accessibility_act": "Accessibility Act",
-			"privacy_policy": "Privacy Policy",
-			"parking_directions": "Parking & Directions",
-			"centre_hours": "Centre Hours",
-			"contact_us": "Contact Us",
-			"about_primaris": "About Primaris"
-		},
-		"locale": {
-			"english": "English",
-			"french": "Français"
+		    "promotions": "Promotions",
+			"hours": "Hours",
+			"directions": "Directions",
+			"services": "Services"
 		}
 	},
 	"days_of_week": {
