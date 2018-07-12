@@ -5,16 +5,16 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-6">
-            <h5><a href="/news"></a></h5>
+            <h5><a href="/news" data-i18n="inside_page.news"></a></h5>
         </div>
         <div class="col-md-6">
-            <h5 class="active_heading"></h5>
+            <h5 class="active_heading" data-i18n="inside_page.events"></h5>
         </div>
         <div class="col-md-6">
-            <h5><a href="/promotions"></a></h5>
+            <h5><a href="/promotions" data-i18n="inside_page.deals"></a></h5>
         </div>
         <div class="col-md-6">
-            <h5><a href="/jobs"></a></h5>
+            <h5><a href="/jobs" data-i18n="inside_page.careers"></a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
