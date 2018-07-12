@@ -30,7 +30,7 @@
                     <div class="social_box text-center" d="social_insta">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
                         <div>
-                            <h5 class="insta">FOLLOW US ON INSTAGRAM</h5>
+                            <h5 class="insta" data-i18n="home.insta"></h5> <!-- FOLLOW US ON INSTAGRAM -->
                         </div>
                     </div>
                 </a>
