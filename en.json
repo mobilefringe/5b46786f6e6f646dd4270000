@@ -46,6 +46,8 @@
 	},
 	"stores": {
 	    "title": "Store Directory",
+	    "new_stores": "New Stores",
+	    "coming_soon": "Coming Soon",
 	    "categories": "Categories"
 	},
 	"pages": {
