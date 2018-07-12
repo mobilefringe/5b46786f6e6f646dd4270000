@@ -1,0 +1,130 @@
+<script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<div class="main_banner text-center">
+    <h3 data-i18n="stores.title"></h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-6">
+            <h5 class="active_heading">Shops & Services</h5>
+        </div>
+        <div class="col-md-6">
+            <h5><a href="/map">Centre Map</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/stores">Shopping & Services</option>
+            <option value="/map">Centre Map</option>
+        </select>
+    </h5>
+</div>
+<div class="content_container main_container position_relative">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
+                <div class="row main_row">
+                    <div class="col-md-6">
+                        <div class="" id="store_list_container">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="" id="store_list_container2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 hidden_phone">
+                <div id="new_stores">
+                    <p class="category_header" data-i18n="stores.new_stores"></p>
+                    <div id="new_store_container">
+                        <script id="new_store_template" type="x-tmpl-mustache/text">
+                            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    
+                        </script>
+                    </div>
+                </div>
+                <div id="coming_soon_stores">
+                    <p class="category_header" data-i18n="stores.coming_soon"></p>
+                    <div id="coming_soon_container">
+                        <script id="coming_soon_template" type="x-tmpl-mustache/text">
+                            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    
+                        </script>
+                    </div>
+                </div>
+                <p class="category_header" data-i18n="stores.category"></p>
+                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
+                <div id="category_container" class="hidden_phone">
+                    <script id="category_template" type="x-tmpl-mustache/text">
+                        <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="store_list_template" type="x-tmpl-mustache/text">
+    <div class="store_list_content cats_row" data-cat="{{cat_list}}">
+        <p class="store_initial" style="{{show}}" id="{{initial}}">{{initial}}</p>
+        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+    </div>
+</script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var stores = getStoresList(); 
+            renderStoreList('#store_list_container','#store_list_template', stores, "A", "L");
+            renderStoreList('#store_list_container2','#store_list_template', stores, "M", "Z");
+            renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
+            
+            var categories = getStoreCategories();
+            var category_list = [];
+            $.each( categories, function( key, val ){
+                if (val.store_ids != null) {
+                    category_list.push(val);
+                } 
+            });
+            renderGeneral('#category_container', '#category_template', category_list);
+            renderGeneral('#mobile_cat_list', '#category_template2', category_list);
+            
+            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
+            show_cat_stores();
+            var coming_soon_stores = getComingSoonList();
+            var new_stores = getNewStoresList();
+            
+            if (new_stores.length > 0){
+                renderGeneral("#new_store_container","#new_store_template", new_stores);
+            } else {
+                $('#new_stores').hide();
+            }
+            
+            if (coming_soon_stores.length > 0){
+                renderGeneral("#coming_soon_container","#coming_soon_template", coming_soon_stores);
+            } else {
+                $('#coming_soon_stores').hide();
+            }
+            show_content();
+            
+            $.each(stores, function(i, val){
+                x = val.x_coordinate - 19;
+                y = val.y_coordinate - 58;
+                $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
+            });  
+            
+            $('#map').craftmap({
+    			image: {
+    				width: 850,
+    				height: 850,
+    			},
+    			map: {
+    				position: 'center'
+    			}
+    		});
+        }
+        
+		loadMallDataCached(renderAll); 
+    })
+</script>
