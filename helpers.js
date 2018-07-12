@@ -248,99 +248,59 @@ function drop_pin(id, map){
         map.selectRegion(id);
 }
     
-function get_day(id){
-    switch(id) {
-        case 0:
-            return ("Sun");
-            break;
-        case 1:
-            return ("Mon");
-            break;
-        case 2:
-            return ("Tue");
-            break;
-        case 3:
-            return ("Wed");
-            break;
-        case 4:
-            return ("Thu");
-            break;
-        case 5:
-            return ("Fri");
-            break;
-        case 6:
-            return ("Sat");
-            break;
-    }
-}
-
-
-function convert_hour(d){
-    var h = (d.getUTCHours());
-    var m = addZero(d.getUTCMinutes());
-    var s = addZero(d.getUTCSeconds());
-    if (h >= 12) {
-        if ( h != 12) {
-            h = h - 12;    
+function getDay(day_of_week){
+    var day;
+    if(Cookies.get('current_locale') == "en-CA"){
+        switch (day_of_week){
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
         }
-        
-        i = "PM"
-    } else {
-        i = "AM"
     }
-    return h+":"+m+i;
-}
-
-
-
-function addZero(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
-function get_month (id){
-    var month = "";
-    switch(id) {
-        case 0:
-            month = "Jan";
-            break;
-        case 1:
-            month = "Feb";
-            break;
-        case 2:
-            month = "Mar";
-            break;
-        case 3:
-            month = "Apr";
-            break;
-        case 4:
-            month = "May";
-            break;
-        case 5:
-            month = "Jun";
-            break;
-        case 6:
-            month = "Jul";
-            break;
-        case 7:
-            month = "Aug";
-            break;
-        case 8:
-            month = "Sep";
-            break;
-        case 9:
-            month = "Oct";
-            break;
-        case 10:
-            month = "Nov";
-            break;
-        case 11:
-            month = "Dec";
-            break;
-            
-    }
-    return month;
+    if(Cookies.get('current_locale') == "fr-CA"){
+        switch (day_of_week){
+            case 0:
+                day = "Dimanche";
+                break;
+            case 1:
+                day = "Lundi";
+                break;
+            case 2:
+                day = "Mardi";
+                break;
+            case 3:
+                day = "Mercredi";
+                break;
+            case 4:
+                day = "Jeudi";
+                break;
+            case 5:
+                day = "Vendredi";
+                break;
+            case 6:
+                day = "Samedi";
+                break;
+        }
+    } 
+    return day;
 }
 
 function sortByKey(array, key) {
