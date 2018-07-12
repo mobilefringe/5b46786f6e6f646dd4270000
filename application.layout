@@ -78,7 +78,7 @@
     <div class="mobile_menu_container">
         <div class="opened_mobile_menu">
             <h3>
-                MENU
+                <span data-i18n="nav.menu"></span>
                 <span id="close_menu" class="pull-right"><img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166976000/close_menu.png"  alt="close"></span>        
             </h3>
             <ul>
