@@ -184,7 +184,7 @@
                     </p>
                     <a href="/hours" class="holiday_hours_home soft_hidden_phone" data-i18n="header.check_hours">Check for Holiday Hours</a>
                     <div class="btn-group pull-right">
-	  						<a href="?locale=en" style="color:#1D1D1D" class="btn" id="set_lang_en">EN</a>
+	  						<a href="?locale=en" style="color:#1D1D1D" class="btn" id="set_lang_en">EN</a> |
 	  						<a href="?locale=fr" style="color:#1D1D1D" class="btn" id="set_lang_fr">FR</a>
 						</div>
                 </div>
