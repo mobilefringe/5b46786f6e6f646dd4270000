@@ -225,7 +225,7 @@
                 <div class="col-md-4">
                     <div class="">
                         <h3 class="site_map_heading" data-i18n="footer.social_title"></h3> <!-- SOCIAL -->
-                        <p class="site_map_desc">
+                        <p class="site_map_desc" data-i18n="footer.social_subtitle">
                             Follow us on social for <br />activities and news
                         </p>
                         <div class="social_icons">
