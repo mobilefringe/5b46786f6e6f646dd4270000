@@ -66,70 +66,19 @@
 	    "scroll_up": "Scroll Up",
 	    "scroll_down": "Scroll Down"
 	},
-	"pages": {
-	    "stores_title": "Store Directory",
-	    "stores_category": "Categories",
-	    "storedetail_website": "Visit Website",
-	    "storedetail_promos": "Sales & Promotions",
-	    "storedetail_jobs": "Job Opportunities",
-	    "storedetail_category": "Categories",
-	    "map_title": "Centre Map",
-	    "new_stores_title": "New Stores",
-	    "new_stores_none": "There are currently no new stores to highlight. Please check back soon.",
-	    "coming_soon_title": "Coming Soon",
-	    "events_title": "Events",
-	    "events_none": "There are currently no events listed. Please check back soon.",
-	    "promotions_title": "Promotions",
-	    "promotions_mall_subtitle": "Mall Sales & Promotions",
-	    "promotions_retailer_subtitle": "Store Sales & Promotions",
-	    "promotions_none": "There are currently no promotions listed. Please check back soon.",
-	    "guest_title": "Guest Services",
-	    "jobs_title": "Jobs",
-	    "jobs_none": "There are currently no job postings listed. Please check back soon.",
-	    "jobs_retailer": "Retailer Jobs",
-	    "jobs_mall": "Mall Jobs",
-	    "jobs_expiry": "Expiry Date",
-	    "jobs_detail_view": "View Store Details",
-	    "jobs_detail_contact": "Contact Name",
-	    "jobs_detail_phone": "Phone",
-	    "jobs_detail_email": "Email",
-	    "directions_title": "Parking & Directions",
-	    "address_title": "Address",
-	    "directions_subtitle": "Directions",
-	    "contact_us_title": "Contact Us",
-	    "about_email": "Email Us",
-	    "hours_title": "Centre Hours",
-	    "hours_regular": "Regular Hours",
-	    "hours_holiday": "Holiday Hours & Closures",
-	    "newsletter_title": "Newsletter",
-	    "newsletter_firstname": "*First Name",
-	    "newsletter_lastname": "*Last Name",
-	    "newsletter_email": "*Email",
-	    "newsletter_postalcode": "Postal Code",
-	    "newsletter_age": "Age",
-	    "newsletter_gender": "Gender",
-	    "gender_choose": "Choose",
-	    "gender_female": "Female",
-	    "gender_male": "Male",
-	    "newsletter_agree": "I agree to receive newsletters from Sherwood Park Mall and I understand the ",
-	    "contest_firstname": "*First Name",
-	    "contest_lastname": "*Last Name",
-	    "contest_email": "*Email",
-	    "contest_phone": "*Phone Number",
-	    "contest_postalcode": "*Postal Code",
-	    "contest_age": "Age",
-	    "contest_gender": "Gender",
-	    "contest_submit": "Submit",
-	    "contest_subscribe": "I would like to subscribe to the ",
-	    "contest_newsletter": " newsletter.",
-	    "contest_rules": "I have read and understand the Contest Rules and Regulations as well as the Privacy Policy.",
-	    "contest_ruleslink": "Contest Rules & Regulations", 
-	    "contest_privacy": "Privacy Policy",
-	    "contest_success": "Thank you! Your entry has been received.",
-	    "search_title": "Search Results",
-	    "blog_title": "Our Blog",
-	    "blog_detail_back": " Back"
+	"news": {
+	    
 	},
+	"events": {
+	    
+	},
+	"promos": {
+	    
+	},
+	"jobs": {
+	    
+	},
+	
 	"general": {
 		"search_placeholder": "Search Site",
 		"popup_name": "INSCRIVEZ-VOUS À NOTRE INFOLETTRE",
@@ -192,10 +141,5 @@
 		"instagram_tablet": "Instagram",
 		"newsletter": "Sign-up to Newsletter",
 		"newsletter_tablet": "Sign-up"
-	},
-	"footer": {
-		"rights": "All rights reserved",
-		"design": "Designed by ",
-		"power": "Powered by "
 	}
 }
