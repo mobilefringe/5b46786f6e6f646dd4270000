@@ -49,7 +49,7 @@
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <script>
-        setEndPoint('//billingsbridge.mallmaverick.com/api/v4/billings/all.json');
+        setEndPoint('//placebathurst.mallmaverick.com/api/v4/placebathurst/all.json');
         setSocialEndPoint('//billingsbridge.mallmaverick.com/api/v2/billings/social.json');
         
         Cookies.set('primary_locale', 'en-CA');
@@ -189,7 +189,7 @@
     <section class="content_container main_container">
         <div class="newsletter_container text-center">
             <h3 class="heading" data-i18n="footer.newsletter_title"></h3> <!-- SUBSCRIBE TO RECEIVE OUR UPDATES -->
-            <p class="newsletter_desc"><span>•</span> Fashion <span>•</span> Events <span>•</span> Sales <span>•</span></p>
+            <p class="newsletter_desc" data-i18n="footer.newsletter_tagline"><span>•</span> Fashion <span>•</span> Events <span>•</span> Sales <span>•</span></p>
             <a href="/newsletter" class="newsletter_btn animated_btn" data-i18n="footer.newsletter_submit"></a> <!-- Sign Up -->
         </div>
         <div class="site_map">
