@@ -85,7 +85,9 @@
 	"jobs": {
 	    
 	},
-	
+	"hours": {
+	    
+	},
 	"general": {
 		"search_placeholder": "Search Site",
 		"popup_name": "INSCRIVEZ-VOUS À NOTRE INFOLETTRE",
