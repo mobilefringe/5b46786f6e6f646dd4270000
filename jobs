@@ -22,7 +22,7 @@
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
             <option value="/news" data-i18n="inside_page.news"></option>
             <option value="/events" data-i18n="inside_page.events"></option>
-            <option value="/jobs" data-i18n="inside_page.careers"></option>
+            <option value="/promotions" data-i18n="inside_page.deals"></option>
         </select>
     </h5>
 </div>
