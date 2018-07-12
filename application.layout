@@ -254,7 +254,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 left_right_border">
-                    <h3 class="site_map_heading">SITE MAP</h3>
+                    <h3 class="site_map_heading" data-i18n="footer.site_map"></h3> <!-- SITE MAP -->
                     <div class="row footer_site_map">
                         <div class="col-md-6 col-xs-6">
                             <ul>
@@ -276,7 +276,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="site_map_heading">© 2017 - BILLINGS BRIDGE</h3>
+                    <h3 class="site_map_heading">&copy; <span id="current_year"></span> - BILLINGS BRIDGE</h3>
                     <p class="rights_reserved">
                         <a href="https://goo.gl/maps/UeBS43VV4u22" target="_blank">
                             2277 Riverside Dr, Ottawa, ON <br/>K1H 7X6
