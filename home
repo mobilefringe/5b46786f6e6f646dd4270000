@@ -63,7 +63,7 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
                         <div id="home_hours_container2" class="home_feature_hours">
                             <script id="home_hours_template2" type="x-tmpl-mustache/text">
-                                <h5>SHOPPING HOURS</h5>
+                                <h5 data-i18n="home.hours"></h5>
                                 <span class="hours_today">{{h}}</span>
                             </script>
                         </div>
