@@ -931,7 +931,9 @@ h4 {
         padding: 0;
         list-style: none;
         li {
-            > span {
+
+        }
+        li > span {
                 text-transform: uppercase;
             }
         }
