@@ -8,9 +8,9 @@
 		}
 	},
 	"footer": {
-	    "newsletter_title": "Abonnez-vous pour recevoir nos mises à jour",
-	    "newsletter_submit": "Signer",
-	    "social_title": "Social"
+	    "newsletter_title" : "Abonnez-vous pour recevoir nos mises à jour",
+	    "newsletter_submit" : "Signer",
+	    "social_title" : "Social"
 	},
 	"nav": {
 	    "menu": "Menu",
