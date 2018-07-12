@@ -3,8 +3,8 @@
 	    "todays_hours": "Heures d'aujourd'hui",
 	    "check_hours": "Voir les heures de vacances",
 	    "locale": {
-			"english": "EN",
-			"french": "FR"
+			"english" : "EN",
+			"french" : "FR"
 		}
 	},
 	"footer": {
