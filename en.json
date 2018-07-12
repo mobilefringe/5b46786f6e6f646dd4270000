@@ -11,29 +11,25 @@
 	},
 	"nav": {
 	    "menu": "Menu",
-		"stores": "Stores",
-		"events_promos": "Events & Promotions",
-		"visit": "Plan Your Visit",
-		"guest_services": "Guest Services",
-		"about_us": "About Us",
+		"stores": "Directory",
+		"news": "News & Events",
+		"services": "Services",
+		"about": "About",
+		"leasing": "Leasing",
 		"subnav": {
-			"directory": "Directory",
+			"directory": "stores",
 	        "map": "Centre Map",
+	        "news": "News",
 			"events": "Events",
-		    "promos": "Promotions",
+		    "promos": "Deals",
+		    "careers": "Careers",
+		    "guest_services": "Guest Services",
+		    "gift_cards": "Gift Cards",
+		    "contact": "Contact Us",
 			"hours": "Hours",
-			"directions": "Directions",
-			"services": "Services"
+			"about": "About Us",
+			"directions": "Directions & Parking"
 		}
-	},
-	"days_of_week": {
-		"0": "Sunday",
-		"1": "Monday",
-		"2": "Tuesday",
-		"3": "Wednesday",
-		"4": "Thursday",
-		"5": "Friday",
-		"6": "Saturday"
 	},
 	"home": {
 		"insta": "Follow Us On Instagram",
