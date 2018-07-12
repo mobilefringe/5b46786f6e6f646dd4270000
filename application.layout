@@ -181,7 +181,7 @@
                             </script>
                         </span>
                     </p>
-                    <a href="/hours" class="holiday_hours_home soft_hidden_phone" data-i18n="header.check_hours">Check for Holiday Hours</a>
+                    <a href="/hours" class="holiday_hours_home soft_hidden_phone" data-i18n="header.check_hours"></a> <!-- Check for Holiday Hours -->
                     <div class="btn-group pull-right">
       					<a href="?locale=en" class="btn" id="set_lang_en">EN</a> |
       					<a href="?locale=fr" class="btn" id="set_lang_fr">FR</a>
