@@ -128,16 +128,16 @@ a {
     }
 }
 #store_scroll_up {
-    top: 37px;
+    top: 35px;
     display: none;
 }
 #store_scroll_down{
-    bottom:0;
+    bottom: 0;
 }
 
 .margin_25_across{
-    margin-left:25px;
-    margin-right:25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .yield{
