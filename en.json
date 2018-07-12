@@ -37,7 +37,8 @@
 	},
 	"home": {
 		"insta": "FOLLOW US ON INSTAGRAM",
-		"hours": "Shopping Hours"
+		"hours": "Shopping Hours",
+		"hours_link": "See More Hours"
 	},
 	"pages": {
 	    "stores_title": "Store Directory",
