@@ -1,7 +1,7 @@
 <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <div class="main_banner text-center">
     <h3 data-i18n="stores.title"></h3>
-    <p>explore • enjoy • shop</p>
+    <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
