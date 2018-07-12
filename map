@@ -49,6 +49,14 @@
     $(document).ready(function(e){
         init(e);
         function renderPageData(){
+            var banner_repo = getRepoDetailsByName("Map Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
             var stores = getStoresList();
             regions = {}
             $.each( stores , function( key, val ) {
