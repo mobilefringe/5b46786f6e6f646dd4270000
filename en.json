@@ -40,6 +40,14 @@
 		"hours": "Shopping Hours",
 		"hours_link": "See More Hours"
 	},
+	"inside_page": {
+	    "stores": "Shops & Services",
+	    "map": "Centre Map"
+	},
+	"stores": {
+	    "title": "Store Directory",
+	    "categories": "Categories"
+	},
 	"pages": {
 	    "stores_title": "Store Directory",
 	    "stores_category": "Categories",
