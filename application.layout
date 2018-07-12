@@ -104,66 +104,66 @@
                         <li><a href="/promotions">Promotions</a></li>
 					</ul>
                 </li>
-                <li>
-                    <a href="#" class="submenu_expander">
-                        PLAN YOUR VISIT
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
-                    </a>
-                    <ul class="sub_menu hidden_now">
-						<li><a href="/hours">Hours</a></li>
-						<li><a href="/directions">Directions</a></li>
-					</ul>
-                </li>
-                <li>
-                    <a href="#"  class="submenu_expander">
-                        GUEST SERVICES
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
-                    </a>
-                    <ul class="sub_menu hidden_now">
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/gift_cards">Gift Cards</a></li>
-                        <li><a href="/free_wifi">Free WIFI</a></li>
-                        <li><a href="/style_services">Style Services</a></li>
-					</ul>
-                </li>
-                <li>
-                    <a href="#" class="submenu_expander">
-                        INFO
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
-                    </a>
-                    <ul class="sub_menu hidden_now">
-                        <li><a href="/jobs">Jobs</a></li>
-                        <li><a href="/accessibility">Accessibility</a></li>
-						<li><a href="/security">Security</a></li>
-					</ul>
-                </li>
-                <li>
-                    <a href="#" class="submenu_expander">
-                        COMMUNITY
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
-                    </a>
-                    <ul class="sub_menu hidden_now">
-                        <li><a href="/mall_walkers">Mall Walkers</a></li>
-                        <li><a href="/charities">Charities & Non-Profits</a></li>
-						<li><a href="/community_partners">Community Partners</a></li>
-					</ul>
-                </li>
-                <li>
-                    <a href="#" class="submenu_expander">
-                        CONTACT US
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
-                    </a>
-                    <ul class="sub_menu hidden_now">
-                        <li><a href="/contact_us">Contact Us</a></li>
-                        <li><a href="/leasing">Leasing</a></li>
-                        <li><a href="/privacy_policy">Privacy Policy</a></li>
-					</ul>
-                </li>
+     <!--           <li>-->
+     <!--               <a href="#" class="submenu_expander">-->
+     <!--                   PLAN YOUR VISIT-->
+     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
+					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
+     <!--               </a>-->
+     <!--               <ul class="sub_menu hidden_now">-->
+					<!--	<li><a href="/hours">Hours</a></li>-->
+					<!--	<li><a href="/directions">Directions</a></li>-->
+					<!--</ul>-->
+     <!--           </li>-->
+     <!--           <li>-->
+     <!--               <a href="#"  class="submenu_expander">-->
+     <!--                   GUEST SERVICES-->
+     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
+					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
+     <!--               </a>-->
+     <!--               <ul class="sub_menu hidden_now">-->
+     <!--                   <li><a href="/services">Services</a></li>-->
+     <!--                   <li><a href="/gift_cards">Gift Cards</a></li>-->
+     <!--                   <li><a href="/free_wifi">Free WIFI</a></li>-->
+     <!--                   <li><a href="/style_services">Style Services</a></li>-->
+					<!--</ul>-->
+     <!--           </li>-->
+     <!--           <li>-->
+     <!--               <a href="#" class="submenu_expander">-->
+     <!--                   INFO-->
+     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
+					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
+     <!--               </a>-->
+     <!--               <ul class="sub_menu hidden_now">-->
+     <!--                   <li><a href="/jobs">Jobs</a></li>-->
+     <!--                   <li><a href="/accessibility">Accessibility</a></li>-->
+					<!--	<li><a href="/security">Security</a></li>-->
+					<!--</ul>-->
+     <!--           </li>-->
+     <!--           <li>-->
+     <!--               <a href="#" class="submenu_expander">-->
+     <!--                   COMMUNITY-->
+     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
+					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
+     <!--               </a>-->
+     <!--               <ul class="sub_menu hidden_now">-->
+     <!--                   <li><a href="/mall_walkers">Mall Walkers</a></li>-->
+     <!--                   <li><a href="/charities">Charities & Non-Profits</a></li>-->
+					<!--	<li><a href="/community_partners">Community Partners</a></li>-->
+					<!--</ul>-->
+     <!--           </li>-->
+     <!--           <li>-->
+     <!--               <a href="#" class="submenu_expander">-->
+     <!--                   CONTACT US-->
+     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
+					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
+     <!--               </a>-->
+     <!--               <ul class="sub_menu hidden_now">-->
+     <!--                   <li><a href="/contact_us">Contact Us</a></li>-->
+     <!--                   <li><a href="/leasing">Leasing</a></li>-->
+     <!--                   <li><a href="/privacy_policy">Privacy Policy</a></li>-->
+					<!--</ul>-->
+     <!--           </li>-->
             </ul>
         </div>
     </div>
