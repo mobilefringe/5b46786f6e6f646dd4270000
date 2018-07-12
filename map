@@ -19,7 +19,7 @@
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
-            <option value="/stores" data-i18n="inside_page.stores">Shopping & Services</option>
+            <option value="/stores" data-i18n="inside_page.stores"></option>
         </select>
     </h5>
 </div>
@@ -32,11 +32,10 @@
                     <div id="mapsvg_store_detail"></div>  
                 </div>
             </div>
-            
             <div class="col-md-4 hidden_phone">
-                <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
-                <a id="store_scroll_down" href="#" class="store_list_navigation">Scroll Down</a>
-                <p class='category_header'>Find Store</p>
+                <a id="store_scroll_up" href="#" class="store_list_navigation" data-i18n="map.scroll_up"></a>
+                <a id="store_scroll_down" href="#" class="store_list_navigation" data-i18n="map.scroll_down"></a>
+                <p class="category_header" data-i18n="map.find_store"></p>
                 <div id="stores_container">
                     <script id="stores_template" type="x-tmpl-mustache/text">
                         <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
