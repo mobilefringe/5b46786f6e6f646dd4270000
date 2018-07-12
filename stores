@@ -27,13 +27,10 @@
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                 <div class="row main_row">
                     <div class="col-md-6">
-                        <div class="" id="store_list_container">
-                        </div>
+                        <div class="" id="store_list_container"></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="" id="store_list_container2">
-                            
-                        </div>
+                        <div class="" id="store_list_container2"></div>
                     </div>
                 </div>
             </div>
@@ -55,7 +52,7 @@
                     </div>
                 </div>
                 <p class="category_header" data-i18n="stores.category"></p>
-                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
+                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores" data-i18n="stores.categories_all"></a></h5>
                 <div id="category_container" class="hidden_phone">
                     <script id="category_template" type="x-tmpl-mustache/text">
                         <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
