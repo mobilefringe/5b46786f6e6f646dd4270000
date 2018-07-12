@@ -1,0 +1,85 @@
+<div class="jobs_banner text-center">
+    <h3 data-i18n="hours.title"></h3>
+    <p data-i18n="inside_page.header_tagline"></p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5 class="active_heading" data-i18n="inside_page.contact"></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/hours" data-i18n="inside_page.hours"></a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/about-us" data-i18n="inside_page.about"></a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/directions-and-parking" data-i18n="inside_page.directions"></a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/hours" data-i18n="inside_page.hours"></option>
+            <option value="/about-us" data-i18n="inside_page.about"></option>
+            <option value="/directions-and-parking" data-i18n="inside_page.directions"></option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5"> 
+                        <h3 class="hours_heading" >Regular Hours</h3>
+                        <div id="hours_container" class="hours_container">
+                            <script id="hours_template" type="x-tmpl-mustache/text">
+                                <div class="hours_div">
+                                    <span>{{day}}:</span>
+                                    <span>{{h}}</span>
+                                </div>
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
+                        <div id="holidays_hours_container" class="hours_container">
+                            <script id="holidays_hours_template" type="x-tmpl-mustache/text">
+                                <div class="hours_div">
+                                    <span>{{holiday_name}} ({{formatted_date}})</span>
+                                    <span>{{h}}</span>
+                                </div>
+                            </script>
+                        </div>
+                        <div class="margin_20"></div>
+                        <h3 class="hours_heading">Holiday Closures</h3>
+                        <div id="closed_hours_container" class="hours_container">
+                            <script id="closed_hours_template" type="x-tmpl-mustache/text">
+                                <div class="hours_div">
+                                    <span>{{holiday_name}} ({{formatted_date}})</span>
+                                </div>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var hours = getPropertyRegularHours().sortBy(function(o){ return o.day_of_week });;
+            renderHours('#hours_container','#hours_template', hours, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
+            renderHours('#holidays_hours_container','#holidays_hours_template', holiday_hours, 'holiday_hours');
+            renderHours('#closed_hours_container','#closed_hours_template', holiday_hours, 'closed_hours');
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
