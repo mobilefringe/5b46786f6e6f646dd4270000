@@ -41,6 +41,13 @@
     $(document).ready(function(e){
         init(e);
         function renderAll (){
+            var banner_repo = getRepoDetailsByName("News Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
             
             show_content();
         }
