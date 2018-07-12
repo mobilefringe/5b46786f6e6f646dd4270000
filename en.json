@@ -1,17 +1,13 @@
 {
 	"header": {
 	    "todays_hours": "Today's Hours",
-	    "check_hours": "View Holiday Hours",
-	    "locale": {
-			"english": "EN",
-			"french": "FR"
-		}
+	    "check_hours": "View Holiday Hours"
 	},
 	"footer": {
 	    "newsletter_title": "Subscribe to Receive Our Updates",
 	    "newsletter_submit": "Sign Up",
-	    "social_title" : "Social",
-	    "social_subtitle" : "Follow us on social media for news and activities"
+	    "social_title": "Social",
+	    "social_subtitle": "Follow us on social media for news and activities"
 	},
 	"nav": {
 	    "menu": "Menu",
