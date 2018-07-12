@@ -20,8 +20,8 @@
 		"subnav": {
 			"directory": "Directoire",
 	        "map": "Carte du Centre",
-			"events": "Events",
-		    "promotions": "Promotions",
+			"events": "Événements",
+		    "promos": "les Soldes",
 			"hours": "Hours",
 			"directions": "Directions",
 			"services": "Services"
