@@ -21,7 +21,7 @@
 			"directory": "Directory",
 	        "map": "Centre Map",
 			"events": "Events",
-		    "promotions": "Promotions",
+		    "promos": "Promotions",
 			"hours": "Hours",
 			"directions": "Directions",
 			"services": "Services"
