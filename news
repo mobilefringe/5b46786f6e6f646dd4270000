@@ -31,22 +31,7 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <div id="jobs_container">
-                    <script id="jobs_template" type="x-tmpl-mustache/text">
-                        <div class="row promo_item cats_row job_list_item" data-cat="{{cat_list}}">
-                            <div class="col-md-12">
-                                <h2 class="promo_list_name">{{name}}</h2>
-                                <p>
-                                    <span class="promo_store">{{store_name}}</span>
-                                    <span class="promo_store">{{job_type}}</span>
-                                    <span class="promo_dates">{{published_on}}</span>
-                                </p>
-                                <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                <a class="read_more" href="/jobs/{{slug}}">View job info</a>
-                            </div>
-                        </div>
-                    </script>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -56,20 +41,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll (){
-            var jobs = getJobsList().sortBy(function(o){ return o.name});
-            var published_jobs = [];
-            $.each( jobs , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate) {
-                    published_jobs.push(val)
-                } 
-            });
-            if(published_jobs.length > 0){
-                renderJobs('#jobs_container', '#jobs_template', jobs, "Billings Bridge Shopping Centre");
-            } else {
-                $('#no_jobs').show()
-            }
+            
             show_content();
         }
 		loadMallDataCached(renderAll); 
