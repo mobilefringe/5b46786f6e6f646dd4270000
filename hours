@@ -5,10 +5,10 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-3">
-            <h5 class="active_heading" data-i18n="inside_page.contact"></h5>
+            <h5><a href="/contact-us" data-i18n="inside_page.contact"></a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/hours" data-i18n="inside_page.hours"></a></h5>
+            <h5 class="active_heading" data-i18n="inside_page.hours"></h5>
         </div>
         <div class="col-md-3">
             <h5><a href="/about-us" data-i18n="inside_page.about"></a></h5>
