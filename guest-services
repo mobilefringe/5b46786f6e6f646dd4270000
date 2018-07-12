@@ -13,10 +13,8 @@
     </div>
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
-            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/gift_cards">Gift Cards</option>
-            <option value="/free_wifi">Free Wifi</option>
-            <option value="/style_services">Style Services</option>
+            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/gift-cards" data-i18n="inside_page.gift_cards"></option>
         </select>
     </h5>
 </div>
