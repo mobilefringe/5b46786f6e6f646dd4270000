@@ -1,4 +1,3 @@
-<script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <div class="main_banner text-center">
     <h3 data-i18n="stores.title"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
@@ -105,21 +104,21 @@
             }
             show_content();
             
-            $.each(stores, function(i, val){
-                x = val.x_coordinate - 19;
-                y = val.y_coordinate - 58;
-                $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
-            });  
+    //         $.each(stores, function(i, val){
+    //             x = val.x_coordinate - 19;
+    //             y = val.y_coordinate - 58;
+    //             $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
+    //         });  
             
-            $('#map').craftmap({
-    			image: {
-    				width: 850,
-    				height: 850,
-    			},
-    			map: {
-    				position: 'center'
-    			}
-    		});
+    //         $('#map').craftmap({
+    // 			image: {
+    // 				width: 850,
+    // 				height: 850,
+    // 			},
+    // 			map: {
+    // 				position: 'center'
+    // 			}
+    // 		});
         }
         
 		loadMallDataCached(renderAll); 
