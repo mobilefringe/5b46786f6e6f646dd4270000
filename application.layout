@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <a href="#" class="submenu_expander open">
-                        STORES
+                        <span data-i18n="header.todays_hours"></span>
                         <img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: none;">
 						<img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: inline;">
                     </a>
@@ -95,7 +95,7 @@
                 </li>
                 <li>
                     <a href="#"  class="submenu_expander">
-                        EVENTS & PROMOTIONS
+                        <span data-i18n="nav.events_promos"></span>
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
