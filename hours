@@ -1,4 +1,4 @@
-<div class="jobs_banner text-center">
+<div class="main_banner text-center">
     <h3 data-i18n="hours.title"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
@@ -68,6 +68,14 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banner_repo = getRepoDetailsByName("Hours Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
             var hours = getPropertyRegularHours().sortBy(function(o){ return o.day_of_week });;
             renderHours('#hours_container','#hours_template', hours, 'reg_hours');
             var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
