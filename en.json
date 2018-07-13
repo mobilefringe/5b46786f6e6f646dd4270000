@@ -1,0 +1,116 @@
+{
+	"header": {
+	    "todays_hours": "Today's Hours",
+	    "check_hours": "View Holiday Hours"
+	},
+	"footer": {
+	    "newsletter_title": "Subscribe to Receive Our Updates",
+	    "newsletter_tagline": "• Fashion • Events • Sales •",
+	    "newsletter_submit": "Sign Up",
+	    "social_title": "Social",
+	    "social_subtitle": "Follow us on social media for news and activities",
+	    "site_map": "Site Map"
+	},
+	"nav": {
+	    "menu": "Menu",
+		"stores": "Directory",
+		"news": "News & Events",
+		"services": "Services",
+		"about": "About",
+		"leasing": "Leasing",
+		"subnav": {
+			"directory": "stores",
+	        "map": "Centre Map",
+	        "news": "News",
+			"events": "Events",
+		    "promos": "Deals",
+		    "careers": "Careers",
+		    "guest_services": "Guest Services",
+		    "gift_cards": "Gift Cards",
+		    "contact": "Contact Us",
+			"hours": "Hours",
+			"about": "About Us",
+			"directions": "Directions & Parking"
+		}
+	},
+	"home": {
+		"insta": "Follow Us On Instagram",
+		"hours": "Shopping Hours",
+		"hours_link": "See More Hours"
+	},
+	"inside_page": {
+	    "header_tagline": "EXPLORE • ENJOY • SHOP",
+	    "mobile_menu": "Tap For More Options",
+	    "stores": "Shops & Services",
+	    "map": "Centre Map",
+	    "news": "News",
+	    "events": "Events",
+	    "deals": "Deals",
+	    "careers": "Careers",
+	    "guest_services": "Guest Services",
+	    "gift_cards": "Gift Cards",
+	    "contact": "Contact Us",
+	    "hours": "Hours",
+	    "about": "About Us",
+	    "directions": "Directions",
+	    "leasing": "Leasing",
+	    "share": "Share: "
+	},
+	"stores": {
+	    "title": "Store Directory",
+	    "new_stores": "New Stores",
+	    "coming_soon": "Coming Soon",
+	    "category": "Categories",
+	    "categories_all": "All",
+	    "back_btn": "Back to Shops & Services",
+	    "store_promo": "Promotions",
+	    "store_job": "Jobs",
+	    "store_phone": "Phone",
+	    "store_website": "Website"
+	},
+	"map": {
+	    "title": "Centre Map",
+	    "find_store": "Find A Store",
+	    "scroll_up": "Scroll Up",
+	    "scroll_down": "Scroll Down"
+	},
+	"news": {
+	    
+	},
+	"events": {
+	    "title": "Events",
+	    "no_events": "There are no Events scheduled at this time. Please check back soon!"
+	},
+	"promos": {
+	    
+	},
+	"jobs": {
+	    
+	},
+	"hours": {
+	    "title": "Centre Hours",
+	    "regular_hours": "Regular Hours",
+	    "reduced_hours": "Reduced Hours of Operation",
+	    "closed_hours": "Holiday Closures"
+	},
+    "directions": {
+        "title": "Directions & Parking"    
+    },
+	"social": {
+		"message": "Connect with Us",
+		"facebook": "Like on Facebook",
+		"facebook_tablet": "Like",
+		"twitter": "Follow on Twitter",
+		"twitter_tablet": "Follow",
+		"pinterest": "Follow on Pinterest",
+		"pinterest_tablet": "Pinterest",
+		"youtube": "Watch on YouTube",
+		"youtube_tablet": "YouTube",
+		"google":"Google+",
+		"google_tablet": "Google+",
+		"instagram": "Follow on Instagram",
+		"instagram_tablet": "Instagram",
+		"newsletter": "Sign-up to Newsletter",
+		"newsletter_tablet": "Sign-up"
+	}
+}
