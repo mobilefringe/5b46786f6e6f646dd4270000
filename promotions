@@ -56,13 +56,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2 class="promo_list_name"><a href="/promotions/{{slug}}">{{name}}</a></h2>
+                                    <h2 class="promo_list_name"><a href="/promotions/{{slug}}">{{name_2}}</a></h2>
                                     <p>
                                         <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
                                         | <span class="promo_dates">{{dates}}</span>
                                     </p>
-                                    <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="read_more" href="/promotions/{{slug}}">See Promotion Details <i class="fa fa-angle-right"></i></a>
+                                    <div class="promo_list_desc">{{description_short_2}}</div>
+                                    <a class="read_more" href="/promotions/{{slug}}">Voir les détails de la promotion <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
