@@ -105,14 +105,14 @@ function renderEvents(container, template, collection, centre){
             }
         }
         
-        var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-        	val.dates = start.format("MMM D");
-        } else {
-        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-        }
+        // var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+        // var start = moment(val.start_date).tz(getPropertyTimeZone());
+        // var end = moment(val.end_date).tz(getPropertyTimeZone());
+        // if (start.format("DMY") == end.format("DMY")){
+        // 	val.dates = start.format("MMM D");
+        // } else {
+        // 	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+        // }
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
