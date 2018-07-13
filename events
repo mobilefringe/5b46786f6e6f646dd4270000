@@ -91,7 +91,7 @@
             } else {
                 $('#no_events').show()
             }
-            show_content();
+            // show_content();
         }
 		loadMallDataCached(renderAll); 
     })
