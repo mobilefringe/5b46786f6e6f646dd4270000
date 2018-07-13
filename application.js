@@ -60,7 +60,7 @@ function renderEvents(container, template, collection, centre){
         
         // English Image
         if (val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.event_image_url_abs="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
         // French Image
         if (val.event_image2_url_abs.indexOf('missing.png') > -1){
@@ -82,6 +82,27 @@ function renderEvents(container, template, collection, centre){
             val.description_short_2 = val.description_2.substring(0,200) + "...";
         } else {
             val.description_short_2 = val.description_2
+        }
+        
+        var show_date = moment(val.show_on_web_date);
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        var french_start = moment(start).locale('fr-ca');
+        var french_end = moment(end).locale('fr-ca');
+        if (start.format("DMY") == end.format("DMY")){
+            if(Cookies.get('current_locale') == "en-CA"){
+                val.dates = start.format("MMM D");
+            }
+            if(Cookies.get('current_locale') == "fr-CA"){
+                val.dates = french_start.format("DD MMM");
+            }
+        } else {
+            if(Cookies.get('current_locale') == "en-CA"){
+                val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
+            if(Cookies.get('current_locale') == "fr-CA"){
+                val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
+            }
         }
         
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
