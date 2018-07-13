@@ -49,7 +49,7 @@
                                     <a class="read_more" href="/promotions/{{slug}}">See Promotion Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
-                            <div class="primary-locale">
+                            <div class="secondary-locale">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
                                         <img src="{{image_url}}" alt="{{name}}" />
