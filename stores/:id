@@ -7,7 +7,7 @@
             <div class="store_list_head">
                 <div class="row">
                     <div class="col-md-12 store_top">
-                        <h5 class="back_btn show_phone"><a href="/stores" class="store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <span data-i18n="stores.back_btn"></span></a></h5>
+                        <h5 class="back_btn show_phone"><i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/stores" class="store_anchors active_heading"><span data-i18n="stores.back_btn"></span></a></h5>
                         <a href="/stores" class="soft_hidden_phone store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <span data-i18n="stores.back_btn"></span></a>
                         <div class="store_details_anchors pull-right">
                             <a id="promo_anchor" href="#promos_main" class="store_anchors active_heading">
