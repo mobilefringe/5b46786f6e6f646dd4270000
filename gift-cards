@@ -1,4 +1,4 @@
-<div class="jobs_banner text-center">
+<div class="main_banner text-center">
     <h3 data-i18n="inside_page.gift_cards"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
@@ -32,6 +32,14 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banner_repo = getRepoDetailsByName("Gift Card Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
             var prefix = get_prefix();
             // var pages_json = prefix + "/pages/billings-services.json"
             // $.getJSON(pages_json).done(function(data) {
