@@ -1,4 +1,4 @@
-<div class="jobs_banner text-center">
+<div class="main_banner text-center">
     <h3>JOBS</h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
@@ -56,6 +56,14 @@
     $(document).ready(function(e){
         init(e);
         function renderAll (){
+            var banner_repo = getRepoDetailsByName("News Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
             var jobs = getJobsList().sortBy(function(o){ return o.name});
             var published_jobs = [];
             $.each( jobs , function( key, val ){
