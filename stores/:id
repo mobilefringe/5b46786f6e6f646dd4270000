@@ -28,7 +28,7 @@
                         <div class="details_desc">
                             <div id="mapsvg_store_detail" class="mobile_padding"></div>
                             <div class="margin_20 primary-locale">{{{rich_description}}}</div>
-                            <div class="margin_20 secondary-locale">{{{rich_description}}}</div>
+                            <div class="margin_20 secondary-locale">{{{rich_description_2}}}</div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -107,7 +107,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            console.log(tore_details)
+            console.log(store_details)
             renderStoreDetails("#store_container","#store_template", store_details, slug);
             
             var banner_repo = getRepoDetailsByName("Directory Banner").images;
