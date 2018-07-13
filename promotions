@@ -30,23 +30,40 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <p class="hidden_now" id="no_promo_in_category">There are no promotions in this category.</p>
                 <div id="promos_container">
                     <script id="promos_template" type="x-tmpl-mustache/text">
                         <div class="row promo_item">
-                            <div class="col-md-3">
-                                <div class="cropped_image">
-                                    <img src="{{image_url}}" alt="{{name}}" />
+                            <div class="primary-locale">
+                                <div class="col-md-3">
+                                    <div class="cropped_image">
+                                        <img src="{{image_url}}" alt="{{name}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="promo_list_name"><a href="/promotions/{{slug}}">{{name}}</a></h2>
+                                    <p>
+                                        <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
+                                        | <span class="promo_dates">{{dates}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/promotions/{{slug}}">See Promotion Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
-                            <div class="col-md-9">
-                                <h2 class="promo_list_name"><a href="/promotions/{{slug}}">{{name}}</a></h2>
-                                <p>
-                                    <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
-                                    | <span class="promo_dates">{{dates}}</span>
-                                </p>
-                                <div class="promo_list_desc">{{description_short}}</div>
-                                <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                            <div class="primary-locale">
+                                <div class="col-md-3">
+                                    <div class="cropped_image">
+                                        <img src="{{image_url}}" alt="{{name}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="promo_list_name"><a href="/promotions/{{slug}}">{{name}}</a></h2>
+                                    <p>
+                                        <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
+                                        | <span class="promo_dates">{{dates}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/promotions/{{slug}}">See Promotion Details <i class="fa fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </script>
@@ -74,11 +91,6 @@
             }
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            var categories = getStoreCategories();
-            renderGeneral('#category_container', '#category_template', categories);
-            renderGeneral('#mobile_cat_list', '#category_template2', categories);
-            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
-            show_cat_stores()
             var published_promos = [];
             $.each( promotions , function( key, val ){
                 today = moment();
@@ -92,6 +104,7 @@
             } else {
                 $('#no_promos').show()
             }
+            
             show_content();
         }
 		loadMallDataCached(renderAll); 
