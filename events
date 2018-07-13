@@ -74,7 +74,7 @@
         </div>
         <div class="row hidden_now" id="no_events">
             <div class="col-md-12">
-                <p>There are no Events scheduled at this time. Please check back soon.</p>
+                <p data-i18n="events.no_events">There are no Events scheduled at this time. Please check back soon.</p>
             </div>
         </div>
     </div>
