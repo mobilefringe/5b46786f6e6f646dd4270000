@@ -36,7 +36,7 @@
                             <div class="primary-locale">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{image_url}}" alt="{{name}}" />
+                                        <img src="{{promo_image_url_abs}}" alt="{{name}}" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
@@ -52,7 +52,7 @@
                             <div class="secondary-locale">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{image_url}}" alt="{{name}}" />
+                                        <img src="{{promo_image2_url_abs}}" alt="{{name}}" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
