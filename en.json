@@ -77,7 +77,8 @@
 	    
 	},
 	"events": {
-	    
+	    "title": "Events",
+	    "no_events": "There are no Events scheduled at this time. Please check back soon!"
 	},
 	"promos": {
 	    
