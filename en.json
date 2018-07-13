@@ -53,7 +53,8 @@
 	    "hours": "Hours",
 	    "about": "About Us",
 	    "directions": "Directions",
-	    "leasing": "Leasing"
+	    "leasing": "Leasing",
+	    "share": "Share: "
 	},
 	"stores": {
 	    "title": "Store Directory",
