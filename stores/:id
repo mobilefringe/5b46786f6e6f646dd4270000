@@ -1,0 +1,200 @@
+<div id="store_container">
+    <script id="store_template" type="x-tmpl-mustache/text">
+        <div class="main_banner text-center">
+            <h3>{{name}}</h3>
+        </div>
+        <div class="main_container content_container">
+            <div class="store_list_head">
+                <div class="row">
+                    <div class="col-md-12 store_top">
+                        <h5 class="back_btn show_phone"><a href="/stores" class="store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <span data-i18n="stores.back_btn"></span></a></h5>
+                        <a href="/stores" class="soft_hidden_phone store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <span data-i18n="stores.back_btn"></span></a>
+                        <div class="store_details_anchors pull-right">
+                            <a id="promo_anchor" href="#promos_main" class="store_anchors active_heading">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1466179730000/promo_icon.png" class="" alt="promo icon">
+                                <span data-i18n="stores.store_promo"></span> (<span></span>)
+                            </a>
+                            <a id="job_anchor" href="#jobs_main" class="store_anchors active_heading">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1466179720000/jobs_icon.png" class="" alt="jobs icon">
+                                <span data-i18n="stores.store_job"></span> (<span></span>)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin_25_across">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="details_desc">
+                            <div id="mapsvg_store_detail" class="mobile_padding"></div>
+                            <div class="margin_20">{{{rich_description}}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                       <img class="margin_20" src="//assets.codecloudapp.com/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg"/>
+                        <div class="side_stores">
+                            <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">
+                                <span data-i18n="stores.store_phone"></span>: {{phone}}
+                            </a>
+                            <a class="animated_btn" href="//{{website}}" target="_blank" style="{{show}}">
+                                <span data-i18n="stores.store_website"></span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </script>
+</div>
+<div class="main_container content_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-8 promo_item" id="promos_main">
+                <h2 class="store_details_promo_heading">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
+                    <span data-i18n="stores.store_promo"></span>
+                </h2>
+                <div id="promos_container">
+                    <script id="promos_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item cats_row" data-cat="{{cat_list}}">
+                            <div class="col-md-5">
+                                <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <span class="promo_dates">{{dates}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-8 promo_item" id="jobs_main">
+                <h2 class="store_details_promo_heading">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="jobs_icon" alt="jobs icon">
+                    <span data-i18n="stores.store_jobs"></span>
+                </h2>
+                <div id="jobs_container">
+                    <script id="jobs_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item" data-cat="{{cat_list}}">
+                            <div class="col-md-12">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <span class="promo_dates">{{job_type}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="read_more" href="/jobs/{{slug}}">Read More</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var banner_repo = getRepoDetailsByName("Directory Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            renderStoreDetails("#store_container","#store_template", store_details, slug);
+            
+            //PROMOS
+            var store_promo_ids = store_details.promotions
+            var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+            var published_promos = [];
+            $.each( store_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    published_promos.push(val)
+                } 
+            });
+            if( published_promos.length > 0){
+                renderPromotions("#promos_container","#promos_template", published_promos);
+                $('#promo_anchor span').text(published_promos.length)
+            } else {
+                $('#promos_main').hide()
+                $('#promo_anchor').hide()
+            }
+            
+            // JOBS
+            var store_job_ids = store_details.jobs
+            var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+            var published_jobs = [];
+            $.each( store_jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    published_jobs.push(val)
+                } 
+            });
+            if( published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                $('#job_anchor span').text(published_jobs.length)
+            } else {
+                $('#jobs_main').hide();
+                $('#job_anchor').hide()
+            }
+            
+            show_content();
+            
+            // MAP
+            var stores = getStoresList();
+            var regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>" + val.name + "</p></div>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            load_map(regions, store_details);
+        }
+		loadMallDataCached(renderAll); 
+    })
+    
+    function load_map(reg, store_details){
+        this_region = {};
+        this_region = store_details.svgmap_region;
+        if(this_region != null) {
+            map = $('#mapsvg_store_detail').mapSvg({
+                source: getSVGMapURL(),
+                colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
+                disableAll: true,
+                regions: this_region,
+                height:1700,
+                width:2300,
+                tooltipsMode:'custom',
+                zoom:true,
+                zoomButtons: {'show': true, 'location': 'left'},
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,5]
+            });
+            // map.setViewBox(store_details.svgmap_region);
+            map.selectRegion(store_details.svgmap_region);
+            drop_pin(store_details.svgmap_region, map);
+        }
+    }
+</script>
