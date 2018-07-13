@@ -80,7 +80,7 @@
                                     <p>
                                         <span class="promo_dates">{{dates}}</span>
                                     </p>
-                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <div class="promo_list_desc">{{description_short_2}}</div>
                                     <a class="read_more" href="/promotions/{{slug}}">Voir les détails de la promotion <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
