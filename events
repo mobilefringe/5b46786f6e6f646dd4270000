@@ -73,11 +73,6 @@
             }
             
             var promotions = getEventsList().sortBy(function(o){ return o.end_date });
-            var categories = getStoreCategories();
-            renderGeneral('#category_container', '#category_template', categories);
-            renderGeneral('#mobile_cat_list', '#category_template2', categories);
-            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
-            show_cat_stores()
             var published_promos = [];
             $.each( promotions , function( key, val ){
                 today = moment();
@@ -86,12 +81,13 @@
                     published_promos.push(val)
                 } 
             });
+            
             if(published_promos.length > 0){
-                renderEvents("#promos_container","#promos_template", published_promos, "Billings Bridge Shopping Centre");
+                renderEvents("#promos_container","#promos_template", published_promos, "Place Bathurst Shopping Centre");
             } else {
                 $('#no_events').show()
             }
-            // show_content();
+            show_content();
         }
 		loadMallDataCached(renderAll); 
     })
