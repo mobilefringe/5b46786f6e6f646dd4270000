@@ -43,6 +43,7 @@
                                     <h2 class="promo_list_name">{{name}}</h2>
                                     <p>
                                         <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
+                                        <span class="underline promo_store" style="{{mall_show}}">{{store_name}}</span>
                                         | <span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
