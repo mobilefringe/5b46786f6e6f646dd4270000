@@ -57,17 +57,32 @@
                 </h2>
                 <div id="promos_container">
                     <script id="promos_template" type="x-tmpl-mustache/text">
-                        <div class="row promo_item cats_row" data-cat="{{cat_list}}">
-                            <div class="col-md-5">
-                                <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+                        <div class="row promo_item">
+                            <div class="primary-locale">
+                                <div class="col-md-5">
+                                    <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_dates">{{dates}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                                </div>
                             </div>
-                            <div class="col-md-7">
-                                <h2 class="promo_list_name">{{name}}</h2>
-                                <p>
-                                    <span class="promo_dates">{{dates}}</span>
-                                </p>
-                                <div class="promo_list_desc">{{description_short}}</div>
-                                <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                            <div class="secondary-locale">
+                                <div class="col-md-5">
+                                    <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_dates">{{dates}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </script>
