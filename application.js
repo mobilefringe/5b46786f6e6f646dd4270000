@@ -515,7 +515,8 @@ function renderPromotions(container, template, collection, mall_name){
         } else {
             val.store_name = mall_name;
             val.store_slug = "/"
-            // val.store_show = "display:none;";
+            val.store_show = "display:none;";
+            val.mall_show = "display: block";
             
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
