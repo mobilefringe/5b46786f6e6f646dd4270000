@@ -63,11 +63,20 @@ function renderEvents(container, template, collection, centre){
         if (val.image_url.indexOf('missing.png') > 0){
             val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
+        
+        // English Description
         if (val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
         } else {
             val.description_short = val.description
         }
+        // French Description
+        if (val.description_2.length > 200){
+            val.description_short_2 = val.description_2.substring(0,200) + "...";
+        } else {
+            val.description_short_2 = val.description_2
+        }
+        
         if (val.event_image_url_abs.indexOf('missing.png') > -1){
             val.event_image_url_abs="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
