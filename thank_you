@@ -1,0 +1,28 @@
+<div class="main_banner text-center">
+    <h3>NEWSLETTER SIGN-UP</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_30"></div>
+    <p>Your subscription has been confirmed. You've been added to our list and will hear from us soon.</p>
+    <div class="margin_30"></div>
+</div>
+<script>
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var banner_repo = getRepoDetailsByName("Newsletter Banner").images;
+        if (banner_repo) {
+            var banner_image = banner_repo[0].image_url;
+            if (banner_image) {
+                $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+            }
+        }
+        
+        show_content();
+    }
+    
+    loadMallDataCached(renderAll); 
+});
+</script>
