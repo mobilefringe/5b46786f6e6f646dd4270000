@@ -46,12 +46,27 @@
                                         <span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="read_more" href="/events/{{slug}}">Read More</a>
+                                    <a class="read_more" href="/events/{{slug}}">See Event Details</a>
                                 </div>
                             </div>
                         </div>
                         <div class="secondary-locale">
-                        
+                            <div class="row promo_item">
+                                <div class="col-md-3">
+                                    <div class="cropped_image">
+                                        <img src="{{event_image2_url_abs}}" alt="{{name_2}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="promo_list_name">{{name_2}}</h2>
+                                    <p>
+                                        <span class="promo_store">{{store_name}}</span>
+                                        <span class="promo_dates">{{dates}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short_2}}</div>
+                                    <a class="read_more" href="/events/{{slug}}">Voir les détails de l'événement</a>
+                                </div>
+                            </div>
                         </div>
                     </script>
                 </div>
