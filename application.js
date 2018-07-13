@@ -54,14 +54,21 @@ function renderEvents(container, template, collection, centre){
             var store_details = getStoreDetailsByID(val.eventable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-            val.image_url = store_details.store_front_url_abs;
-            val.cat_list = store_details.categories.join(',')
         } else {
             val.store_name = centre;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
-        if (val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+        
+        // English Image
+        if (val.event_image_url_abs.indexOf('missing.png') > -1){
+            val.event_image_url_abs="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+        }
+        // French Image
+        if (val.event_image2_url_abs.indexOf('missing.png') > -1){
+            if (val.event_image_url_abs.indexOf('missing.png') > -1){
+                val.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+            } else {
+                val.event_image2_url_abs = val.event_image_url_abs;
+            }
         }
         
         // English Description
@@ -77,10 +84,6 @@ function renderEvents(container, template, collection, centre){
             val.description_short_2 = val.description_2
         }
         
-        if (val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.event_image_url_abs="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
-        }
-
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
