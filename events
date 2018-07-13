@@ -1,5 +1,5 @@
 <div class="main_banner text-center">
-    <h3>MALL EVENTS</h3>
+    <h3 data-i18n="events.title"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="store_list_head main_container">
@@ -73,6 +73,7 @@
             }
             
             var promotions = getEventsList().sortBy(function(o){ return o.end_date });
+            console.log(promotions)
             var published_promos = [];
             $.each( promotions , function( key, val ){
                 today = moment();
