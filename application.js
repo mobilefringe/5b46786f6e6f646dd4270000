@@ -498,14 +498,6 @@ function renderPromotions(container, template, collection, mall_name){
                 val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg"
             }
             
-            if(val.cat_list != null){
-                try {
-                    val.cat_list = store_details.categories.join(',')
-                }
-                catch(err) {
-                    console.log(err);
-                }
-            }
             val.store_slug = "/stores/" + store_details.slug
         } else {
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
