@@ -467,7 +467,35 @@ h4 {
         text-transform: uppercase;
     }
 }
-
+.inside_banner {
+    padding: 20px 0px 64px 0;
+    background-color: $primary;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h3 {
+        margin:0;
+        font-size: 54px;
+        color: #fff;
+        letter-spacing: 4px;
+        padding-top: 60px;
+        margin-bottom: 10px;
+        text-transform:uppercase;
+        // font-family: 'EB Garamond';
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-family: 'Open Sans Condensed';
+        text-transform: uppercase;
+    }
+}
 #promo_details_container{
     .details_desc{
         margin-left:0 !important;
