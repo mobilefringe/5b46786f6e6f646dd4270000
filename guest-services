@@ -49,9 +49,6 @@
                 if(Cookies.get('current_locale') == "fr-CA"){
                     $('#mm_page_content').html(data.body_2);
                 }
-            
-                // $('#mm_page_title').html(data.title.toUpperCase());
-                // $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
