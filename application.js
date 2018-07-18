@@ -650,9 +650,14 @@ function renderPromoDetails(container, template, collection, mall_name){
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-            val.store_image = store_details.store_front_url_abs;
+            
             val.store_slug = store_details.slug
             val.store_show = "display:block";
+            if (store_details.store_front_url_abs.indexOf('missing') > 0) {
+                val.store_image = "https://placehold.it/500x500";
+            } else {
+                val.store_image = store_details.store_front_url_abs;
+            }
             if (store_details.website != null && store_details.website.length > 0){
                 val.show = "display:block";
                 val.website = store_details.website
@@ -668,7 +673,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
+            val.store_image = "https://placehold.it/500x500";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
