@@ -376,6 +376,7 @@ function renderJobs(container, template, collection, mall_name){
             val.store_name = store_details.name;
             val.store_slug = store_details.slug;
             val.store_show = "display:block";
+            val.mall_show = "display: none"
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.img_url = "https://placehold.it/500x500";
             } else {
@@ -384,7 +385,8 @@ function renderJobs(container, template, collection, mall_name){
         } else {
             val.store_name = mall_name;
             val.img_url = "https://placehold.it/500x500";
-            val.store_show = "display:none";
+            val.store_show = "display: none";
+            val.mall_show = "display: inline-block"
         }
         // English Description
         if (val.description.length > 200){
