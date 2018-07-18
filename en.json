@@ -79,13 +79,16 @@
 	},
 	"events": {
 	    "title": "Events",
-	    "no_events": "There are no Events scheduled at this time. Please check back soon!"
+	    "no_events": "There are no Events scheduled at this time. Please check back soon!",
+	    "return": "Return to Events"
 	},
 	"promos": {
 	    
 	},
 	"jobs": {
-	    
+	    "title": "Careers",
+	    "no_jobs": "There are no Job postings at this time. Please check back soon!",
+	    "return": "Return to Careers"    
 	},
 	"hours": {
 	    "title": "Centre Hours",
