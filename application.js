@@ -673,24 +673,20 @@ function renderPromoDetails(container, template, collection, mall_name){
             }
             
             // English Image
-            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                    val.promo_image_url_abs = "https://placehold.it/500x500";
-                } else {
-                    val.promo_image_url_abs = store_details.store_front_url_abs;
-                }
+            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+                val.show_img = "display: none"
+            } else {
+                val.image_url = val.promo_image_url_abs;
             }
             // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
-                if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                        val.promo_image_url_abs = "https://placehold.it/500x500";
-                    } else {
-                        val.promo_image_url_abs = store_details.store_front_url_abs;
-                    }
+            if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
+                if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+                    val.show_img = "display: none"
                 } else {
-                    val.promo_image2_url_abs = val.promo_image_url_abs;
+                    val.image_url = val.promo_image_url_abs;
                 }
+            } else {
+                val.image_url = val.promo_image2_url_abs;
             }
         } else {
             val.store_name = mall_name;
