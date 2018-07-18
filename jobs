@@ -37,7 +37,7 @@
                             <div class="row promo_item">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{img_url}}" alt="{{store_name}} + ' Logo'" />
+                                        <img src="{{img_url}}" alt="{{store_name}} Logo" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
@@ -56,7 +56,7 @@
                             <div class="row promo_item">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{img_url}}" alt="{{store_name}} + ' Logo'" />
+                                        <img src="{{img_url}}" alt="{{store_name}} Logo" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
