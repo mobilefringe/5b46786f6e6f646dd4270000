@@ -701,7 +701,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-                val.show_img = "display: none;"
+                val.show_img = "display: none"
             } else {
                 val.image_url = val.promo_image_url_abs
             }
@@ -709,6 +709,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
                 if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                     val.image_url = "https://placehold.it/500x500";
+                    val.show_img = "display: none"
                 } else {
                     val.image_url = val.promo_image_url_abs;
                 }
