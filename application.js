@@ -671,6 +671,27 @@ function renderPromoDetails(container, template, collection, mall_name){
             } else {
                 val.phone_show = "display:none";
             }
+            
+            // English Image
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
+                    val.promo_image_url_abs = "https://placehold.it/500x500";
+                } else {
+                    val.promo_image_url_abs = store_details.store_front_url_abs;
+                }
+            }
+            // French Image
+            if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
+                if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                    if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
+                        val.promo_image_url_abs = "https://placehold.it/500x500";
+                    } else {
+                        val.promo_image_url_abs = store_details.store_front_url_abs;
+                    }
+                } else {
+                    val.promo_image2_url_abs = val.promo_image_url_abs;
+                }
+            }
         } else {
             val.store_name = mall_name;
             val.store_image = "https://placehold.it/500x500";
@@ -678,8 +699,8 @@ function renderPromoDetails(container, template, collection, mall_name){
             val.phone_show = "display:none";
             val.show = "display:none";
         }
-        val.image_url = val.promo_image_url_abs
-        if(val.image_url.indexOf('missing.png') > 0){
+
+        if(val.promo_image_url_abs.indexOf('missing.png') > 0){
             val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
