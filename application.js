@@ -372,9 +372,23 @@ function renderJobs(container, template, collection, mall_name){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         if(val.jobable_type == "Store"){
+            console.log("Store ", getStoreDetailsByID(val.jobable_id))
             val.store_name = getStoreDetailsByID(val.jobable_id).name;
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
             val.store_show = "display:block";
+            // English Image
+            if (val.event_image_url_abs.indexOf('missing.png') > -1){
+                val.event_image_url_abs = "https://placehold.it/500x500";
+            }
+            // French Image
+            if (val.event_image2_url_abs.indexOf('missing.png') > -1){
+                if (val.event_image_url_abs.indexOf('missing.png') > -1){
+                    val.event_image2_url_abs = "https://placehold.it/500x500";
+                } else {
+                    val.event_image2_url_abs = val.event_image_url_abs;
+                }
+            }
+        
         } else {
             val.store_name = mall_name;
             val.store_show = "display:none";
