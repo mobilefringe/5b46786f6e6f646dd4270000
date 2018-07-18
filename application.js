@@ -60,12 +60,12 @@ function renderEvents(container, template, collection, centre){
         
         // English Image
         if (val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+            val.event_image_url_abs = "https://placehold.it/500x500";
         }
         // French Image
         if (val.event_image2_url_abs.indexOf('missing.png') > -1){
             if (val.event_image_url_abs.indexOf('missing.png') > -1){
-                val.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+                val.event_image2_url_abs = "https://placehold.it/500x500";
             } else {
                 val.event_image2_url_abs = val.event_image_url_abs;
             }
