@@ -712,6 +712,8 @@ function renderPromoDetails(container, template, collection, mall_name){
                 } else {
                     val.image_url = val.promo_image_url_abs;
                 }
+            } else {
+                val.image_url = val.promo_image2_url_abs;
             }
         }
 
