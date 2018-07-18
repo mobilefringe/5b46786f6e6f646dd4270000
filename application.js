@@ -383,13 +383,13 @@ function renderJobs(container, template, collection, mall_name){
                 val.img_url = val.store_details.store_front_alt_url_abs
             }
             // French Image
-            if (val.event_image2_url_abs.indexOf('missing.png') > -1){
-                if (val.event_image_url_abs.indexOf('missing.png') > -1){
-                    val.event_image2_url_abs = "https://placehold.it/500x500";
-                } else {
-                    val.event_image2_url_abs = val.event_image_url_abs;
-                }
-            }
+            // if (val.event_image2_url_abs.indexOf('missing.png') > -1){
+            //     if (val.event_image_url_abs.indexOf('missing.png') > -1){
+            //         val.event_image2_url_abs = "https://placehold.it/500x500";
+            //     } else {
+            //         val.event_image2_url_abs = val.event_image_url_abs;
+            //     }
+            // }
         
         } else {
             val.store_name = mall_name;
