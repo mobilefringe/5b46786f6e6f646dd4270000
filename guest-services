@@ -1,0 +1,64 @@
+<div class="main_banner text-center">
+    <h3 data-i18n="inside_page.guest_services"></h3>
+    <p data-i18n="inside_page.header_tagline"></p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-6">
+            <h5 class="active_heading" data-i18n="inside_page.guest_services"></h5>
+        </div>
+        <div class="col-md-6">
+            <h5><a href="/gift-cards" data-i18n="inside_page.gift_cards"></a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/gift-cards" data-i18n="inside_page.gift_cards"></option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="mm_page_content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banner_repo = getRepoDetailsByName("Guest Services Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/billings-services.json"
+            $.getJSON(pages_json).done(function(data) {
+                if(Cookies.get('current_locale') == "en-CA"){
+                    $('#mm_page_content').html(data.body);
+                }
+                if(Cookies.get('current_locale') == "fr-CA"){
+                    $('#mm_page_content').html(data.body2);
+                }
+            
+                // $('#mm_page_title').html(data.title.toUpperCase());
+                // $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
