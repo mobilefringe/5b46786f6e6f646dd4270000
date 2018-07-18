@@ -83,7 +83,9 @@
 	    "return": "Return to Events"
 	},
 	"promos": {
-	    
+	    "title": "Deals",
+	    "no_jobs": "There are no Deals scheduled at this time. Please check back soon!",
+	    "return": "Return to Deals"        
 	},
 	"jobs": {
 	    "title": "Careers",
