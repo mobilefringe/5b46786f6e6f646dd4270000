@@ -107,7 +107,7 @@
                     published_jobs.push(val)
                 } 
             });
-            if(published_jobs.length > 0){
+            if(published_jobs.length > 10){
                 renderJobs('#jobs_container', '#jobs_template', jobs, "Billings Bridge Shopping Centre");
             } else {
                 $('#no_jobs').show()
