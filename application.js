@@ -161,16 +161,7 @@ function renderEventDetails(container, template, collection, mall_name){
                 val.image_url = val.event_image2_url_abs;
             }
         }
-        // val.image_url = val.event_image_url_abs
-        
-        // if(val.image_url.indexOf('missing.png') > 0){
-        //     val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
-        // }
-        
-        // if(val.event_image_url_abs.indexOf('missing.png') > -1){
-        //     val.promo_image_show="display:none";
-        // }
-        
+
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
