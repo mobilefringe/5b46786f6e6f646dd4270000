@@ -45,8 +45,8 @@
             }
             
             var prefix = get_prefix();
-            var directions_json = prefix + "/pages/placebathurst-directions.json"
-            $.getJSON(directions_json).done(function(data) {
+            var pages_json = prefix + "/pages/placebathurst-directions.json"
+            $.getJSON(pages_json).done(function(data) {
                 console.log(data)
                 if(Cookies.get('current_locale') == "en-CA"){
                     $('#mm_page_content').html(data.body);
