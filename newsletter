@@ -1,6 +1,6 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
 <div class="inside_banner text-center">
-    <h3>NEWSLETTER SIGN-UP</h3>
+    <h3 data-i18n="newsletter.title"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="margin_20"></div>
@@ -8,7 +8,7 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <div id="mm_page_content"></div>
+                <div id="mm_page_content" class="margin_20"></div>
 
                 <div class="newsletter_page">
                     <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A6AFAD7168AEFFEAE9F8FAF0F5F19B70214530E460535B70C100B938B21A1A5BF5F2FF05D3AFE1EFB2EAC827CC9E255DA">	
