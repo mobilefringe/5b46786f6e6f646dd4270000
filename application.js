@@ -375,7 +375,7 @@ function renderJobs(container, template, collection, mall_name){
             var store_details = getStoreDetailsByID(val.jobable_id)
             val.store_name = store_details.name;
             val.store_slug = store_details.slug;
-            val.store_show = "display:block";
+            val.store_show = "display: inline-block";
             val.mall_show = "display: none"
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.img_url = "https://placehold.it/500x500";
