@@ -377,7 +377,7 @@ function renderJobs(container, template, collection, mall_name){
             val.store_slug = store_details.slug;
             val.store_show = "display:block";
             // English Image
-            if (store_details.store_front_alt_url_abs.indexOf('missing.png') > -1){
+            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.img_url = "https://placehold.it/500x500";
             } else {
                 val.img_url = val.store_details.store_front_alt_url_abs
