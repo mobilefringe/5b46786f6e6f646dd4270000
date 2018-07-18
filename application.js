@@ -399,8 +399,8 @@ function renderJobs(container, template, collection, mall_name){
             val.description_short_2 = val.description_2
         }
 
-        var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-        val.published_on = show_date.format("MMM D");
+        var show_date = moment(val.end_date).tz(getPropertyTimeZone());
+        val.enD_date = show_date.format("MMM D");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
