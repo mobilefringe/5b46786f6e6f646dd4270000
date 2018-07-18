@@ -4,41 +4,46 @@
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="margin_20"></div>
-<div class="content_container main_container mobile_padding">
-    <h2>We know you like to be the first to know!</h2>
-    <p></p>
-    <div class="margin_20"></div>
-    <div class="newsletter_page">
-        <form action="https://mobilefringe.createsend.com/t/d/s/qttjii/" method="post" id="subForm">
-            <div class="row">
-                <div class="col-sm-6">
-                    <label for="fieldName">Name</label><br />
-                    <input id="fieldName" name="cm-name" type="text" tabindex="1"/>
-                </div>
-                <div class="col-sm-6">
-                    <label for="fieldEmail">Email</label><br />
-                    <input id="fieldEmail" name="cm-qttjii-qttjii" type="email" required tabindex="2"/>
-                </div>
-            </div>
-            <div class="margin_20"></div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <label class="agree_terms">
-                        <input id="agree_terms" type="checkbox" required tabindex="3"/> 
-                        I agree to receive communications from Billings Bridge Shopping Centre.
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button class="newsletter_btn animated_btn" type="submit" tabindex="4">Subscribe</button>
-                </div>
-            </div>
-        </form>
-        <div class="margin_20"></div>
+<div class="content_container main_container mobile_padding pages_text">
+    <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <p id="thank_you" class="hidden_now">Thank you for subscribing to our newsletter.</p>
+                <div id="mm_page_content"></div>
+
+                <div class="newsletter_page">
+                    <form action="https://mobilefringe.createsend.com/t/d/s/qttjii/" method="post" id="subForm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="fieldName">Name</label><br />
+                                <input id="fieldName" name="cm-name" type="text" tabindex="1"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="fieldEmail">Email</label><br />
+                                <input id="fieldEmail" name="cm-qttjii-qttjii" type="email" required tabindex="2"/>
+                            </div>
+                        </div>
+                        <div class="margin_20"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="agree_terms">
+                                    <input id="agree_terms" type="checkbox" required tabindex="3"/> 
+                                    I agree to receive communications from Billings Bridge Shopping Centre.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="newsletter_btn animated_btn" type="submit" tabindex="4">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="margin_20"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p id="thank_you" class="hidden_now">Thank you for subscribing to our newsletter.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -56,14 +61,20 @@ $(document).ready(function(e){
         }
         
         var prefix = get_prefix();
-        var pages_json = prefix + "/pages/billings-leasing.json"
+        var pages_json = prefix + "/pages/placebathurst-newsletter.json"
         $.getJSON(pages_json).done(function(data) {
-            $('#mm_page_content').html(data.body);
+            console.log(data)
+            if(Cookies.get('current_locale') == "en-CA"){
+                $('#mm_page_content').html(data.body);
+            }
+            if(Cookies.get('current_locale') == "fr-CA"){
+                $('#mm_page_content').html(data.body_2);
+            }
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                 $("#404_msg").fadeIn("fast");
             }
-        }); 
+        });
             
         show_content();
         
