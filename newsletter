@@ -1,0 +1,89 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="inside_banner text-center">
+    <h3>NEWSLETTER SIGN-UP</h3>
+    <p data-i18n="inside_page.header_tagline"></p>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <h2>We know you like to be the first to know!</h2>
+    <p></p>
+    <div class="margin_20"></div>
+    <div class="newsletter_page">
+        <form action="https://mobilefringe.createsend.com/t/d/s/qttjii/" method="post" id="subForm">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="fieldName">Name</label><br />
+                    <input id="fieldName" name="cm-name" type="text" tabindex="1"/>
+                </div>
+                <div class="col-sm-6">
+                    <label for="fieldEmail">Email</label><br />
+                    <input id="fieldEmail" name="cm-qttjii-qttjii" type="email" required tabindex="2"/>
+                </div>
+            </div>
+            <div class="margin_20"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label class="agree_terms">
+                        <input id="agree_terms" type="checkbox" required tabindex="3"/> 
+                        I agree to receive communications from Billings Bridge Shopping Centre.
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="newsletter_btn animated_btn" type="submit" tabindex="4">Subscribe</button>
+                </div>
+            </div>
+        </form>
+        <div class="margin_20"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="thank_you" class="hidden_now">Thank you for subscribing to our newsletter.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var banner_repo = getRepoDetailsByName("Newsletter Banner").images;
+        if (banner_repo) {
+            var banner_image = banner_repo[0].image_url;
+            if (banner_image) {
+                $(".inside_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+            }
+        }
+        
+        var prefix = get_prefix();
+        var pages_json = prefix + "/pages/billings-leasing.json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#mm_page_content').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#404_msg").fadeIn("fast");
+            }
+        }); 
+            
+        show_content();
+        
+        // $("#subForm").submit(function( e ) {
+        //     e.preventDefault();
+        //     $.getJSON(
+        //         this.action + "?callback=?",
+        //         $(this).serialize(),
+        //         function (data) {
+        //             if (data.Status === 400) {
+        //                 alert("Please try again later.");
+        //             } else { // 200
+        //                 $("#thank_you").fadeIn();
+        //                 $('#subForm').trigger('reset')
+        //             }
+        //         }
+        //     );
+        // });
+    }
+    
+    loadMallDataCached(renderAll); 
+});
+</script>
