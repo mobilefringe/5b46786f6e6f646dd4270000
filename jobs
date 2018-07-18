@@ -33,7 +33,7 @@
             <div class="col-md-12">
                 <div id="jobs_container">
                     <script id="jobs_template" type="x-tmpl-mustache/text">
-                        <div class="row promo_item cats_row job_list_item" data-cat="{{cat_list}}">
+                        <div class="row promo_item">
                             <div class="col-md-3">
                                 <div class="cropped_image">
                                     <img src="{{img_url}}" alt="{{name}}" />
