@@ -101,6 +101,13 @@
     "directions": {
         "title": "Directions & Parking"    
     },
+    "newslette": {
+        "title": "Newsletter",
+        "name": "Name",
+        "email": "Email",
+        "agree": "I agree to receive communications from Place Bathurst.",
+        "subscribe": "Subscribe"
+    },
 	"social": {
 		"message": "Connect with Us",
 		"facebook": "Like on Facebook",
