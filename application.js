@@ -469,7 +469,7 @@ function renderJobDetails(container, template, collection, mall_name){
         } else {
             val.store_name = mall_name;
             val.store_image = "https://placehold.it/500x500";
-            val.webite_show = "display:none";
+            val.website_show = "display:none";
             val.phone_show = "display:none";
             val.store_link_show = "display: none";
             val.show = "display:none";
