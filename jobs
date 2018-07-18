@@ -47,7 +47,7 @@
                                     <span class="promo_dates"><span data-i18n="jobs.end_date"></span>: {{end_date}}</span>
                                 </p>
                                 <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                <a class="read_more" href="/jobs/{{slug}}">View job info</a>
+                                <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
                             </div>
                         </div>
                     </script>
