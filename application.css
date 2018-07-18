@@ -904,19 +904,19 @@ h4 {
 }
 
 .newsletter_btn{
-    width:180px;
-    display: inline-block;
-    background: $primary;
-    color: #fff;
-    font-size: 22px;
     margin-top: 25px;
-    padding:14px 0px 18px  0;
+    padding: 14px 0px 18px  0;
+    width: 180px;
+    height: auto;
+    display: inline-block;
     border: 0;
+    background: $primary;
+    font-size: 22px;
+    line-height: normal;
+    color: #FFF;
     &:hover, &:focus{
         color: #fff;
         text-decoration: none;
-        
-        
     }
 }
 .menu_icon{
