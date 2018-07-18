@@ -69,7 +69,7 @@ $(document).ready(function(e){
             }
         });
             
-        // show_content();
+        show_content();
     }
     
     loadMallDataCached(renderAll); 
