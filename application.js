@@ -139,20 +139,37 @@ function renderEventDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
+            val.store_image = "https://placehold.it/500x500";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
+            
+            // English Image
+            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+                val.show_img = "display: none"
+            } else {
+                val.image_url = val.promo_image_url_abs;
+            }
+            // French Image
+            if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
+                if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+                    val.show_img = "display: none"
+                } else {
+                    val.image_url = val.promo_image_url_abs;
+                }
+            } else {
+                val.image_url = val.promo_image2_url_abs;
+            }
         }
-        val.image_url = val.event_image_url_abs
+        // val.image_url = val.event_image_url_abs
         
-        if(val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
-        }
+        // if(val.image_url.indexOf('missing.png') > 0){
+        //     val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
+        // }
         
-        if(val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.promo_image_show="display:none";
-        }
+        // if(val.event_image_url_abs.indexOf('missing.png') > -1){
+        //     val.promo_image_show="display:none";
+        // }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
