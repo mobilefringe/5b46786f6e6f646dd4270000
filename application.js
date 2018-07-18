@@ -464,7 +464,7 @@ function renderJobDetails(container, template, collection, mall_name){
                 val.phone_show = "display:none";
             }
             val.store_slug = store_details.slug
-            val.store_show = "display:block";
+            val.store_link_show = "display: block;";
         } else {
             val.store_name = mall_name;
             val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
