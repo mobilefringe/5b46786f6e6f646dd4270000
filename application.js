@@ -701,14 +701,14 @@ function renderPromoDetails(container, template, collection, mall_name){
             
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.promo_image_url_abs = "https://placehold.it/500x500";
+                val.image_url = "https://placehold.it/500x500";
             }
             // French Image
             if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    val.promo_image2_url_abs = "https://placehold.it/500x500";
+                    val.image_url = "https://placehold.it/500x500";
                 } else {
-                    val.promo_image2_url_abs = val.promo_image_url_abs;
+                    val.image_url = val.promo_image_url_abs;
                 }
             }
         }
