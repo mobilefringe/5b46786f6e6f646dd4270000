@@ -394,11 +394,17 @@ function renderJobs(container, template, collection, mall_name){
                 val.job_type = "À plein temps";
             }
         } else if (val.job_type === "Part Time") {
-            
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À temps partiel";
+            }
         } else if (val.job_type === "Part Time/Full Time") {
-            
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À temps partiel / À temps plein";
+            }
         } else if (val.job_type === "Seasonal") {
-            
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "Saisonnier";
+            }
         }
         
         // English Description
