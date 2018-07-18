@@ -400,7 +400,7 @@ function renderJobs(container, template, collection, mall_name){
         }
 
         var show_date = moment(val.end_date).tz(getPropertyTimeZone());
-        val.enD_date = show_date.format("MMM D");
+        val.end_date = show_date.format("MMM D");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
