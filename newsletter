@@ -9,7 +9,6 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="mm_page_content" class="margin_20"></div>
-
                 <div class="newsletter_page">
                     <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A6AFAD7168AEFFEAE9F8FAF0F5F19B70214530E460535B70C100B938B21A1A5BF5F2FF05D3AFE1EFB2EAC827CC9E255DA">	
                         <div class="row">
