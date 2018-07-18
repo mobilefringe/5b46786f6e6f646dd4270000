@@ -162,8 +162,8 @@
                 </div>
                 <div class="col-md-4 col-xs-4 text-right position_relative">
                     <div class="language_toggle">
-      					<a href="?locale=en" class="btn" id="set_lang_en">EN</a> |
-      					<a href="?locale=fr" class="btn" id="set_lang_fr">FR</a>
+      					<a href="?locale=en" id="set_lang_en">EN</a> |
+      					<a href="?locale=fr" id="set_lang_fr">FR</a>
 					</div>
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="menu open">
                 </div>
