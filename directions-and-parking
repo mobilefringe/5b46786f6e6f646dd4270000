@@ -58,11 +58,11 @@
             $.getJSON(directions_json).done(function(data) {
                 console.log(data)
                 if(Cookies.get('current_locale') == "en-CA"){
-                    $('#directions_title').html(data.body);
+                    $('#directions_title').html(data.title);
                     $('#directions_content').html(data.body);
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#directions_title').html(data.body);
+                    $('#directions_title').html(data.title_2);
                     $('#directions_content').html(data.body_2);
                 }
             }).fail(function(jqXHR) {
@@ -74,11 +74,11 @@
             var parking_json = prefix + "/pages/placebathurst-parking.json"
             $.getJSON(parking_json).done(function(data) {
                 if(Cookies.get('current_locale') == "en-CA"){
-                    $('#parking_title').html(data.body);
+                    $('#parking_title').html(data.title);
                     $('#parking_content').html(data.body);
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#parking_title').html(data.body);
+                    $('#parking_title').html(data.title_2);
                     $('#parking_content').html(data.body_2);
                 }
             }).fail(function(jqXHR) {
