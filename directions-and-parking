@@ -56,7 +56,7 @@
             var prefix = get_prefix();
             var directions_json = prefix + "/pages/placebathurst-directions.json"
             $.getJSON(directions_json).done(function(data) {
-                console.log(directions_json)
+                console.log(data)
                 if(Cookies.get('current_locale') == "en-CA"){
                     $('#directions_title').html(data.body);
                     $('#directions_content').html(data.body);
