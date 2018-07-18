@@ -423,7 +423,7 @@ function renderJobs(container, template, collection, mall_name){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         var french_end = moment(end).locale('fr-ca');
         if(Cookies.get('current_locale') == "en-CA"){
-            val.end_date = show_date.format("MMM D");
+            val.end_date = end.format("MMM D");
         }
         if(Cookies.get('current_locale') == "fr-CA"){
             val.end_date = french_end.format("D MMM");
@@ -477,7 +477,7 @@ function renderJobDetails(container, template, collection, mall_name){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         var french_end = moment(end).locale('fr-ca');
         if(Cookies.get('current_locale') == "en-CA"){
-            val.end_date = show_date.format("MMM D");
+            val.end_date = end.format("MMM D");
         }
         if(Cookies.get('current_locale') == "fr-CA"){
             val.end_date = french_end.format("D MMM");
