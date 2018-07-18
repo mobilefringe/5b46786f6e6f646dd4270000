@@ -1,4 +1,4 @@
-<div class="main_banner text-center">
+<div class="inside_banner text-center">
     <h3 data-i18n="inside_page.leasing"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
@@ -40,7 +40,7 @@
             if (banner_repo) {
                 var banner_image = banner_repo[0].image_url;
                 if (banner_image) {
-                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                    $(".inside_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
                 }
             }
             
