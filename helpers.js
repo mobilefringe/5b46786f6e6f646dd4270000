@@ -77,9 +77,12 @@ function init(e){
 }
 
 function show_content(){
-    var scrolled = 0;
-    $(".yield").css({visibility: "visible"});
-    $(".modal-backdrop").remove();
+    setTimeout(function() {
+        var scrolled = 0;
+        $(".yield").css({visibility: "visible"});
+        $(".modal-backdrop").remove();
+    }, 500);
+    
     var d = new Date();
     var n = d.getDay();
     var today_hours = getTodaysHours();
