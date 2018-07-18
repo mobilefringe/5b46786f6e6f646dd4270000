@@ -386,10 +386,17 @@ function renderJobs(container, template, collection, mall_name){
             val.img_url = "https://placehold.it/500x500";
             val.store_show = "display:none";
         }
+        // English Description
         if (val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
         } else {
-            val.description_short = val.description;
+            val.description_short = val.description
+        }
+        // French Description
+        if (val.description_2.length > 200){
+            val.description_short_2 = val.description_2.substring(0,200) + "...";
+        } else {
+            val.description_short_2 = val.description_2
         }
 
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
