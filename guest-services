@@ -47,7 +47,7 @@
                     $('#mm_page_content').html(data.body);
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#mm_page_content').html(data.body2);
+                    $('#mm_page_content').html(data.body_2);
                 }
             
                 // $('#mm_page_title').html(data.title.toUpperCase());
