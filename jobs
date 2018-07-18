@@ -36,7 +36,7 @@
                         <div class="row promo_item cats_row job_list_item" data-cat="{{cat_list}}">
                             <div class="col-md-3">
                                 <div class="cropped_image">
-                                    <img src="{{promo_image_url_abs}}" alt="{{name}}" />
+                                    <img src="{{img_url}}" alt="{{name}}" />
                                 </div>
                             </div>
                             <div class="col-md-9">
