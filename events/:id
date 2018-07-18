@@ -5,11 +5,11 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-12">
-            <h5 class="active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/events" data-i18n="inside_page.events"></a></h5>
+            <h5 class="active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/events" data-i18n="events.return"></a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
-        <i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/events" data-i18n="inside_page.header_tagline"></a>
+        <i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/events" data-i18n="events.return"></a>
     </h5>
 </div>
 <div class="content_container main_container">
