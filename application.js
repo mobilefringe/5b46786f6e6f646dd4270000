@@ -419,11 +419,6 @@ function renderJobs(container, template, collection, mall_name){
         } else {
             val.description_short_2 = val.description_2
         }
-        
-        
-        var show_date = moment(val.end_date).tz(getPropertyTimeZone());
-        val.end_date = show_date.format("MMM D");
-        
 
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         var french_end = moment(end).locale('fr-ca');
@@ -450,7 +445,11 @@ function renderJobDetails(container, template, collection, mall_name){
         if(val.jobable_type == "Store"){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_name = store_details.name;
-            val.store_image = store_details.store_front_url_abs;
+            if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
+                val.store_image = "https://placehold.it/500x500";
+            } else {
+                val.store_image = store_details.store_front_url_abs;    
+            }
             if (store_details.website != null && store_details.website.length > 0){
                 val.webite_show = "display: block;";
                 val.website = store_details.website
@@ -474,12 +473,15 @@ function renderJobDetails(container, template, collection, mall_name){
             val.store_link_show = "display: none";
             val.show = "display:none";
         }
-        if (val.store_image.indexOf('missing.png') > 0){
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
+        
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        var french_end = moment(end).locale('fr-ca');
+        if(Cookies.get('current_locale') == "en-CA"){
+            val.end_date = show_date.format("MMM D");
         }
-
-        var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-        val.published_on = show_date.format("MMM D");
+        if(Cookies.get('current_locale') == "fr-CA"){
+            val.end_date = french_end.format("D MMM");
+        }
     
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
