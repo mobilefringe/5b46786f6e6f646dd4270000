@@ -154,10 +154,6 @@
                         </span>
                     </p>
                     <a href="/hours" class="holiday_hours_home soft_hidden_phone" data-i18n="header.check_hours"></a> <!-- Check for Holiday Hours -->
-                    <div class="btn-group">
-      					<a href="?locale=en" class="btn" id="set_lang_en">EN</a> |
-      					<a href="?locale=fr" class="btn" id="set_lang_fr">FR</a>
-					</div>
                 </div>
                 <div class="col-md-4 col-xs-4 text-center">
                     <a href="/">
@@ -165,6 +161,10 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-xs-4 text-right position_relative">
+                    <div class="language_toggle">
+      					<a href="?locale=en" class="btn" id="set_lang_en">EN</a> |
+      					<a href="?locale=fr" class="btn" id="set_lang_fr">FR</a>
+					</div>
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="menu open">
                 </div>
                 <div class="col-xs-12 show_phone home_hours_phone">
