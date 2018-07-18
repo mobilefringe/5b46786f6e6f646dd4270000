@@ -474,6 +474,24 @@ function renderJobDetails(container, template, collection, mall_name){
             val.show = "display:none";
         }
         
+        if (val.job_type === "Full Time") {
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À plein temps";
+            }
+        } else if (val.job_type === "Part Time") {
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À temps partiel";
+            }
+        } else if (val.job_type === "Part Time/Full Time") {
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À temps partiel / À temps plein";
+            }
+        } else if (val.job_type === "Seasonal") {
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "Saisonnier";
+            }
+        }
+        
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         var french_end = moment(end).locale('fr-ca');
         if(Cookies.get('current_locale') == "en-CA"){
