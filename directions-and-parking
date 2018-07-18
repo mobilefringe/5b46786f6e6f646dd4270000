@@ -32,10 +32,10 @@
         <div class="row">
             <div class="col-md-12">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.277992600631!2d-65.68015894857518!3d47.64016449354944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c9893c52cc34b67%3A0x512d77068cb3ddd!2sPlace+Bathurst+Mall%2C+1300+St+Peter+Ave%2C+Bathurst%2C+NB+E2A+3A6!5e0!3m2!1sen!2sca!4v1531432888458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <h3 id="directions_title"></h3>
+                <h2 id="directions_title"></h2>
                 <div id="directions_content"></div>
                 <hr>
-                <h3 id="parking_title"></h3>
+                <h2 id="parking_title"></h2>
                 <div id="parking_content"></div>
             </div>
         </div>
