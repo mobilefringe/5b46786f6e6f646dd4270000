@@ -33,21 +33,42 @@
             <div class="col-md-12">
                 <div id="jobs_container">
                     <script id="jobs_template" type="x-tmpl-mustache/text">
-                        <div class="row promo_item">
-                            <div class="col-md-3">
-                                <div class="cropped_image">
-                                    <img src="{{img_url}}" alt="{{name}}" />
+                        <div class="primary-locale">
+                            <div class="row promo_item">
+                                <div class="col-md-3">
+                                    <div class="cropped_image">
+                                        <img src="{{img_url}}" alt="{{name}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_store">{{store_name}}</span> |
+                                        <span class="promo_store">{{job_type}}</span> |
+                                        <span class="promo_dates"><span data-i18n="jobs.end_date"></span>: {{end_date}}</span>
+                                    </p>
+                                    <div class="promo_list_desc hidden_phone">{{description_short}}</div>
+                                    <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
                                 </div>
                             </div>
-                            <div class="col-md-9">
-                                <h2 class="promo_list_name">{{name}}</h2>
-                                <p>
-                                    <span class="promo_store">{{store_name}}</span> |
-                                    <span class="promo_store">{{job_type}}</span> |
-                                    <span class="promo_dates"><span data-i18n="jobs.end_date"></span>: {{end_date}}</span>
-                                </p>
-                                <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
+                        </div>
+                        <div class="secondary-locale">
+                            <div class="row promo_item">
+                                <div class="col-md-3">
+                                    <div class="cropped_image">
+                                        <img src="{{img_url}}" alt="{{name}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_store">{{store_name}}</span> |
+                                        <span class="promo_store">{{job_type}}</span> |
+                                        <span class="promo_dates"><span data-i18n="jobs.end_date"></span>: {{end_date}}</span>
+                                    </p>
+                                    <div class="promo_list_desc hidden_phone">{{description_short}}</div>
+                                    <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
+                                </div>
                             </div>
                         </div>
                     </script>
