@@ -48,7 +48,7 @@
                                         <span class="promo_dates">End Date: {{end_date}}</span>
                                     </p>
                                     <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                    <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
+                                    <a class="read_more" href="/jobs/{{slug}}">View Job Details</a>
                                 </div>
                             </div>
                         </div>
@@ -60,14 +60,14 @@
                                     </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <h2 class="promo_list_name">{{name_2}}</h2>
                                     <p>
                                         <span class="promo_store">{{store_name}}</span> |
                                         <span class="promo_store">{{job_type}}</span> |
                                         <span class="promo_dates">Date de fin: {{end_date}}</span>
                                     </p>
-                                    <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                    <a class="read_more" href="/jobs/{{slug}}" data-i18n="jobs.read_more"></a>
+                                    <div class="promo_list_desc hidden_phone">{{description_short_2}}</div>
+                                    <a class="read_more" href="/jobs/{{slug}}">Détails du poste</a>
                                 </div>
                             </div>
                         </div>
