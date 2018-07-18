@@ -145,14 +145,14 @@ function renderEventDetails(container, template, collection, mall_name){
             val.show = "display:none";
             
             // English Image
-            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+            if (val.event_image_url_abs.indexOf('missing.png') > 0){
                 val.show_img = "display: none"
             } else {
                 val.image_url = val.promo_image_url_abs;
             }
             // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
-                if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+            if (val.event_image2_url_abs.indexOf('missing.png') > 0){
+                if (val.event_image_url_abs.indexOf('missing.png') > 0){
                     val.show_img = "display: none"
                 } else {
                     val.image_url = val.promo_image_url_abs;
