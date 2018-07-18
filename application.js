@@ -155,10 +155,10 @@ function renderEventDetails(container, template, collection, mall_name){
                 if (val.event_image_url_abs.indexOf('missing.png') > 0){
                     val.show_img = "display: none"
                 } else {
-                    val.image_url = val.promo_image_url_abs;
+                    val.image_url = val.event_image_url_abs;
                 }
             } else {
-                val.image_url = val.promo_image2_url_abs;
+                val.image_url = val.event_image2_url_abs;
             }
         }
         // val.image_url = val.event_image_url_abs
