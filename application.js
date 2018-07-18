@@ -388,6 +388,19 @@ function renderJobs(container, template, collection, mall_name){
             val.store_show = "display: none";
             val.mall_show = "display: inline-block"
         }
+        
+        if (val.job_type === "Full Time") {
+            if (Cookies.get('current_locale') == "fr-CA") {
+                val.job_type = "À plein temps";
+            }
+        } else if (val.job_type === "Part Time") {
+            
+        } else if (val.job_type === "Part Time/Full Time") {
+            
+        } else if (val.job_type === "Seasonal") {
+            
+        }
+        
         // English Description
         if (val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
@@ -400,7 +413,8 @@ function renderJobs(container, template, collection, mall_name){
         } else {
             val.description_short_2 = val.description_2
         }
-
+        
+        
         var show_date = moment(val.end_date).tz(getPropertyTimeZone());
         val.end_date = show_date.format("MMM D");
         
