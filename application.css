@@ -125,7 +125,10 @@ body{
 .position_relative {
     position: relative;
 }
-
+.management_logo {
+    padding-top: 10px;
+    max-width: 140px;
+}
 #mapsvg_store_detail{
     margin-bottom:20px;
 }
