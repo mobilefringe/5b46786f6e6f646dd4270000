@@ -28,8 +28,14 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                $('#mm_page_title').html(data.title.toUpperCase());
-                $('#mm_page_content').html(data.body);
+                if(Cookies.get('current_locale') == "en-CA"){
+                    $('#mm_page_title').html(data.title.toUpperCase());
+                    $('#mm_page_content').html(data.body);
+                }
+                if(Cookies.get('current_locale') == "fr-CA"){
+                    $('#mm_page_title').html(data.title_2.toUpperCase());
+                    $('#mm_page_content').html(data.body_2);
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
