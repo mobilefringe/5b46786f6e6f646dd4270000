@@ -47,7 +47,7 @@
                                         <span class="promo_dates">{{publish_date}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="read_more" href="/posts/{{slug}}">See News Details <i class="fa fa-angle-right"></i></a>
+                                    <a class="read_more" href="/posts/{{slug}}">View News Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
