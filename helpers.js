@@ -108,27 +108,8 @@ function show_content(){
         }
     })
     
-    var events = getEventsList();
-    var news_exist = false;
-    var contests_exist = false;
-    $.each(events, function(i, v){
-        if(($.inArray("news", v.tags) != -1) && showOnWeb(v)){
-            news_exist = true;
-        }
-        if(($.inArray("contests", v.tags) != -1) && showOnWeb(v)){
-            contests_exist = true;
-        }
-    })
-    if (news_exist == false){
-        $('.news_link').hide()
-        $('option.news_link').remove()
-        $('.plan_visit').css('width', '33.33333%')
-    }
-    if (contests_exist == false){
-        $('.contest_link').hide()
-        $('option.contest_link').remove()
-        $('.spec_offer').css('width', '50%')
-    }
+    
+    
     
     $('#stores_container').scroll(function(){
         if( $(this).scrollTop() == 0){
