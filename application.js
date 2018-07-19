@@ -60,12 +60,12 @@ function renderEvents(container, template, collection, centre){
         
         // English Image
         if (val.event_image_url_abs.indexOf('missing.png') > 0){
-            val.event_image_url_abs = "https://placehold.it/500x500";
+            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
         }
         // French Image
         if (val.event_image2_url_abs.indexOf('missing.png') > 0){
             if (val.event_image_url_abs.indexOf('missing.png') > 0){
-                val.event_image2_url_abs = "https://placehold.it/500x500";
+                val.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             } else {
                 val.event_image2_url_abs = val.event_image_url_abs;
             }
@@ -139,7 +139,7 @@ function renderEventDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "https://placehold.it/500x500";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -488,13 +488,13 @@ function renderJobs(container, template, collection, mall_name){
             val.store_show = "display: inline-block";
             val.mall_show = "display: none"
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.img_url = "https://placehold.it/500x500";
+                val.img_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             } else {
                 val.img_url = val.store_details.store_front_alt_url_abs
             }
         } else {
             val.store_name = mall_name;
-            val.img_url = "https://placehold.it/500x500";
+            val.img_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             val.store_show = "display: none";
             val.mall_show = "display: inline-block"
         }
@@ -556,7 +556,7 @@ function renderJobDetails(container, template, collection, mall_name){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                val.store_image = "https://placehold.it/500x500";
+                val.store_image = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             } else {
                 val.store_image = store_details.store_front_url_abs;    
             }
@@ -577,7 +577,7 @@ function renderJobDetails(container, template, collection, mall_name){
             val.store_link_show = "display: block;";
         } else {
             val.store_name = mall_name;
-            val.store_image = "https://placehold.it/500x500";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             val.website_show = "display:none";
             val.phone_show = "display:none";
             val.store_link_show = "display: none";
@@ -670,7 +670,7 @@ function renderPromotions(container, template, collection, mall_name){
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                    val.promo_image_url_abs = "https://placehold.it/500x500";
+                    val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
                 } else {
                     val.promo_image_url_abs = store_details.store_front_url_abs;
                 }
@@ -679,7 +679,7 @@ function renderPromotions(container, template, collection, mall_name){
             if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                     if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                        val.promo_image_url_abs = "https://placehold.it/500x500";
+                        val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
                     } else {
                         val.promo_image_url_abs = store_details.store_front_url_abs;
                     }
@@ -697,12 +697,12 @@ function renderPromotions(container, template, collection, mall_name){
             
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.promo_image_url_abs = "https://placehold.it/500x500";
+                val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             }
             // French Image
             if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    val.promo_image2_url_abs = "https://placehold.it/500x500";
+                    val.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
                 } else {
                     val.promo_image2_url_abs = val.promo_image_url_abs;
                 }
@@ -764,7 +764,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             val.store_slug = store_details.slug
             val.store_show = "display:block";
             if (store_details.store_front_url_abs.indexOf('missing') > 0) {
-                val.store_image = "https://placehold.it/500x500";
+                val.store_image = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             } else {
                 val.store_image = store_details.store_front_url_abs;
             }
@@ -800,7 +800,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "https://placehold.it/500x500";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
