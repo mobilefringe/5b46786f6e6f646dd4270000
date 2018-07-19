@@ -795,9 +795,11 @@ h4 {
     opacity: 0.7;
     background: $secondary !important;
 }
-.flex-direction-nav a{
-    width:28px;
-    height:28px;
+.flex-direction-nav a {
+    padding: 10px 0;
+    width: 38px;
+    height: 38px;
+    
 }
 .flex-active {
     opacity: 0.7;
