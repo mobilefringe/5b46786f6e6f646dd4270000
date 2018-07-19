@@ -383,14 +383,7 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == false) {
                 var day = getDay(val.day_of_week);
                 val.day = day;
-            
-                var today = moment().tz(getPropertyTimeZone());
-                if(val.day_of_week == parseInt(today.format('d'))){
-                    val.active_class = "drop-down-row-today";
-                }
-                else{
-                    val.active_class = "";
-                }
+
                 if(Cookies.get('current_locale') == "en-CA"){
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
@@ -411,7 +404,10 @@ function renderHours(container, template, collection, type){
                         val.h = "Fermé";
                     }
                 }
-                item_list.push(val);
+                
+                if (val.h == "Closed") {
+                    item_list.push(val)
+                }
             }
         });
         collection = [];
@@ -422,12 +418,12 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == true) {
                 var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var today = moment().tz(getPropertyTimeZone());
-                if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
-                    val.active_class = "drop-down-row-today";
-                }
-                else{
-                    val.active_class = "";
-                }
+                // if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
+                //     val.active_class = "drop-down-row-today";
+                // }
+                // else{
+                //     val.active_class = "";
+                // }
                 if(Cookies.get('current_locale') == "en-CA"){
                     val.formatted_date = holiday.format("MMM DD");
                     if (val.open_time && val.close_time && val.is_closed == false){
