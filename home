@@ -86,6 +86,7 @@
             
             $('.flexslider').flexslider({
                 animation: "slide",
+                pauseOnHover: true
             });
             
             show_content();
