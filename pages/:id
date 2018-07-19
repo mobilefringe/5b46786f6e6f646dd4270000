@@ -40,7 +40,7 @@
             if (banner_repo) {
                 var banner_image = banner_repo[0].image_url;
                 if (banner_image) {
-                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                    $(".inside_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
                 }
             }
             
