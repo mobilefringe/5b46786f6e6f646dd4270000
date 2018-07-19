@@ -676,7 +676,7 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
 
         
-        val.published_on = moment(val.publish_date).format("MMM DD")
+        val.published_on = moment(val.publish_date).format("MMM DD, YYYY")
     
         val.counter = counter;
         
