@@ -796,6 +796,7 @@ h4 {
     height:28px;
 }
 .flex-active {
+    opacity: 0.7;
     background: $primary !important;
 }
 .feature_item{
