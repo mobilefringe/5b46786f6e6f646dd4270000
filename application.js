@@ -442,7 +442,7 @@ function renderHours(container, template, collection, type){
                         val.h = "Fermé";
                     }
                 }
-                if (val.h != "Closed") {
+                if (val.h != "Closed" || val.h != "Fermé") {
                     item_list.push(val)
                 }
                 // item_list.push(val);
