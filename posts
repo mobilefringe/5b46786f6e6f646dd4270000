@@ -55,11 +55,11 @@
                             <div class="row promo_item">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{event_image2_url_abs}}" alt="{{name_2}}" />
+                                        <img src="{{image_url}}" alt="{{name_2}}" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2 class="promo_list_name">{{name_2}}</h2>
+                                    <h2 class="promo_list_name">{{title_2}}</h2>
                                     <p>
                                         <span data-i18n="news.posted"></span>
                                         <span class="promo_dates">{{published_on}}</span>
