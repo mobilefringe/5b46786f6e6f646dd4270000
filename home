@@ -1,0 +1,134 @@
+<div class="popup_home hidden_now">
+    <a href="#" target="_blank">
+        <img src="#" alt="pop up" />
+    </a>
+    <i class="fa fa-remove close_popup"></i>
+</div>
+<div class="home_banner">
+    <div class="flexslider text-center">
+        <ul class="slides" id="home_banner">
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                <li class="position_relative">
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                        <div class="hero_banner" style="background-image: url({{image_url}})"></div>
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+</div>
+<div class="content_container main_container">
+    <div class="feature_items_box mobile_padding">
+        <div class="feature_row">
+            <div class="feature_item">
+                <div id="feature_0" class="position_relative"></div>
+                <div id="feature_1" class="position_relative"></div>
+            </div>
+            <div class="feature_item">
+                <div id="feature_2" class="position_relative"></div>
+                <div id="feature_3" class="position_relative"></div>
+                <div id="feature_4" class="position_relative"></div>
+            </div>
+            <div class="feature_item">
+                <div id="feature_4" class="position_relative"></div>
+                <div class="social_box text-center" id="social_fb">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
+                    <span class="hidden-xs">
+                        <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
+                        <p>
+                            <a  class="social_link_blank" href="https://www.facebook.com/BillingsBridge" target="_blank">Facebook/BillingsBridge</a><br/>
+                            <span id="latest_fb_date"></span>    
+                        </p>
+                    </span>
+                    <span class="visible-xs-block">
+                        <a href="https://www.facebook.com/BillingsBridge" target="_blank">
+                            <h5 class="insta">LIKE US ON FACEBOOK</h5>
+                        </a>        
+                    </span>
+                </div>
+                <div id="feature_5" class="position_relative"></div>
+            </div>
+            <div class="feature_item">
+                <div class="social">
+                    <a href="/hours" class="social_box text-center hours_box" id="hours_box">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
+                        <div id="home_hours_container2" class="home_feature_hours">
+                            <script id="home_hours_template2" type="x-tmpl-mustache/text">
+                                <h5 data-i18n="home.hours"></h5>
+                                <span class="hours_today">{{h}}</span>
+                            </script>
+                        </div>
+                        <p class="hours_link" data-i18n="home.hours_link"></p>
+                    </a>
+                </div>
+                <div id="feature_6" class="position_relative"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<style>
+    .newsletter_container{
+        margin-top:0;
+    }
+</style>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner',banners);
+            
+            loadSocialFeeds(render_social)
+            renderFeatureItems();
+            var today_hours = getTodaysHours();
+            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours);
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            show_content();
+            
+            if($.cookie("popup_viewed") != "true"){
+                $.cookie("popup_viewed", "true", { expires: 1 });
+                var popup = getPopups()[0];
+                if (popup != undefined){
+                    $('.popup_home a').attr('href', popup.photo_link)
+                    $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                    $('.popup_home').show()
+                }
+            }
+            $('.close_popup, .custom_backdrop').click(function(){
+                $(".modal-backdrop").remove();
+		        $(".popup_home").remove();
+            });
+        }
+        loadMallDataCached(renderAll); 
+    });
+    
+    function render_social(){
+        var social_feed = getSocialFeed()
+        var latest_tweet = social_feed.twitter[0]
+        var latest_fb_post = social_feed.facebook[0]
+        if(latest_tweet.text.length > 100){
+            $('#latest_tweet').text(latest_tweet.text.substr(0,100) + "...")
+        } else {
+            $('#latest_tweet').text(latest_tweet.text)
+        }
+        $('#latest_tweet_link').attr('href', latest_tweet.link)
+        var tweet_date = new Date(latest_tweet.created_at.split(',')[0])
+        $('#latest_tweet_date').text(get_month(tweet_date.getMonth()) + " " + tweet_date.getDate())
+        
+        
+        if(latest_fb_post.text.length > 100){
+            $('#latest_fb').text(latest_fb_post.text.substr(0,100) + "...")
+        } else {
+            $('#latest_fb').text(latest_fb_post.text)
+        }
+        $('#latest_fb_link').attr('href', latest_fb_post.link)
+        var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
+        $('#latest_fb_date').text(get_month(fb_date.getMonth()) + " " + fb_date.getDate())
+    }
+</script>
