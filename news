@@ -37,17 +37,17 @@
                             <div class="row promo_item">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{event_image_url_abs}}" alt="{{name}}" />
+                                        <img src="{{image_url}}" alt="{{title}}" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <h2 class="promo_list_name">{{title}}</h2>
                                     <p>
                                         <span class="promo_store">{{store_name}}</span>
-                                        <span class="promo_dates">{{dates}}</span>
+                                        <span class="promo_dates">{{publish_date}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="read_more" href="/events/{{slug}}">See Event Details <i class="fa fa-angle-right"></i></a>
+                                    <a class="read_more" href="/posts/{{slug}}">See News Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
