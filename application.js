@@ -691,9 +691,7 @@ function renderPosts(container, template, collection){
         val.description_short_2 = val.description_short_2.replace("&amp;", "&");
 
         
-        val.published_on = moment(val.publish_date).format("MMM DD, YYYY")
-    
-        val.counter = counter;
+        val.published_on = moment(val.publish_date).format("MMM DD, YYYY");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
@@ -709,46 +707,32 @@ function renderPostDetails(container, template, collection, blog_posts){
     var item_rendered = [];
     var template_html = $(template).html();
     $.each(collection , function( key, val ) {
-        if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461352407000/HallifaxLogo.png";
-        } else {
-            val.post_image = val.image_url;
+        // English Image
+        if (val.image_url.indexOf('missing.png') > 0) {
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+        }
+        // French Image
+        if (val.image_url2.indexOf('missing.png') > 0) {
+            if (val.image_url.indexOf('missing.png') > 0) {
+                val.image_url2 = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+            } else {
+                val.image_url2 = val.image_url;
+            }
         }
         
-        if(val.body.length > 100){
-            val.description_short = val.body.substring(0,100) + "...";
+        // English Description
+        if (val.body.length > 200){
+            val.description_short = val.body.substring(0,200) + "...";
+        } else {
+            val.description_short = val.body
         }
-        else{
-            val.description_short = val.body;
-        }
-
-        var blog_list = [];
-        $.each(blog_posts, function(key, val) {
-            var slug = val.slug;
-            blog_list.push(val.slug);
-        });
-        var current_slug = val.slug;
-        var index = blog_list.indexOf(current_slug);
-        if(index >= 0 && index < blog_list.length){
-          var next_slug = blog_list[index + 1];
-            if(next_slug != undefined || next_slug != null){
-                val.next_post = "/posts/" + next_slug;
-                val.next_show = "display: block";
-            } else {
-                val.next_show = "display: none";
-            }
-        }
-        if(index >= 0 && index < blog_list.length){
-            var prev_slug = blog_list[index - 1];
-            if(prev_slug != undefined || prev_slug != null){
-                val.prev_post = "/posts/" + prev_slug;
-                val.prev_show = "display: block";
-            } else {
-                val.prev_show = "display: none";
-            }
+        // French Description
+        if (val.body_2.length > 200){
+            val.description_short_2 = val.body_2.substring(0,200) + "...";
+        } else {
+            val.description_short_2 = val.body_2
         }
 
-        val.twitter_title = val.title + " via @shopHSC";
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
