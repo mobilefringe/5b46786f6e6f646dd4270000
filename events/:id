@@ -33,10 +33,10 @@
                     </div>
                     <div class="show_phone mobile_share_container">
                         <span data-i18n="inside_page.share"></span>
-                        <a href="https://www.facebook.com/sharer.php?u=https://www.billingsbridge.com/events/{{slug}}" target="_blank">
+                        <a href="https://www.facebook.com/sharer.php?u=https://www.placebathurstmall.com/events/{{slug}}" target="_blank">
                             <i class="fa fa-facebook-square"></i>
                         </a>
-                        <a href="https://twitter.com/intent/tweet?url=https://www.billingsbridge.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
+                        <a href="https://twitter.com/intent/tweet?url=https://www.placebathurstmall.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
                             <i class="fa fa-twitter-square"></i>
                         </a>
                     </div>
@@ -45,10 +45,10 @@
                     <img src="{{store_image}}" alt="Store Logo" class="store_logo" />
                     <div class="share_container">
                         <span data-i18n="inside_page.share"></span>
-                        <a href="https://www.facebook.com/sharer.php?u=https://www.billingsbridge.com/events/{{slug}}" target="_blank">
+                        <a href="https://www.facebook.com/sharer.php?u=https://www.placebathurstmall.com/events/{{slug}}" target="_blank">
                             <i class="fa fa-facebook-square"></i>
                         </a>
-                        <a href="https://twitter.com/intent/tweet?url=https://www.billingsbridge.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
+                        <a href="https://twitter.com/intent/tweet?url=https://www.placebathurstmall.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
                             <i class="fa fa-twitter-square"></i>
                         </a>
                     </div>
