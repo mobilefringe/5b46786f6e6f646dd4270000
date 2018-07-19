@@ -123,14 +123,12 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            console.log(store_details)
             renderStoreDetails("#store_container","#store_template", store_details, slug);
             
             var banner_repo = getRepoDetailsByName("Directory Banner").images;
             if (banner_repo) {
                 var banner_image = banner_repo[0].image_url;
                 if (banner_image) {
-                    console.log(banner_image)
                     $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
                 }
             }
