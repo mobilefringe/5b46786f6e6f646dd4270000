@@ -404,10 +404,7 @@ function renderHours(container, template, collection, type){
                         val.h = "Fermé";
                     }
                 }
-                
-                if (val.h == "Closed") {
-                    item_list.push(val)
-                }
+                item_list.push(val);
             }
         });
         collection = [];
@@ -445,7 +442,10 @@ function renderHours(container, template, collection, type){
                         val.h = "Fermé";
                     }
                 }
-                item_list.push(val);
+                if (!val.h == "Closed") {
+                    item_list.push(val)
+                }
+                // item_list.push(val);
             }
         });
         collection = [];
