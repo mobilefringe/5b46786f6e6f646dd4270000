@@ -7,8 +7,8 @@ For more information on asset types please see //www.getcodecloud.com/docs#SaSS
 
 
 /* COLOURS */
-$primary: #cf7889;
-$secondary: #cf7889;
+$primary: #004776;
+$secondary: #0ba0da;
 
 .loader {
     color: $primary;
