@@ -456,6 +456,7 @@ function renderHours(container, template, collection, type){
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
                     var french_holiday = moment(val.holiday_date).locale('fr-ca');
+                    console.log(french_holiday)
                     val.holiday_name = val.holiday_name_2
                     val.formatted_date = french_holiday.format("DD MMM");
                     val.h = "Fermé";
