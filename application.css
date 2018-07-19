@@ -223,6 +223,7 @@ a {
 }
 
 .yield {
+    margin-top: 32px;
     visibility: hidden;
 }
 
