@@ -676,7 +676,6 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
 
         
-        var date_blog = new Date(val.publish_date);
         val.published_on = moment(val.publish_date).format("MMM DD")
     
         val.counter = counter;
