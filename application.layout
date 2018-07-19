@@ -15,12 +15,10 @@
     <meta name="author" content="">
     
     <title>{{meta_title}}</title>
+
+    <!-- FAVICON -->
     <link rel="icon" href="">
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
-    <title>{{meta_title}}</title>
-    
+
     <!--CSS-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/flexslider.min.css" rel="stylesheet">
