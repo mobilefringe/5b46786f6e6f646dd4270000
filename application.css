@@ -1112,7 +1112,7 @@ h4 {
 }
 
 .hours_container{
-    display: table-row;
+    margin-bottom: 20px;
     span{
         display:table-cell;
         font-size: 24px;
