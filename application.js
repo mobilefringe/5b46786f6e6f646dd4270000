@@ -695,9 +695,9 @@ function renderPosts(container, template, collection){
             val.published_on = moment(val.publish_date).format("MMM DD, YYYY");
         }
         if(Cookies.get('current_locale') == "fr-CA"){
-            var french_date = moment(val.publish_date).locale('fr-CA');
+            var french_date = moment(val.publish_date).locale('fr-ca');
             console.log(french_date)
-            console.log(moment(val.publish_date).format('ll'))
+            console.log(french_date.format('ll'))
             val.published_on = french_date.format('ll');
         }
 
