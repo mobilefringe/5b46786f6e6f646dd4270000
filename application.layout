@@ -199,22 +199,13 @@
                         <h3 class="site_map_heading" data-i18n="footer.social_title"></h3> <!-- SOCIAL -->
                         <p class="site_map_desc" data-i18n="footer.social_subtitle"></p> <!-- Follow us on social for activities and news -->
                         <div class="social_icons">
-                            <a href="https://www.facebook.com/BillingsBridge" target="_blank">
+                            <a href="https://www.facebook.com/placebathurstmall/" target="_blank">
                                 <span id="social_fb"></span>
                             </a>
-                            <a href="https://twitter.com/Billings_Bridge" target="_blank">
+                            <a href="" target="_blank">
                                 <span id="social_twitter"></span>
                             </a>
-                            <a href="https://plus.google.com/108464391241900323876" target="_blank">
-                                <span id="social_google"></span>
-                            </a>
-                            <a href="https://pinterest.com/billingsbridge/" target="_blank">
-                                <span id="social_pinterest"></span>
-                            </a>
-                            <a href="https://www.youtube.com/user/BillingsBridge?sub_confirmation=1" target="_blank">
-                                <span id="social_yt"></span>
-                            </a>
-                            <a href="https://www.instagram.com/billingsbridge/" target="_blank">
+                            <a href="" target="_blank">
                                 <span id="social_insta"></span>
                             </a>
                             <a href="/newsletter">
