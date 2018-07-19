@@ -31,8 +31,8 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-12">
-                <div id="promos_container">
-                    <script id="promos_template" type="x-tmpl-mustache/text">
+                <div id="post_container">
+                    <script id="post_template" type="x-tmpl-mustache/text">
                         <div class="primary-locale">
                             <div class="row promo_item">
                                 <div class="col-md-3">
