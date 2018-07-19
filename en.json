@@ -7,7 +7,7 @@
 	    "newsletter_title": "Subscribe to Receive Our Updates",
 	    "newsletter_tagline": "Fashion • Events • Sales",
 	    "newsletter_submit": "Sign Up",
-	    "social_title": "Social",
+	    "social_title": "Social Media",
 	    "social_subtitle": "Follow us on social media for news and activities",
 	    "site_map": "Site Map",
 	    "power": "Powered by",
@@ -113,22 +113,5 @@
         "subscribe": "Subscribe",
         "thank_you": "Thank you!",
         "message": "Your subscription has been confirmed. You've been added to our list and will hear from us soon."
-    },
-	"social": {
-		"message": "Connect with Us",
-		"facebook": "Like on Facebook",
-		"facebook_tablet": "Like",
-		"twitter": "Follow on Twitter",
-		"twitter_tablet": "Follow",
-		"pinterest": "Follow on Pinterest",
-		"pinterest_tablet": "Pinterest",
-		"youtube": "Watch on YouTube",
-		"youtube_tablet": "YouTube",
-		"google":"Google+",
-		"google_tablet": "Google+",
-		"instagram": "Follow on Instagram",
-		"instagram_tablet": "Instagram",
-		"newsletter": "Sign-up to Newsletter",
-		"newsletter_tablet": "Sign-up"
-	}
+    }
 }
