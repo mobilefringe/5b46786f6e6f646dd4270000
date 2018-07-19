@@ -1,5 +1,5 @@
 <div class="inside_banner text-center">
-    <h3>NEWSLETTER SIGN-UP</h3>
+    <h3 data-i18n="newsletter.title"></h3>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="margin_20"></div>
