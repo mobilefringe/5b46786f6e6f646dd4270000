@@ -667,17 +667,14 @@ function renderPosts(container, template, collection){
             val.post_image = val.image_url;
         }
         
-        if(val.body.length > 175){
-            val.description_short = val.body.substring(0, 175) + "...";
-        }
-        else{
+        if(val.body.length > 200){
+            val.description_short = val.body.substring(0, 199) + "...";
+        } else {
             val.description_short = val.body;
         }
+        
         val.description_short = val.description_short.replace("&amp;", "&");
-        
-        val.slug = "posts/" + val.slug;
-        
-        val.twitter_title = val.title + " via @shopHSC";
+
         
         var date_blog = new Date(val.publish_date);
         val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
