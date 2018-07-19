@@ -427,6 +427,7 @@ function renderHours(container, template, collection, type){
                     }    
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
+                    val.holiday_name = val.holiday_name_2
                     var french_holiday = moment(val.holiday_date).locale('fr-ca');
                     val.formatted_date = french_holiday.format("DD MMM");
                     if (val.open_time && val.close_time && val.is_closed == false){
@@ -451,11 +452,13 @@ function renderHours(container, template, collection, type){
             if (!val.store_ids && val.is_holiday == true && val.is_closed == true) {
                 if(Cookies.get('current_locale') == "en-CA"){
                     var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
+                    
                     val.formatted_date = holiday.format("MMM DD");
                     val.h = "Closed";
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
                     var french_holiday = moment(val.holiday_date).locale('fr-ca');
+                    val.holiday_name = val.holiday_name_2
                     val.formatted_date = french_holiday.format("DD MMM");
                     val.h = "Fermé";
                 }
