@@ -102,9 +102,6 @@
 	    "reduced_hours": "Reduced Hours of Operation",
 	    "closed_hours": "Holiday Closures"
 	},
-    "directions": {
-        "title": "Directions & Parking"    
-    },
     "newsletter": {
         "title": "Newsletter",
         "name": "Name",
