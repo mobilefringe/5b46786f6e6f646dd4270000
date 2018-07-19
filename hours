@@ -51,7 +51,6 @@
                         </div>
                     </script>
                 </div>
-                <div class="margin_20"></div>
                 <h3 class="hours_heading" data-i18n="hours.closed_hours"></h3>
                 <div id="closed_hours_container" class="hours_container">
                     <script id="closed_hours_template" type="x-tmpl-mustache/text">
