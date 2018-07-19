@@ -80,8 +80,8 @@
                 <li>
                     <a href="#" class="submenu_expander open">
                         <span data-i18n="nav.stores"></span>
-                        <img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: none;">
-						<img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: inline;">
+                        <img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" alt="" style="display: none;">
+						<img class="menu_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" alt="" style="display: inline;">
                     </a>
                     <ul class="sub_menu">
 						<li><a href="/stores" data-i18n="nav.subnav.directory"></a></li>
@@ -91,8 +91,8 @@
                 <li>
                     <a href="#"  class="submenu_expander">
                         <span data-i18n="nav.news"></span>
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" alt="" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" alt="" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
                         <li><a href="/posts" data-i18n="nav.subnav.news"></a></li>
