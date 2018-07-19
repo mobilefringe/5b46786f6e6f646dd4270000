@@ -698,11 +698,7 @@ function renderPosts(container, template, collection){
             var french_date = moment(val.publish_date).locale('fr-ca');
             val.published_on = french_date.format("DD MMM, YYYY");
         }
-        
-        
-        
-        val.published_on = moment(val.publish_date).format("MMM DD, YYYY");
-        
+
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
         counter = counter + 1;
