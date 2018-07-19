@@ -106,7 +106,9 @@
         "name": "Name",
         "email": "Email",
         "agree": "I agree to receive communications from Place Bathurst.",
-        "subscribe": "Subscribe"
+        "subscribe": "Subscribe",
+        "thank_you": "Thank You!",
+        "message": "Your subscription has been confirmed. You've been added to our list and will hear from us soon."
     },
 	"social": {
 		"message": "Connect with Us",
