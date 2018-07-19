@@ -689,7 +689,16 @@ function renderPosts(container, template, collection){
         
         val.description_short = val.description_short.replace("&amp;", "&");
         val.description_short_2 = val.description_short_2.replace("&amp;", "&");
-
+        
+        var french_date = moment(publish_date).locale('fr-ca');
+        if(Cookies.get('current_locale') == "en-CA"){
+            val.published_on = moment(val.publish_date).format("MMM DD, YYYY");
+        }
+        if(Cookies.get('current_locale') == "fr-CA"){
+            val.published_on = french_date.format("DD MMM, YYYY");
+        }
+        
+        
         
         val.published_on = moment(val.publish_date).format("MMM DD, YYYY");
         
