@@ -414,7 +414,7 @@ h4 {
     position: fixed;
     width: 100%;
     background: #fff;
-    z-index: 9;
+    z-index: 99;
     top:0;
 }
 
@@ -781,7 +781,7 @@ h4 {
 .flex-control-nav {
     padding-right: 15px;
     bottom: 13px;
-    z-index: 99;
+    z-index: 9;
     text-align: right;
     color: transparent;
 }
