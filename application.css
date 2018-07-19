@@ -779,10 +779,12 @@ h4 {
 }
 
 .flex-control-nav {
+    padding-right: 15px;
     bottom: 13px;
+    z-index: 99;
     text-align: right;
     color: transparent;
-    padding-right: 15px;
+    
 }
 
 .flex-control-paging li a{
