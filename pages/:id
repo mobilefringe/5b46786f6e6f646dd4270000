@@ -1,28 +1,7 @@
 <div class="inside_banner text-center">
     <h3 id="mm_page_title"></h3>
-    <p>explore • enjoy • shop</p>
+    <p data-i18n="inside_page.header_tagline"></p>
 </div>
-<!--<div class="store_list_head main_container">-->
-<!--    <div class="row hidden_phone">-->
-<!--        <div class="col-md-4">-->
-<!--            <h5><a href=""></a> Help</h5>-->
-<!--        </div>-->
-<!--        <div class="col-md-4 text-center">-->
-<!--            <h5 id=""><a href=""></a></h5>-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--            <h5 id=""><a href=""></a></h5>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <h5 class="text-center tap_here show_phone">-->
-<!--        <select id="option_selector" class="link_selector">-->
-<!--            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>-->
-<!--            <option value=""></option>-->
-<!--            <option value=""></option>-->
-<!--            <option value=""></option>-->
-<!--        </select>-->
-<!--    </h5>-->
-<!--</div>-->
 <div class="margin_20"></div>
 <div class="content_container main_container mobile_padding pages_text">
     <div class="row">
