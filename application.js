@@ -677,7 +677,7 @@ function renderPosts(container, template, collection){
 
         
         var date_blog = new Date(val.publish_date);
-        val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
+        val.published_on = moment(val.publish_date).format("MMM DD")
     
         val.counter = counter;
         
