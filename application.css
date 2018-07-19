@@ -786,7 +786,8 @@ h4 {
     color: transparent;
 }
 
-.flex-control-paging li a{
+.flex-control-paging li a {
+    border-radius: 0 !important;
     color: transparent;
 }
 
