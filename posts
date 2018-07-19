@@ -44,7 +44,7 @@
                                     <h2 class="promo_list_name">{{title}}</h2>
                                     <p>
                                         <span data-i18n="news.posted"></span>
-                                        <span class="promo_dates">{{publish_date}}</span>
+                                        <span class="promo_dates">{{published_on}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
                                     <a class="read_more" href="/posts/{{slug}}">View News Details <i class="fa fa-angle-right"></i></a>
@@ -62,7 +62,7 @@
                                     <h2 class="promo_list_name">{{name_2}}</h2>
                                     <p>
                                         <span data-i18n="news.posted"></span>
-                                        <span class="promo_dates">{{dates}}</span>
+                                        <span class="promo_dates">{{published_on}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short_2}}</div>
                                     <a class="read_more" href="/events/{{slug}}">Détails des nouvelles <i class="fa fa-angle-right"></i></a>
