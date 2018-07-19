@@ -450,6 +450,7 @@ function renderHours(container, template, collection, type){
         $.each( collection , function( key, val ) {
             if (!val.store_ids && val.is_holiday == true && val.is_closed == true) {
                 if(Cookies.get('current_locale') == "en-CA"){
+                    val.formatted_date = holiday.format("MMM DD");
                     val.h = "Closed";
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
