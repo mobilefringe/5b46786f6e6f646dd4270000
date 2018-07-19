@@ -55,7 +55,7 @@
                             <div class="row promo_item">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
-                                        <img src="{{image_url}}" alt="{{name_2}}" />
+                                        <img src="{{image_url2}}" alt="{{name_2}}" />
                                     </div>
                                 </div>
                                 <div class="col-md-9">
