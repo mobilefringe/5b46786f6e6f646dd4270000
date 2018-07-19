@@ -262,7 +262,7 @@ function getDay(day_of_week){
 
 function getAssetURL(id){
     var store_id = id;
-    var store_assets = "https://billingsbridge.mallmaverick.com/api/v4/billings/stores/" + store_id + "/store_files.json"
+    var store_assets = "placebathurst.mallmaverick.com/api/v4/placebathurst/stores/" + store_id + "/store_files.json"
     var store_front_image_url = "";    
     $.ajax({
         url: store_assets,
