@@ -161,7 +161,7 @@
       					<a href="?locale=en" id="set_lang_en">EN</a> |
       					<a href="?locale=fr" id="set_lang_fr">FR</a>
 					</div>
-                    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="menu open">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="Open Menu">
                 </div>
                 <div class="col-xs-12 show_phone home_hours_phone">
                     <p class="hours_home"><span class="hours_dot"></span> Today's Hours: 
