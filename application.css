@@ -794,7 +794,9 @@ h4 {
     width:28px;
     height:28px;
 }
-
+.flex-active {
+    background: $primary;
+}
 .feature_item{
     div{
         overflow: hidden;
