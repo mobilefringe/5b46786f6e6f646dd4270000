@@ -661,12 +661,19 @@ function renderPosts(container, template, collection){
     var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461352407000/HallifaxLogo.png";
-        } else {
-            val.post_image = val.image_url;
+        // English Image
+        if (val.image_url.indexOf('missing.png') > 0) {
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
         }
-
+        // French Image
+        if (val.image_url2.indexOf('missing.png') > 0) {
+            if (val.image_url.indexOf('missing.png') > 0) {
+                val.image_url2 = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+            } else {
+                val.image_url2 = val.image_url;
+            }
+        }
+            
         // English Description
         if (val.body.length > 200){
             val.description_short = val.body.substring(0,200) + "...";
