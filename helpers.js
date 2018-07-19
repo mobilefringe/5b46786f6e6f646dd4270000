@@ -261,21 +261,6 @@ function getDay(day_of_week){
     return day;
 }
 
-function load_more(num){
-    var n = parseInt(num);
-    for(i = n; i < n + 3; i++){
-        var id = i.toString();
-        $('#show_' + id ).fadeIn();
-    }
-    var posts = getBlogDataBySlug('').posts;
-    var total_posts = posts.length;
-    if(i >= total_posts){
-        $('#loaded_posts').hide();
-        $('#all_loaded').show();
-    }
-    $('#num_loaded').val(i);
-}
-
 function getAssetURL(id){
     var store_id = id;
     var store_assets = "https://billingsbridge.mallmaverick.com/api/v4/billings/stores/" + store_id + "/store_files.json"
