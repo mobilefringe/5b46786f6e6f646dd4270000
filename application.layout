@@ -215,8 +215,8 @@
                             <br class="hidden_phone" />
                         </div>
                         <p class="rights_reserved">
-                        <span data-i18n="footer.power"></span> <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
-                    </p>
+                            <span data-i18n="footer.power"></span> <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4 left_right_border">
@@ -249,7 +249,7 @@
                             Bathurst, NB E2A 3A6
                         </a>
                         <br/>
-                        Administration: <a href="tel:613-733-2595">(613) 733-2595</a><br />
+                        <span data-i18n="footer.contact"></span>: <a href="tel:506 546-9194">(506) 546-9194</a><br />
                         <a href="http://www.cushmanwakefield.ca/en/" target="_blank">
                             <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1509381758000/CW Logos-_CW_Colorlogo.png" class="management_logo" alt="Cushman & Wakefield Logo">
                         </a>
