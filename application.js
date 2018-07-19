@@ -666,14 +666,22 @@ function renderPosts(container, template, collection){
         } else {
             val.post_image = val.image_url;
         }
-        
-        if(val.body.length > 200){
-            val.description_short = val.body.substring(0, 199) + "...";
+
+        // English Description
+        if (val.body.length > 200){
+            val.description_short = val.body.substring(0,200) + "...";
         } else {
-            val.description_short = val.body;
+            val.description_short = val.body
+        }
+        // French Description
+        if (val.body_2.length > 200){
+            val.description_short_2 = val.body_2.substring(0,200) + "...";
+        } else {
+            val.description_short_2 = val.body_2
         }
         
         val.description_short = val.description_short.replace("&amp;", "&");
+        val.description_short_2 = val.description_short_2.replace("&amp;", "&");
 
         
         val.published_on = moment(val.publish_date).format("MMM DD, YYYY")
@@ -936,33 +944,6 @@ function renderPromoDetails(container, template, collection, mall_name){
         item_rendered.push(rendered);
     });
     $(container).html(item_rendered.join(''));
-}
-
-function renderSinglePost(container, template, main_post){
-    var item_list = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html);   // optional, speeds up future uses
-
-    if (main_post.image_url.indexOf('missing.png') > 0) {
-        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
-    } else {
-        main_post.post_image = main_post.image_url;
-    }
-        
-    if(main_post.body.length > 235){
-        main_post.description_short = main_post.body.substring(0,235) + "...";
-    } else{
-        main_post.description_short = main_post.body;
-    }
-    main_post.description_short = main_post.description_short.replace("&amp;", "&");
-    
-    main_post.slug = "posts/" + main_post.slug;
-    
-    main_post.twitter_title = main_post.title + " via @Billings_Bridge";
-    
-    var rendered = Mustache.render(template_html, main_post);
-    item_list.push(rendered);
-    $(container).html(item_list.join(''));
 }
 
 function renderStoreList(container, template, collection, starter, breaker){
