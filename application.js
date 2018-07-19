@@ -696,7 +696,7 @@ function renderPosts(container, template, collection){
         }
         if(Cookies.get('current_locale') == "fr-CA"){
             var french_date = moment(val.publish_date).locale('fr-ca');
-            val.published_on = french_date.format("DD MMM, YYYY");
+            val.published_on = french_date.format('ll');
         }
 
         var rendered = Mustache.render(template_html,val);
