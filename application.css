@@ -788,9 +788,9 @@ h4 {
 
 .flex-control-paging li a {
     border-radius: 0 !important;
+    background: rgba(255, 255, 255,.7);
     color: transparent;
 }
-
 .flex-direction-nav a{
     width:28px;
     height:28px;
