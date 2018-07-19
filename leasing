@@ -27,7 +27,6 @@
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/placebathurst-space-for-lease.json"
             $.getJSON(pages_json).done(function(data) {
-                console.log(data)
                 if(Cookies.get('current_locale') == "en-CA"){
                     $('#mm_page_content').html(data.body);
                 }
