@@ -1,0 +1,117 @@
+{
+	"header": {
+	    "todays_hours": "Heures d'aujourd'hui",
+	    "check_hours": "Voir les heures de vacances"
+	},
+	"footer": {
+	    "newsletter_title": "Abonnez-vous pour recevoir nos mises à jour",
+	    "newsletter_tagline": "Fashion • Events • Sales",
+	    "newsletter_submit": "S'inscrire",
+	    "social_title": "Des médias sociauxl",
+	    "social_subtitle": "Suivez-nous sur les médias sociaux pour les nouvelles et les activités.",
+	    "site_map": "Carte du site",
+	    "power": "Alimenté par",
+	    "contact": "Centre de service à la clientèle"
+	},
+	"nav": {
+	    "menu": "Menu",
+		"stores": "Le Directoire",
+		"news": "Nouvelles et événements",
+		"services": "les services",
+		"about": "À propos de nous",
+		"leasing": "Location",
+		"subnav": {
+			"directory": "Magasins",
+	        "map": "Carte du Centre",
+	        "news": "Nouvelles",
+			"events": "Événements",
+		    "promos": "Offres",
+		    "careers": "Carrières",
+		    "guest_services": "Services à la clientèle",
+		    "gift_cards": "Cartes cadeaux",
+		    "contact": "Contactez nous",
+			"hours": "Heures",
+			"about": "À propos de nous",
+			"directions": "Directions et stationnement"
+		}
+	},
+	"home": {
+		"insta": "Suis nous sur instagram",
+		"hours": "Heures de magasinage",
+		"hours_link": "Voir plus d'heures"
+	},
+	"inside_page": {
+	    "header_tagline": "EXPLORE • ENJOY • SHOP",
+	    "mobile_menu": "Appuyez sur pour plus d'options",
+	    "stores": "Magasins",
+	    "map": "Carte du Centre",
+	    "news": "Nouvelles",
+	    "events": "Événements",
+	    "deals": "Offres",
+	    "careers": "Carrières",
+	    "guest_services": "Services à la clientèle",
+	    "gift_cards": "Cartes cadeaux",
+	    "contact": "Contactez nous",
+	    "hours": "Heures",
+	    "about": "À propos de nous",
+	    "directions": "Directions",
+	    "leasing": "Location",
+	    "share": "Share: "
+	},
+	"stores": {
+	    "title": "Magasins",
+	    "new_stores": "Nouveaux magasins",
+	    "coming_soon": "Arrive bientôt",
+	    "category": "Catégories",
+	    "categories_all": "Toute",
+	    "back_btn": "Retour aux magasins",
+	    "store_promo": "les Soldes",
+	    "store_job": "Carrières",
+	    "store_phone": "Phone",
+	    "store_website": "Website"
+	},
+	"map": {
+	    "title": "Carte du Centre",
+	    "find_store": "Trouver un magasin",
+	    "scroll_up": "faire remonter",
+	    "scroll_down": "faire descendre"
+	},
+	"news": {
+	    "title": "Nouvelles",
+	    "return": "Retour aux nouvelles",
+	    "posted": "Posté sur:"
+	},
+	"events": {
+	    "title": "Événements",
+	    "no_events": "Il n'y a pas d'évènements prévus pour le moment. S'il vous plaît revenez bientôt!",
+	    "return": "Retourner aux événements"
+	},
+	"promos": {
+	    "title": "Offres",
+	    "no_jobs": "Il n'y a pas d'offres planifiées pour le moment. S'il vous plaît revenez bientôt!",
+	    "return": "Retour aux offres"        
+	},
+	"jobs": {
+	    "title": "Carrières",
+	    "no_jobs": "Il n'y a pas d'offres d'emploi en ce moment. S'il vous plaît revenez bientôt!",
+	    "return": "Retour aux carrières"    
+	},
+	"hours": {
+	    "title": "Heures du Centre",
+	    "regular_hours": "Heures régulières",
+	    "reduced_hours": "Heures d'ouverture réduites",
+	    "closed_hours": "Fermetures de vacances"
+	},
+    "directions": {
+        "title": "Directions et stationnement"    
+    },
+    "newsletter": {
+        "title": "Bulletin",
+        "name": "Nom",
+        "email": "Email",
+        "agree": "J'accepte de recevoir des communications de Place Bathurst Mall.",
+        "subscribe": "Signer",
+        "thank_you": "Merci!",
+        "message": "Votre abonnement a été confirmé. Vous avez été ajouté à notre liste et nous entendrons bientôt."
+    }
+}
