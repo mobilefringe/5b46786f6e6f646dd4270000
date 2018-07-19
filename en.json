@@ -78,7 +78,8 @@
 	},
 	"news": {
 	    "title": "News",
-	    "return": "Return to News"
+	    "return": "Return to News",
+	    "posted": "Posted On:"
 	},
 	"events": {
 	    "title": "Events",
