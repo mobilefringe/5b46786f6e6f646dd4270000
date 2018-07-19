@@ -36,7 +36,7 @@
                     <span class="hidden-xs">
                         <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
                         <p>
-                            <a  class="social_link_blank" href="https://www.facebook.com/BillingsBridge" target="_blank">Facebook/BillingsBridge</a><br/>
+                            <a  class="social_link_blank" href="https://www.facebook.com/placebathurstmall" target="_blank">Facebook/PlaceBathurstMall</a><br/>
                             <span id="latest_fb_date"></span>    
                         </p>
                     </span>
