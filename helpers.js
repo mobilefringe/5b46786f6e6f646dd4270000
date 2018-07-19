@@ -34,6 +34,7 @@ function init(e){
         $('body').addClass('no_scroll');
         $('.mobile_menu_container').addClass('active_menu')
     });
+    
     $('#close_menu').click(function(e){
         e.preventDefault();
         $('body').removeClass('no_scroll');
@@ -106,10 +107,7 @@ function show_content(){
                 $('#hours_home').text(v.h)
             }
         }
-    })
-    
-    
-    
+    });
     
     $('#stores_container').scroll(function(){
         if( $(this).scrollTop() == 0){
@@ -192,44 +190,20 @@ function show_cat_stores(){
     
 }
 
-function show_pin(param){
-	store_id = $(param).attr('store_id');
-	if($("#"+store_id).is(":visible")){
-		$("."+store_id).hide();				
-		$("#"+store_id).hide();
-		$("#no_pin_"+store_id).show();
-		$("#show_pin_"+store_id).hide();
-		$("#m_no_pin_"+store_id).show();
-		$("#m_show_pin_"+store_id).hide();
-	}else{
-		$(".marker").hide();
-		$("#"+store_id).show();
-		$("#"+store_id).click();
-		$("#no_pin_"+store_id).hide();
-		$("#show_pin_"+store_id).show();
-		$("#m_no_pin_"+store_id).hide();
-		$("#m_show_pin_"+store_id).show();
-	}
-	$('.stores_table').hide()
-	
-	return false;
-}
 function drop_pin(id, map){
-
     var coords = map.get_coords(id);
     var height = parseInt(coords["height"])
     var width = parseInt(coords["width"])
     var x_offset = (parseInt(width) / 2);
     var y_offset = (parseInt(height) /2);
-    
-    map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-              attrs: {
-                        src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
-                      }
+    map.setMarks([{ 
+        xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+        attrs: {
+            src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
         }
-        ])
-        // map.setViewBox(id);
-        map.selectRegion(id);
+    }]);
+    // map.setViewBox(id);
+    map.selectRegion(id);
 }
     
 function getDay(day_of_week){
