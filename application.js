@@ -384,7 +384,6 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == false) {
                 var day = getDay(val.day_of_week);
                 val.day = day;
-
                 if(Cookies.get('current_locale') == "en-CA"){
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
@@ -416,12 +415,7 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == true) {
                 var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var today = moment().tz(getPropertyTimeZone());
-                // if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
-                //     val.active_class = "drop-down-row-today";
-                // }
-                // else{
-                //     val.active_class = "";
-                // }
+
                 if(Cookies.get('current_locale') == "en-CA"){
                     val.formatted_date = holiday.format("MMM DD");
                     if (val.open_time && val.close_time && val.is_closed == false){
@@ -454,27 +448,15 @@ function renderHours(container, template, collection, type){
     }
     if (type == "closed_hours") {
         $.each( collection , function( key, val ) {
-            if (!val.store_id && val.is_holiday == true) {
-                holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = holiday.format("ddd, MMM D, YYYY");
-                
-                if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    if (val.open_time == "0:00 AM"){
-                        val.open_time = "12:00 AM"
-                    }
-                    if (val.close_time == "0:00 AM"){
-                        val.close_time = "12:00 AM"
-                    }
-                    val.h = open_time.format("h:mmA") + " to " + close_time.format("h:mmA");
-                } else {
-                    val.h = "Closed"
+            if (!val.store_ids && val.is_holiday == true && val.is_closed == true) {
+                if(Cookies.get('current_locale') == "en-CA"){
+                    val.h = "Closed";
                 }
-                if (val.h == "Closed") {
-                    item_list.push(val)
+                if(Cookies.get('current_locale') == "fr-CA"){
+                    val.h = "Fermé";
                 }
+            
+                item_list.push(val)
             }
         });
         collection = []
