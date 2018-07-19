@@ -6,7 +6,7 @@
 <div class="content_container main_container mobile_padding">
     <div class="margin_30"></div>
     <h2  data-i18n="newsletter.thank_you"></h2>
-    <p data-i18n="newsletter.message">Your subscription has been confirmed. You've been added to our list and will hear from us soon.</p>
+    <p data-i18n="newsletter.message"></p>
     <div class="margin_30"></div>
 </div>
 <script>
