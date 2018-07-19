@@ -196,8 +196,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="">
-                        <h3 class="site_map_heading" data-i18n="footer.social_title"></h3> <!-- SOCIAL -->
-                        <p class="site_map_desc" data-i18n="footer.social_subtitle"></p> <!-- Follow us on social for activities and news -->
+                        <h3 class="site_map_heading" data-i18n="footer.social_title"></h3>
+                        <p class="site_map_desc" data-i18n="footer.social_subtitle"></p>
                         <div class="social_icons">
                             <a href="https://www.facebook.com/placebathurstmall/" target="_blank">
                                 <span id="social_fb"></span>
@@ -217,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 left_right_border">
-                    <h3 class="site_map_heading" data-i18n="footer.site_map"></h3> <!-- SITE MAP -->
+                    <h3 class="site_map_heading" data-i18n="footer.site_map"></h3>
                     <div class="row footer_site_map">
                         <div class="col-md-6 col-xs-6">
                             <ul>
@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="site_map_heading">&copy; <span id="current_year"></span> - BILLINGS BRIDGE</h3>
+                    <h3 class="site_map_heading">&copy; <span id="current_year"></span> - Place Bathurst Shopping Centre</h3>
                     <p class="rights_reserved">
                         <a href="https://goo.gl/maps/UeBS43VV4u22" target="_blank">
                             2277 Riverside Dr, Ottawa, ON <br/>K1H 7X6
