@@ -93,7 +93,6 @@
             }
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            console.log(promotions)
             var published_promos = [];
             $.each( promotions , function( key, val ){
                 today = moment();
