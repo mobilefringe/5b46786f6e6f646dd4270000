@@ -202,12 +202,12 @@
                             <a href="https://www.facebook.com/placebathurstmall/" target="_blank">
                                 <span id="social_fb"></span>
                             </a>
-                            <a href="" target="_blank">
-                                <span id="social_twitter"></span>
-                            </a>
-                            <a href="" target="_blank">
-                                <span id="social_insta"></span>
-                            </a>
+                            <!--<a href="" target="_blank">-->
+                            <!--    <span id="social_twitter"></span>-->
+                            <!--</a>-->
+                            <!--<a href="" target="_blank">-->
+                            <!--    <span id="social_insta"></span>-->
+                            <!--</a>-->
                             <a href="/newsletter">
                                 <span id="social_newsletter"></span>
                             </a>
