@@ -697,7 +697,7 @@ function renderPosts(container, template, collection){
         if(Cookies.get('current_locale') == "fr-CA"){
             var french_date = moment(val.publish_date).locale('fr-ca');
             console.log(french_date)
-            console.log(french_date.format('LL'))
+            console.log(french_date.format('LL').locale('fr-ca');)
             val.published_on = french_date.format('ll');
         }
 
