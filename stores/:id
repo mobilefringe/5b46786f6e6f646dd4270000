@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                       <img class="margin_20" src="//assets.codecloudapp.com/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg"/>
+                       <img class="margin_20" src=""/>
                         <div class="side_stores">
                             <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">
                                 <span data-i18n="stores.store_phone"></span>: {{phone}}
