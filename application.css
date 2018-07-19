@@ -2387,8 +2387,7 @@ gallery:after{
         }
     }
     .main_logo{
-        max-width: 165px;
-        // margin-top: 10px;
+        max-width: 100px;
     }
     .search_field{
         height: 31px;
