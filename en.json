@@ -8,7 +8,7 @@
 	    "newsletter_tagline": "Fashion • Events • Sales",
 	    "newsletter_submit": "Sign Up",
 	    "social_title": "Social Media",
-	    "social_subtitle": "Follow us on social media for news and activities",
+	    "social_subtitle": "Follow us on social media for news and activities.",
 	    "site_map": "Site Map",
 	    "power": "Powered by",
 	    "contact": "Client Service Centre"
@@ -43,7 +43,7 @@
 	"inside_page": {
 	    "header_tagline": "EXPLORE • ENJOY • SHOP",
 	    "mobile_menu": "Tap For More Options",
-	    "stores": "Store Directory",
+	    "stores": "Stores",
 	    "map": "Centre Map",
 	    "news": "News",
 	    "events": "Events",
@@ -59,7 +59,7 @@
 	    "share": "Share: "
 	},
 	"stores": {
-	    "title": "Store Directory",
+	    "title": "Stores",
 	    "new_stores": "New Stores",
 	    "coming_soon": "Coming Soon",
 	    "category": "Categories",
