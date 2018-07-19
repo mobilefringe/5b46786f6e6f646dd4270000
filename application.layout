@@ -130,7 +130,7 @@
 					</ul>
                 </li>
                 <li>
-                    <a href="/leasing"  class="submenu_expander">
+                    <a href="/leasing">
                         <span data-i18n="nav.leasing"></span>
                     </a>
                     
