@@ -709,12 +709,14 @@ function renderPostDetails(container, template, collection, blog_posts){
     $.each(collection , function( key, val ) {
         // English Image
         if (val.image_url.indexOf('missing.png') > 0) {
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+            // val.image_url = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+            val.show_img = "display: none"
         }
         // French Image
         if (val.image_url2.indexOf('missing.png') > 0) {
             if (val.image_url.indexOf('missing.png') > 0) {
                 val.image_url2 = "//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/png/1532018614000/placeholder.png";
+                val.show_img = "display: none"
             } else {
                 val.image_url2 = val.image_url;
             }
