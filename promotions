@@ -75,7 +75,7 @@
         </div>
         <div class="row hidden_now" id="no_promos">
             <div class="col-md-12">
-                <p>There are no Promotions scheduled at this time. Please check back soon.</p>
+                <p data-i18n="promo.no_deals">There are no Promotions scheduled at this time. Please check back soon.</p>
             </div>
         </div>
     </div>
