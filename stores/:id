@@ -30,7 +30,15 @@
                             <img class="margin_20 img-responsive" style="{{show_store_front}}" src="{{store_front_alt_url_abs}}" alt="{{name}} Store Front" />
                             <div class="margin_20 primary-locale">{{{rich_description}}}</div>
                             <div class="margin_20 secondary-locale">{{{rich_description_2}}}</div>
-                            <div id="mapsvg_store_detail" class="mobile_padding"></div>
+                            <div class="map light_border">
+                        	    <div class="zoom_container" id="zoom_container_store">
+                            		<img id="zoom_image" src=""/>
+                            		<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
+                            	</div>
+                            	<div class="controls">
+                        	        <a id="anchor_id"><div style="color:#FFFFFF"></div></a>	
+                            	</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -113,10 +121,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
@@ -175,45 +180,63 @@
             
             show_content();
             
-            // MAP
-            var stores = getStoresList();
-            var regions = {}
-            $.each( stores , function( key, val ) {
-                if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
-                    obj = {};
-                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>" + val.name + "</p></div>"
-                    obj["attr"] = {}
-                    obj["attr"]["href"] = "/stores/"+val.slug
-                    regions[val.svgmap_region] = obj
-                }
-            });
-            load_map(regions, store_details);
+            //MAP  
+            $("#zoom_image").attr("src", getPNGMapURL());
+    		$('#zoom_image').smoothZoom({
+    		    width: "100%",
+                height: 465,
+    		    initial_ZOOM: 0,
+    			zoom_MIN: 0,
+    			zoom_MAX: 250,
+    			responsive: true,
+    		    responsive_maintain_ratio: true,
+    			zoom_BUTTONS_SHOW : 'YES',
+    			pan_BUTTONS_SHOW : 'NO',
+    			pan_LIMIT_BOUNDARY : 'NO',
+    			button_SIZE: 34,
+    			button_ALIGN: "top right",
+    			zoom_OUT_TO_FIT: "NO",
+    			container: 'zoom_container_store'
+    		});
+    		var store_x_coordinate = store_details.x_coordinate;
+    		var store_y_coordinate = store_details.y_coordinate;
+    		var pin_id = store_details.id; 
+    		var store_name = store_details.name;
+    		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
         }
+		
 		loadMallDataCached(renderAll); 
-    })
-    
-    function load_map(reg, store_details){
-        this_region = {};
-        this_region = store_details.svgmap_region;
-        if(this_region != null) {
-            map = $('#mapsvg_store_detail').mapSvg({
-                source: getSVGMapURL(),
-                colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
-                disableAll: true,
-                regions: this_region,
-                height:1700,
-                width:2300,
-                tooltipsMode:'custom',
-                zoom:true,
-                zoomButtons: {'show': true, 'location': 'left'},
-                pan:true,
-                cursor:'pointer',
-                responsive:true,
-                zoomLimit: [0,5]
-            });
-            // map.setViewBox(store_details.svgmap_region);
-            map.selectRegion(store_details.svgmap_region);
-            drop_pin(store_details.svgmap_region, map);
-        }
-    }
+		
+		function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
+		var name = store_name;
+		var x_coordinate = store_x_coordinate;
+		var y_coordinate = store_y_coordinate;
+		var mark = "mark_store_" + pin_id;
+
+        // Remove existing landmark
+	    $('#zoom_image').smoothZoom('removeLandmark');
+
+		// Add new landmark
+		$('#zoom_image').smoothZoom('addLandmark', 
+			[
+			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coordinate + ',' + y_coordinate + '" id="' + mark + '">\
+				<div>\
+					<div class="text">\
+					<strong>' + name + '</strong>\
+				</div>\
+				<img src="//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png" width="40px" height="65px" alt="' + name +'" />\
+				</div>\
+			</div>'
+			]
+		);
+
+		// Focus on new landmark
+		$('#zoom_image').smoothZoom('focusTo',{
+			x: x_coordinate,
+			y: y_coordinate,
+			zoom: 120,
+			speed: 5
+		});
+	}
+    });
 </script>
