@@ -1,5 +1,5 @@
 <div class="main_banner text-center">
-    <h3 data-i18n="news.title"></h3>
+    <h2 data-i18n="news.title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="store_list_head main_container">
