@@ -131,6 +131,6 @@
         $('#latest_fb_link').attr('href', latest_fb_post.link)
         var fb_date = moment(latest_fb_post.created_at.split(',')[0])
         console.log(fb_date)
-        $('#latest_fb_date').text(get_month(fb_date.getMonth()) + " " + fb_date.getDate())
+        $('#latest_fb_date').text(moment(fb_date).format("MMM DD"))
     }
 </script>
