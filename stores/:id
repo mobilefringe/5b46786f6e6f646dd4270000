@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img class="margin_20" src="{{store_front_url_abs}}"/>
+                        <img class="margin_20 store_logo" src="{{store_front_url_abs}}"/>
                         <div class="side_stores">
                             <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">
                                 <span data-i18n="stores.store_phone"></span>: {{phone}}
