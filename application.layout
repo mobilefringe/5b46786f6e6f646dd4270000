@@ -197,6 +197,7 @@
                         <div class="social_icons">
                             <a href="https://www.facebook.com/placebathurstmall/" target="_blank">
                                 <span id="social_fb"></span>
+                                <p style="display: none;">Facebook</p>
                             </a>
                             <!--<a href="" target="_blank">-->
                             <!--    <span id="social_twitter"></span>-->
@@ -206,6 +207,7 @@
                             <!--</a>-->
                             <a href="/newsletter">
                                 <span id="social_newsletter"></span>
+                                <p style="display: none;">Newsletter</p>
                             </a>
                             <div class="clearfix"></div>
                             <br class="hidden_phone" />
