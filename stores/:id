@@ -62,7 +62,6 @@
         <div class="row">
             <div class="col-md-8 promo_item" id="promos_main">
                 <h2 class="store_details_promo_heading">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
                     <span data-i18n="stores.store_promo"></span>
                 </h2>
                 <div id="promos_container">
