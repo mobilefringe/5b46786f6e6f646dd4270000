@@ -45,7 +45,7 @@
                                     <p>
                                         <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
                                         <span class="promo_store" style="{{mall_show}}">{{store_name}}</span>
-                                        | <span class="promo_dates">{{dates}}</span>
+                                        <span class="hidden_phone"> | </span><span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
                                     <a class="read_more" href="/promotions/{{slug}}">View Deals Details <i class="fa fa-angle-right"></i></a>
@@ -62,7 +62,7 @@
                                     <p>
                                         <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
                                         <span class="promo_store" style="{{mall_show}}">{{store_name}}</span>
-                                        | <span class="promo_dates">{{dates}}</span>
+                                        <span class="hidden_phone"> | </span><span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short_2}}</div>
                                     <a class="read_more" href="/promotions/{{slug}}">Voir les détails de la promotion <i class="fa fa-angle-right"></i></a>
