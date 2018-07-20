@@ -114,6 +114,7 @@
         console.log("Social ", social_feed)
         var latest_tweet = social_feed.twitter[0]
         var latest_fb_post = social_feed.facebook[0]
+        console.log("latest_fb_post ", latest_fb_post)
         if(latest_tweet.text.length > 100){
             $('#latest_tweet').text(latest_tweet.text.substr(0,100) + "...")
         } else {
