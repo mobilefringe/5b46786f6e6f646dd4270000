@@ -88,7 +88,7 @@
 	},
 	"promos": {
 	    "title": "Deals",
-	    "no_jobs": "There are no Deals scheduled at this time. Please check back soon!",
+	    "no_deals": "There are no Deals scheduled at this time. Please check back soon!",
 	    "return": "Return to Deals"        
 	},
 	"jobs": {
