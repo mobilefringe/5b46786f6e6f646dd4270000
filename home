@@ -115,24 +115,15 @@
         var social_feed = getSocialFeed();
         var latest_tweet = social_feed.twitter[0]
         var latest_fb_post = social_feed.facebook[0]
-        // if(latest_tweet.text.length > 100){
-        //     $('#latest_tweet').text(latest_tweet.text.substr(0,100) + "...")
-        // } else {
-        //     $('#latest_tweet').text(latest_tweet.text)
-        // }
-        // $('#latest_tweet_link').attr('href', latest_tweet.link)
-        // var tweet_date = new Date(latest_tweet.created_at.split(',')[0])
-        // $('#latest_tweet_date').text(get_month(tweet_date.getMonth()) + " " + tweet_date.getDate())
-        
-        
+
         if(latest_fb_post.text.length > 100){
             $('#latest_fb').text(latest_fb_post.text.substr(0,100) + "...")
         } else {
             $('#latest_fb').text(latest_fb_post.text)
         }
+        
         $('#latest_fb_link').attr('href', latest_fb_post.link)
         var fb_date = moment(latest_fb_post.created_at.split(',')[0])
-        console.log(fb_date)
         $('#latest_fb_date').text(moment(fb_date).format("MMM DD"))
     }
 </script>
