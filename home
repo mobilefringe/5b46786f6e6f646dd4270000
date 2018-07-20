@@ -110,7 +110,8 @@
     });
     
     function render_social(){
-        var social_feed = getSocialFeed()
+        var social_feed = getSocialFeed();
+        console.log("Social ", social_feed)
         var latest_tweet = social_feed.twitter[0]
         var latest_fb_post = social_feed.facebook[0]
         if(latest_tweet.text.length > 100){
