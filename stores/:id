@@ -1,7 +1,7 @@
 <div id="store_container">
     <script id="store_template" type="x-tmpl-mustache/text">
         <div class="main_banner text-center">
-            <h3>{{name}}</h3>
+            <h2>{{name}}</h2>
             <p data-i18n="inside_page.header_tagline"></p>
         </div>
         <div class="main_container content_container">
