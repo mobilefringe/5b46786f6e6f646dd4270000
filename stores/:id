@@ -201,7 +201,6 @@
     		var store_x_coordinate = store_details.x_coordinate;
     		var store_y_coordinate = store_details.y_coordinate;
     		var pin_id = store_details.id; 
-    		console.log(store_x_coordinate)
     		var store_name = store_details.name;
     		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
         }
@@ -209,6 +208,7 @@
 		loadMallDataCached(renderAll); 
 		
 		function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
+		    console.log("x ", store_x_coordinate, "y ", store_y_coordinate, "pin ", pin_id, "store ", store_name)
 		var name = store_name;
 		var x_coordinate = store_x_coordinate;
 		var y_coordinate = store_y_coordinate;
