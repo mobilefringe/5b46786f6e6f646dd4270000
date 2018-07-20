@@ -1,0 +1,115 @@
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+
+<div class="main_banner text-center">
+    <h3 data-i18n="map.title"></h3>
+    <p data-i18n="inside_page.header_tagline"></p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-6">
+            <h5><a href="/stores" data-i18n="inside_page.stores"></a></h5>
+        </div>
+        <div class="col-md-6">
+            <h5 class="active_heading" data-i18n="inside_page.map"></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/stores" data-i18n="inside_page.stores"></option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="map">
+                    <div id="mapsvg_store_detail"></div>  
+                </div>
+            </div>
+            <div class="col-md-4 hidden_phone">
+                <a id="store_scroll_up" href="#" class="store_list_navigation" data-i18n="map.scroll_up"></a>
+                <a id="store_scroll_down" href="#" class="store_list_navigation" data-i18n="map.scroll_down"></a>
+                <p class="category_header" data-i18n="map.find_store"></p>
+                <div id="stores_container">
+                    <script id="stores_template" type="x-tmpl-mustache/text">
+                        <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
+                    </script>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderPageData(){
+            var banner_repo = getRepoDetailsByName("Map Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                }
+            }
+            
+            var stores = getStoresList();
+            regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                        val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                    } 
+                    obj = {};
+                    obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+                    obj["attr"] = {}
+                    // obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+            show_content();
+            var map = $('#mapsvg_store_detail').mapSvg({
+                source: getSVGMapURL(),
+                colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
+                disableAll: true,
+                regions: regions,
+                height:1700,
+                width:2300,
+                tooltipsMode:'custom',
+                zoom:true,
+                zoomButtons: {'show': true, 'location': 'left'},
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,5]
+            });
+            
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-value')
+                map_pin(id)
+            })
+            
+            function map_pin(value){
+                map.marksHide();
+                value = value.split('/')
+                if (value[0] != null){
+                    drop_pin(value[0], map);    
+                }
+            }
+        }
+        loadMallDataCached(renderPageData);
+    });
+    
+    
+    
+    
+    
+    
+</script>
