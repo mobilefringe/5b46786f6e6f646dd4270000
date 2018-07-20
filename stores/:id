@@ -12,11 +12,9 @@
                         <span class="soft_hidden_phone store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/stores"><span data-i18n="stores.back_btn"></span></a></span>
                         <div class="store_details_anchors pull-right">
                             <a id="promo_anchor" href="#promos_main" class="store_anchors active_heading">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1466179730000/promo_icon.png" class="" alt="promo icon">
                                 <span data-i18n="stores.store_promo"></span> (<span></span>)
                             </a>
                             <a id="job_anchor" href="#jobs_main" class="store_anchors active_heading">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1466179720000/jobs_icon.png" class="" alt="jobs icon">
                                 <span data-i18n="stores.store_job"></span> (<span></span>)
                             </a>
                         </div>
