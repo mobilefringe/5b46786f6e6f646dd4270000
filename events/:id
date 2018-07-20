@@ -35,9 +35,11 @@
                         <span data-i18n="inside_page.share"></span>
                         <a href="https://www.facebook.com/sharer.php?u=https://www.placebathurstmall.com/events/{{slug}}" target="_blank">
                             <i class="fa fa-facebook-square"></i>
+                            <p class="accessibility">Facebook</p>
                         </a>
                         <a href="https://twitter.com/intent/tweet?url=https://www.placebathurstmall.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
                             <i class="fa fa-twitter-square"></i>
+                            <p class="accessibility">Twitter</p>
                         </a>
                     </div>
                 </div>
@@ -47,9 +49,11 @@
                         <span data-i18n="inside_page.share"></span>
                         <a href="https://www.facebook.com/sharer.php?u=https://www.placebathurstmall.com/events/{{slug}}" target="_blank">
                             <i class="fa fa-facebook-square"></i>
+                            <p class="accessibility">Facebook</p>
                         </a>
                         <a href="https://twitter.com/intent/tweet?url=https://www.placebathurstmall.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
                             <i class="fa fa-twitter-square"></i>
+                            <p class="accessibility">Twitter</p>
                         </a>
                     </div>
                 </div>
