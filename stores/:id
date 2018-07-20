@@ -193,7 +193,7 @@
     			zoom_BUTTONS_SHOW : 'YES',
     			pan_BUTTONS_SHOW : 'NO',
     			pan_LIMIT_BOUNDARY : 'NO',
-    			button_SIZE: 34,
+    			button_SIZE: 24,
     			button_ALIGN: "top right",
     			zoom_OUT_TO_FIT: "NO",
     			container: 'zoom_container_store'
