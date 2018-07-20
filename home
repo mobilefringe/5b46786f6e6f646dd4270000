@@ -36,11 +36,9 @@
                     <span class="hidden-xs">
                         <a href="#" id="latest_fb_link" target="_blank">
                             <p id="latest_fb" class="latest_post"></p>
-                            <span id="latest_fb_date"></span>
                         </a>
+                        <p id="latest_fb_date" class="latest_post"></p>
                         <p>
-                            
-                            <br>
                             <a  class="social_link_blank" href="https://www.facebook.com/placebathurstmall" target="_blank">Facebook/PlaceBathurstMall</a>
                         </p>
                     </span>
