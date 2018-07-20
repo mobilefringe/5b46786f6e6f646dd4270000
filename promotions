@@ -60,7 +60,7 @@
                                 <div class="col-md-9">
                                     <h2 class="promo_list_name">{{name_2}}</h2>
                                     <p>
-                                        <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
+                                        <a href="{{store_slug}}" class="underline promo_store" style="{{store_show}}">{{store_name}}</a>
                                         <span class="promo_store" style="{{mall_show}}">{{store_name}}</span>
                                         <span class="hidden_phone"> | </span><span class="promo_dates">{{dates}}</span>
                                     </p>
