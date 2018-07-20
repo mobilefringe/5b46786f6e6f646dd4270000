@@ -1,5 +1,5 @@
 <div class="inside_banner text-center">
-    <h3 id="mm_page_title"></h3>
+    <h2 id="mm_page_title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="margin_20"></div>
