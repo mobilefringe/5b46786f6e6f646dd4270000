@@ -99,7 +99,6 @@
             </div>
             <div class="col-md-8 promo_item" id="jobs_main">
                 <h2 class="store_details_promo_heading">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="jobs_icon" alt="jobs icon">
                     <span data-i18n="stores.store_jobs"></span>
                 </h2>
                 <div id="jobs_container">
