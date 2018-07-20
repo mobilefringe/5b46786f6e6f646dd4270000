@@ -50,7 +50,7 @@
                                         <span class="promo_dates">End Date: {{end_date}}</span>
                                     </p>
                                     <div class="promo_list_desc hidden_phone">{{description_short}}</div>
-                                    <a class="read_more" href="/jobs/{{slug}}">View Job Details</a>
+                                    <a class="read_more" href="/jobs/{{slug}}">View Posting Details</a>
                                 </div>
                             </div>
                         </div>
