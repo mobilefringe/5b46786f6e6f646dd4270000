@@ -31,7 +31,7 @@
                         <p class="show_phone promo_store">{{store_name}}</p>
                         <div class="details_desc">{{{rich_description_2}}}</div>
                     </div>
-                    <div class="show_phone mobile_share_container">
+                    <div class="mobile_share_container">
                         <span data-i18n="inside_page.share"></span>
                         <a href="https://www.facebook.com/sharer.php?u=https://www.placebathurstmall.com/events/{{slug}}" target="_blank">
                             <i class="fa fa-facebook-square"></i>
