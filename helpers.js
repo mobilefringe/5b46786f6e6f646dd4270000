@@ -268,7 +268,7 @@ function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name
 	var mark = "mark_store_" + pin_id;
 
     // Remove existing landmark
-    $('#zoom_image').smoothZoom('removeLandmark');
+    // $('#zoom_image').smoothZoom('removeLandmark');
 
 	// Add new landmark
 	$('#zoom_image').smoothZoom('addLandmark', 
