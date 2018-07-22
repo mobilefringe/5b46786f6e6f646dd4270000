@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="details_desc">
-                            <img class="margin_20 img-responsive center-block" style="{{show_store_front}}" src="{{store_front_alt_url_abs}}" alt="{{name}} Store Front" />
+                            <img class="margin_20 img-responsive" style="{{show_store_front}}" src="{{store_front_alt_url_abs}}" alt="{{name}} Store Front" />
                             <div class="margin_20 primary-locale">{{{rich_description}}}</div>
                             <div class="margin_20 secondary-locale">{{{rich_description_2}}}</div>
                             <div class="map light_border">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img class="margin_20 store_logo" src="{{store_front_url_abs}}"/>
+                        <img class="margin_20 store_logo center-block" src="{{store_front_url_abs}}"/>
                         <div class="side_stores">
                             <a class="animated_btn newsletter_btn" href="tel:{{phone}}" style="{{phone_show}}">
                                 <span data-i18n="stores.store_phone"></span>: {{phone}}
