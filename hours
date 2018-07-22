@@ -47,7 +47,7 @@
                 <div id="holidays_hours_container" class="hours_container">
                     <script id="holidays_hours_template" type="x-tmpl-mustache/text">
                         <div class="hours_div">
-                            <span class="mobile_holiday">{{holiday_name}} ({{formatted_date}})</span>
+                            <span class="mobile_holiday_name">{{holiday_name}} ({{formatted_date}})</span>
                             <span>{{h}}</span>
                         </div>
                     </script>
