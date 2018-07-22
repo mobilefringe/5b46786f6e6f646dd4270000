@@ -30,7 +30,7 @@
                             <div class="margin_20 secondary-locale">{{{rich_description_2}}}</div>
                             <div class="map light_border">
                         	    <div class="zoom_container" id="zoom_container_store">
-                            		<img id="zoom_image" src=""/>
+                            		<img id="zoom_image" class="hidden_now" src=""/>
                             		<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
                             	</div>
                             	<div class="controls">
@@ -200,6 +200,7 @@
         		var pin_id = store_details.id; 
         		var store_name = store_details.name;
     		    add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+    		    $("#zoom_image").show();
     		}
         }
 		
