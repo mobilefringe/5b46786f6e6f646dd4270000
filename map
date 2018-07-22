@@ -89,7 +89,7 @@
     
                 // $('.show_pin').hide();
                 // $('.no_pin').show();
-                $('#show_pin_store_' + pin_id).show();
+                // $('#show_pin_store_' + pin_id).show();
                 // $('#no_pin_store_' + pin_id).hide();
                 
                 add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
