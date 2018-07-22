@@ -198,7 +198,9 @@
     		var store_y_coordinate = store_details.y_coordinate;
     		var pin_id = store_details.id; 
     		var store_name = store_details.name;
-    		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+    		if (store_x_coordinate != null && store_y_coordinate != null) {
+    		    add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+    		}
         }
 		
 		loadMallDataCached(renderAll); 
