@@ -23,16 +23,6 @@
 <div class="content_container main_container mobile_padding">
     <div class="margin_25_across">
         <div class="row">
-            <div class="col-md-8">
-                <div class="map">
-                    <div class="map light_border">
-        			    <div class="zoom_container" id="zoom_container_directory">
-            			    <img alt="Centre Map" id="zoom_image" src=""/>
-        				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true">
-        				</div>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-4 hidden_phone">
                 <a id="store_scroll_up" href="#" class="store_list_navigation" data-i18n="map.scroll_up"></a>
                 <a id="store_scroll_down" href="#" class="store_list_navigation" data-i18n="map.scroll_down"></a>
@@ -43,6 +33,16 @@
                     </script>
                 </div>
             </div> 
+            <div class="col-md-8">
+                <div class="map">
+                    <div class="map light_border">
+        			    <div class="zoom_container" id="zoom_container_directory">
+            			    <img alt="Centre Map" id="zoom_image" src=""/>
+        				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true">
+        				</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
