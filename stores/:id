@@ -177,7 +177,7 @@
             show_content();
             
             //MAP  
-            if (store_x_coordinate != null && store_y_coordinate != null) {
+            if (store_details.x_coordinate != null && store_details.y_coordinate != null) {
                 $("#zoom_image").attr("src", getPNGMapURL());
         		$('#zoom_image').smoothZoom({
         		    width: "100%",
