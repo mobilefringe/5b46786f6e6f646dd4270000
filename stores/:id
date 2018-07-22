@@ -66,10 +66,10 @@
                     <script id="promos_template" type="x-tmpl-mustache/text">
                         <div class="row promo_item">
                             <div class="primary-locale">
-                                <div class="col-md-5">
+                                <div class="col-md-6">
                                     <img class="promo_store_image" src="{{promo_image_url_abs}}" alt="{{name}}" />
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-6">
                                     <h2 class="promo_list_name">{{name}}</h2>
                                     <p>
                                         <span class="promo_dates">{{dates}}</span>
