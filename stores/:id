@@ -28,9 +28,9 @@
                             <img class="margin_20 img-responsive" style="{{show_store_front}}" src="{{store_front_alt_url_abs}}" alt="{{name}} Store Front" />
                             <div class="margin_20 primary-locale">{{{rich_description}}}</div>
                             <div class="margin_20 secondary-locale">{{{rich_description_2}}}</div>
-                            <div class="map light_border">
+                            <div class="map hidden_now">
                         	    <div class="zoom_container" id="zoom_container_store">
-                            		<img id="zoom_image" class="hidden_now" src=""/>
+                            		<img id="zoom_image" src=""/>
                             		<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
                             	</div>
                             	<div class="controls">
