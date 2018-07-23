@@ -40,7 +40,7 @@
                         <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
                         <script id="store_mobile_template">
                             
-                            <option value="{{map_data}}" data-i18n="inside_page.stores">{{name}}</option>    
+                            <option value="{{map_data}}">{{name}}</option>    
                         </script>
                     </select>
                 </div>
