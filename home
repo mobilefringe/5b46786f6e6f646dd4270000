@@ -64,7 +64,7 @@
                             <p class="hours_link" data-i18n="home.hours_link"></p>
                         </span>
                         <span class="visible-sm-block visible-xs-block">
-                            <h5 class="insta" data-i18n="home.hours"></h5>    
+                            <h5 class="insta caps" data-i18n="home.hours"></h5>    
                         </span>
                     </a>
                 </div>
