@@ -33,7 +33,7 @@
                 <div id="feature_5" class="position_relative"></div>
                 <div class="social_box text-center" id="social_fb">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
-                    <span class="hidden-sm">
+                    <span class="hidden-sm hidden-xs">
                         <a href="#" id="latest_fb_link" target="_blank">
                             <p id="latest_fb" class="latest_post"></p>
                         </a>
@@ -42,7 +42,7 @@
                             <a  class="social_link_blank" href="https://www.facebook.com/placebathurstmall" target="_blank">Facebook/PlaceBathurstMall</a>
                         </p>
                     </span>
-                    <span class="visible-sm-block">
+                    <span class="visible-sm-block visible-xs-block">
                         <a href="https://www.facebook.com/placebathurstmall" target="_blank">
                             <h5 class="insta">LIKE US ON FACEBOOK</h5>
                         </a>        
