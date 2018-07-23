@@ -34,6 +34,13 @@
                 </div>
             </div> 
             <div class="col-md-8">
+                <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
+                <select id="store_mobile_conatiner" class="link_selector">
+                    <script id="store_mobile_template">
+                        <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
+                        <option value="/stores" data-i18n="inside_page.stores"></option>    
+                    </script>
+                </select>
                 <div class="map">
     			    <div class="zoom_container" id="zoom_container_directory">
         			    <img alt="Centre Map" id="zoom_image" src=""/>
