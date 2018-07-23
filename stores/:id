@@ -99,13 +99,25 @@
                 <div id="jobs_container">
                     <script id="jobs_template" type="x-tmpl-mustache/text">
                         <div class="row promo_item" data-cat="{{cat_list}}">
-                            <div class="col-md-12">
-                                <h2 class="promo_list_name">{{name}}</h2>
-                                <p>
-                                    <span class="promo_dates">{{job_type}}</span>
-                                </p>
-                                <div class="promo_list_desc">{{description_short}}</div>
-                                <a class="read_more" href="/jobs/{{slug}}">Read More</a>
+                            <div class="primary-locale">
+                                <div class="col-md-12">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_dates">{{job_type}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/jobs/{{slug}}">Read More</a>
+                                </div>
+                            </div>
+                            <div class="secondary-locale">
+                                <div class="col-md-12">
+                                    <h2 class="promo_list_name">{{name}}</h2>
+                                    <p>
+                                        <span class="promo_dates">{{job_type}}</span>
+                                    </p>
+                                    <div class="promo_list_desc">{{description_short}}</div>
+                                    <a class="read_more" href="/jobs/{{slug}}">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </script>
