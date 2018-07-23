@@ -113,8 +113,9 @@
             // 		var store_y_coordinate = $(this).attr('store_y_coordinate');
                 }
 
-                add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+                // add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
             });
+            
             show_content();
         }
         
