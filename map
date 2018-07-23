@@ -102,7 +102,7 @@
             $("#store_mobile_conatiner").change(function(e) {
                e.preventDefault();
                
-               console.log($(this));
+               console.log($(this).[0].selectedOptions);
             });
             show_content();
         }
