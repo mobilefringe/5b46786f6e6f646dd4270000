@@ -75,7 +75,8 @@
 	    "title": "Carte du Centre",
 	    "find_store": "Trouver un magasin",
 	    "scroll_up": "faire remonter",
-	    "scroll_down": "faire descendre"
+	    "scroll_down": "faire descendre",
+	    "select": "French"
 	},
 	"news": {
 	    "title": "Nouvelles",
