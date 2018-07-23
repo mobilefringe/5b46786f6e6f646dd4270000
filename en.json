@@ -75,7 +75,8 @@
 	    "title": "Centre Map",
 	    "find_store": "Find A Store",
 	    "scroll_up": "Scroll Up",
-	    "scroll_down": "Scroll Down"
+	    "scroll_down": "Scroll Down",
+	    "select": "Select a Store"
 	},
 	"news": {
 	    "title": "News",
