@@ -94,11 +94,11 @@
             </div>
             <div class="col-md-8 promo_item" id="jobs_main">
                 <h2 class="store_details_promo_heading">
-                    <span data-i18n="stores.store_jobs"></span>
+                    <span data-i18n="stores.store_job"></span>
                 </h2>
                 <div id="jobs_container">
                     <script id="jobs_template" type="x-tmpl-mustache/text">
-                        <div class="row promo_item" data-cat="{{cat_list}}">
+                        <div class="row promo_item">
                             <div class="primary-locale">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
