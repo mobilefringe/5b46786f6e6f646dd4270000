@@ -37,9 +37,7 @@
                 <div class="map_mobile_selection">
                     <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
                     <select id="store_mobile_conatiner">
-                        <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
                         <script id="store_mobile_template">
-                            
                             <option value="{{map_data}}">{{name}}</option>    
                         </script>
                     </select>
@@ -70,6 +68,8 @@
             var stores = getStoresList();
             renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
             renderStoreList('#store_mobile_conatiner','#store_mobile_template', stores, "A", "Z");
+            
+            $("#store_mobile_conatiner").prepend('<option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>')
             
             $("#zoom_image").attr("src", getPNGMapURL());
     		$('#zoom_image').smoothZoom({
