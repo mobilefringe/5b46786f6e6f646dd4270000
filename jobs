@@ -70,7 +70,7 @@
                                         <span class="promo_dates">Date de fin: {{end_date}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{{description_short_2}}}</div>
-                                    <a class="read_more" href="/jobs/{{slug}}">Détails du poste <i class="fa fa-angle-right"></i></a>
+                                    <a class="newsletter_btn animated_btn" href="/jobs/{{slug}}">Détails du poste <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
