@@ -168,7 +168,9 @@
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="Open Menu">
                 </div>
                 <div class="col-xs-12 show_phone home_hours_phone">
-                    <p class="hours_home"><span class="hours_dot"></span> Today's Hours: 
+                    <p class="hours_home">
+                        <span class="hours_dot"></span>
+                        <span data-i18n="header.todays_hours"></span>
                         <span id="home_hours_container3">
                             <script id="home_hours_template3" type="x-tmpl-mustache/text">
                                 <span class="hours_today">{%raw%}{{h}}{%endraw%}</span>
