@@ -35,7 +35,7 @@
             </div> 
             <div class="col-md-8">
                 <div class="map_mobile_selection">
-                    <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
+                    <label class="accessibility" for="store_mobile_conatiner" data-i18n="map.select"></label>
                     <select id="store_mobile_conatiner">
                         <script id="store_mobile_template">
                             <option store_id="{{id}}" store_name="{{name}}" x_coordinate="{{x_coordinate}}" y_coordinate="{{y_coordinate}}">{{name}}</option>    
