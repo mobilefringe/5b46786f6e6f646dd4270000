@@ -36,7 +36,7 @@
             <div class="col-md-8">
                 <div class="map_mobile_selection">
                     <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
-                    <select id="store_mobile_conatiner" class="link_selector">
+                    <select id="store_mobile_conatiner">
                         <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
                         <script id="store_mobile_template">
                             
