@@ -261,7 +261,6 @@ function getDay(day_of_week){
 }
 
 function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
-    console.log("x ", store_x_coordinate, "y ", store_y_coordinate, "pin ", pin_id, "store ", store_name)
 	var name = store_name;
 	var x_coordinate = store_x_coordinate;
 	var y_coordinate = store_y_coordinate;
