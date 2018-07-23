@@ -38,7 +38,7 @@
                 <select id="store_mobile_conatiner" class="link_selector">
                     <script id="store_mobile_template">
                         <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
-                        <option value="/stores" data-i18n="inside_page.stores"></option>    
+                        <option value="{{map_data}}" data-i18n="inside_page.stores">{{name}}</option>    
                     </script>
                 </select>
                 <div class="map">
