@@ -134,6 +134,7 @@ function show_content(){
             $('body').removeClass( "no_scroll" );
         }
     );
+    var scrolled = 0;
     
     $('#store_scroll_down').click(function(e){
         e.preventDefault();
