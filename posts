@@ -91,7 +91,7 @@
             
             var blog = getBlogDataBySlug("placebathurst-news").posts
             var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
-            consoel.log(posts)
+            console.log(posts)
             renderPosts('#post_container', '#post_template', posts);
 
             show_content();
