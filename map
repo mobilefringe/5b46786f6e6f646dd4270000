@@ -101,19 +101,15 @@
             
             $("#store_mobile_conatiner").change(function(e) {
                 e.preventDefault();
-                console.log($(this)[0].selectedOptions[0].attributes);
                 var selected = $(this)[0].selectedOptions[0].attributes
                 if (selected != null) {
-           
                     var pin_id = selected[0].value;
-                    console.log(pin_id)
                     var store_name = selected[1].value;
-                    console.log(store_name)
                     var store_x_coordinate = selected[2].value;
             		var store_y_coordinate = selected[3].value;
+            		
+            		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
                 }
-
-                add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
             });
             
             show_content();
