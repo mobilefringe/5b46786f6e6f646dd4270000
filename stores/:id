@@ -76,10 +76,10 @@
                                 </div>
                             </div>
                             <div class="secondary-locale">
-                                <div class="col-md-5">
+                                <div class="col-md-4">
                                     <img class="promo_store_image" src="{{promo_image_url_abs}}" alt="{{name_2}}" />
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <h2 class="promo_list_name">{{name_2}}</h2>
                                     <p>
                                         <span class="promo_dates">{{dates}}</span>
