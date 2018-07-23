@@ -23,6 +23,7 @@ function init(e){
     if(Cookies.get('current_locale') == "en-CA"){
         $("#set_lang_fr").css({fontWeight: "normal"});
         $("#set_lang_en").css({fontWeight: "bold"});               
+        $("#set_lang_en_m").css({fontWeight: "bold"}); 
     }
     if(Cookies.get('current_locale') == "fr-CA"){
         $("#set_lang_en").css({fontWeight: "normal"});
