@@ -37,8 +37,9 @@
                 <div class="map_mobile_selection">
                     <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
                     <select id="store_mobile_conatiner" class="link_selector">
+                        <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
                         <script id="store_mobile_template">
-                            <option value="" disabled selected data-i18n="map.select_a_store">Select a Store</option>
+                            
                             <option value="{{map_data}}" data-i18n="inside_page.stores">{{name}}</option>    
                         </script>
                     </select>
