@@ -38,7 +38,7 @@
                     <label class="accessibility" for="store_mobile_conatiner">Select a Store</label>
                     <select id="store_mobile_conatiner">
                         <script id="store_mobile_template">
-                            <option value="{{map_data}}">{{name}}</option>    
+                            <option store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</option>    
                         </script>
                     </select>
                 </div>
