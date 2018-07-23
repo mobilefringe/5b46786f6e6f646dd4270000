@@ -99,6 +99,10 @@
                 add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
             });
             
+            $("#store_mobile_conatiner").change(function(e) {
+               e.preventDeafult();
+               console.log($(this));
+            });
             show_content();
         }
         
