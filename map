@@ -100,7 +100,7 @@
             });
             
             $("#store_mobile_conatiner").change(function(e) {
-               e.preventDeafult();
+               e.preventDefault();
                
                console.log($(this));
             });
