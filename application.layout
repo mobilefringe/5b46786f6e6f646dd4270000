@@ -142,8 +142,8 @@
             <div class="row header mobile_margin">
                 <div class="col-md-4 col-xs-4">
                     <div class="language_toggle_mobile">
-      					<a href="?locale=en" id="set_lang_en">EN</a> |
-      					<a href="?locale=fr" id="set_lang_fr">FR</a>
+      					<a href="?locale=en" id="set_lang_en_m">EN</a> |
+      					<a href="?locale=fr" id="set_lang_fr_m">FR</a>
 					</div>
                     <p class="hours_home hidden_phone"><span class="hours_dot"></span> 
                         <span data-i18n="header.todays_hours"></span>
