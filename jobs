@@ -85,7 +85,12 @@
         </div>
     </div>
 </div>
-
+<style>
+    .newsletter_btn {
+        margin-top: 20px;
+        padding: 14px 20px 18px  20px;
+    }
+</style>
 <script>
     $(document).ready(function(e){
         init(e);
