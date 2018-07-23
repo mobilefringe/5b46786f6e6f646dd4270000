@@ -53,7 +53,7 @@
             <div class="feature_item">
                 <div class="social">
                     <a href="/hours" class="social_box text-center hours_box" id="hours_box">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours" />
                         <span class="hidden-sm hidden-xs">
                             <div id="home_hours_container2" class="home_feature_hours">
                                 <script id="home_hours_template2" type="x-tmpl-mustache/text">
@@ -64,9 +64,7 @@
                             <p class="hours_link" data-i18n="home.hours_link"></p>
                         </span>
                         <span class="visible-sm-block visible-xs-block">
-                            <a href="/hours">
-                                <h5 data-i18n="home.hours"></h5>    
-                            </a>
+                            <h5 data-i18n="home.hours"></h5>    
                         </span>
                     </a>
                 </div>
