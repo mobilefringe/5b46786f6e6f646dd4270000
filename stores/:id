@@ -33,9 +33,6 @@
                             		<img id="zoom_image" src=""/>
                             		<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
                             	</div>
-                            	<div class="controls">
-                        	        <a id="anchor_id"><div style="color:#FFFFFF"></div></a>	
-                            	</div>
                             </div>
                         </div>
                     </div>
