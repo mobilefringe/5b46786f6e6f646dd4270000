@@ -228,19 +228,20 @@
                     <div class="row footer_site_map">
                         <div class="col-md-6 col-xs-6">
                             <ul>
-                                <li><a href="/stores">Directory</a></li>
-                                <li><a href="/map">Centre Map</a></li>
-                                <li class="news_link"><a href="/news">The Latest</a></li>
-                                <li><a href="/promotions">Promotions</a></li>
-                                <li><a href="/events">Events</a></li>
+                                <li><a href="/stores"></a></li>
+                                <li><a href="/posts"></a></li>
+                                <li><a href="/events"></a></li>
+                                <li><a href="/promotions"></a></li>
+                                <li><a href="/jobs"></a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-xs-6">
                             <ul>
-                                <li><a href="/services">Mall Services</a></li>
-                                <li><a href="/hours">Shopping Hours</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
-                                <li><a href="/jobs">Jobs</a></li>
+                                <li><a href="/hours"></a></li>
+                                <li><a href="/about-us"></a></li>
+                                <li><a href="/directions-and-parking"></a></li>
+                                <li><a href="/guest-services"></a></li>
+                                <li><a href="/leasing"></a></li>
                             </ul>
                         </div>
                     </div>
