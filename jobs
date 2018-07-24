@@ -50,7 +50,7 @@
                                         <span class="promo_dates">End Date: {{end_date}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="newsletter_btn animated_btn" href="/jobs/{{slug}}">View Posting Details <i class="fa fa-angle-right"></i></a>
+                                    <a class="newsletter_btn animated_btn inside_btn" href="/jobs/{{slug}}">View Posting Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
 <style>
     .newsletter_btn {
         margin-top: 20px;
-        padding: 14px 20px 18px 20px;
+        padding: 4px 20px;
         width: auto;
     }
 </style>
