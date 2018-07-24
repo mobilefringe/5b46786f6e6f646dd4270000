@@ -239,7 +239,7 @@
                             <ul>
                                 <li><a href="/hours" data-i18n="nav.subnav.hours"></a></li>
                                 <li><a href="/about-us" data-i18n="nav.subnav.about"></a></li>
-                                <li><a href="/directions-and-parking" data-i18n="nav.subnav.directions"></a></li>
+                                <li><a href="/directions-and-parking" data-i18n="inside_page.directions"></a></li>
                                 <li><a href="/guest-services" data-i18n="nav.subnav.guest_services"></a></li>
                                 <li><a href="/leasing" data-i18n="nav.leasing"></a></li>
                             </ul>
