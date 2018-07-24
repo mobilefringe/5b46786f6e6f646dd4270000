@@ -228,11 +228,11 @@
                     <div class="row footer_site_map">
                         <div class="col-md-6 col-xs-6">
                             <ul>
-                                <li><a href="/stores"></a></li>
-                                <li><a href="/posts"></a></li>
-                                <li><a href="/events"></a></li>
-                                <li><a href="/promotions"></a></li>
-                                <li><a href="/jobs"></a></li>
+                                <li><a href="/stores" data-i18n="nav.subnav.stores"></a></li>
+                                <li><a href="/posts" data-i18n="nav.subnav.news"></a></li>
+                                <li><a href="/events" data-i18n="nav.subnav.events"></a></li>
+                                <li><a href="/promotions" data-i18n="nav.subnav.promos"></a></li>
+                                <li><a href="/jobs" data-i18n="nav.subnav.careers"></a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-xs-6">
