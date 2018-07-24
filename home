@@ -38,7 +38,7 @@
                             <p id="latest_fb" class="latest_post"></p>
                         </a>
                         <p id="latest_fb_date" class="latest_post"></p>
-                        <p>
+                        <p id="fb_link">
                             <a  class="social_link_blank" href="https://www.facebook.com/placebathurstmall" target="_blank">Facebook/PlaceBathurstMall</a>
                         </p>
                     </span>
