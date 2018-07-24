@@ -48,7 +48,9 @@
                                         <span class="hidden_phone"> | </span><span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short}}</div>
-                                    <a class="read_more" href="/promotions/{{slug}}">View Deals Details <i class="fa fa-angle-right"></i></a>
+                                    <a class="newsletter_btn animated_btn inside_btn" href="/promotions/{{slug}}">
+                                        View Deals Details <i class="fa fa-angle-right"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="secondary-locale">
@@ -65,7 +67,9 @@
                                         <span class="hidden_phone"> | </span><span class="promo_dates">{{dates}}</span>
                                     </p>
                                     <div class="promo_list_desc">{{description_short_2}}</div>
-                                    <a class="read_more" href="/promotions/{{slug}}">Voir les détails de la promotion <i class="fa fa-angle-right"></i></a>
+                                    <a class="newsletter_btn animated_btn inside_btn" href="/promotions/{{slug}}">
+                                        Voir les détails de la promotion <i class="fa fa-angle-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
