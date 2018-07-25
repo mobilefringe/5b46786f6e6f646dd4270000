@@ -4,14 +4,14 @@
 	    "check_hours": "Horaire des jours fériés"
 	},
 	"footer": {
-	    "newsletter_title": "Abonnez-vous pour recevoir nos mises à jour",
-	    "newsletter_tagline": "FRENCH TAGLINE",
+	    "newsletter_title": "Abonnez-vous pour recevoir nos nouveautés",
+	    "newsletter_tagline": "Mode • Événements • Soldes",
 	    "newsletter_submit": "S'inscrire",
-	    "social_title": "Des médias sociauxl",
-	    "social_subtitle": "Suivez-nous sur les médias sociaux pour les nouvelles et les activités.",
+	    "social_title": "Médias sociaux",
+	    "social_subtitle": "Suivez-nous sur les médias sociaux pour nos nouvelles OU actualités et activités.",
 	    "site_map": "Carte du site",
-	    "power": "Alimenté par",
-	    "contact": "Centre de service à la clientèle"
+	    "power": "Développé par",
+	    "contact": "Centre de services à la clientèle"
 	},
 	"nav": {
 	    "menu": "Menu",
