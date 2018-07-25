@@ -15,15 +15,15 @@
 	},
 	"nav": {
 	    "menu": "Menu",
-		"stores": "Directory",
-		"news": "News & Events",
+		"stores": "Répertoire",
+		"news": "Actualités & événements",
 		"services": "Services",
-		"about": "About",
+		"about": "À Propos",
 		"leasing": "Leasing",
 		"subnav": {
-			"directory": "Stores",
-	        "map": "Centre Map",
-	        "news": "News",
+			"directory": "Points de vente",
+	        "map": "Carte",
+	        "news": "Actualités",
 			"events": "Events",
 		    "promos": "Deals",
 		    "careers": "Careers",
@@ -31,7 +31,7 @@
 		    "gift_cards": "Gift Cards",
 		    "contact": "Contact Us",
 			"hours": "Hours",
-			"about": "About Us",
+			"about": "À Propos",
 			"directions": "Directions & Parking"
 		}
 	},
@@ -43,8 +43,8 @@
 	"inside_page": {
 	    "header_tagline": "EXPLORE • ENJOY • SHOP",
 	    "mobile_menu": "Tap For More Options",
-	    "stores": "Stores",
-	    "map": "Centre Map",
+	    "stores": "Points de vente",
+	    "map": "Carte",
 	    "news": "News",
 	    "events": "Events",
 	    "deals": "Deals",
@@ -59,7 +59,7 @@
 	    "share": "Share: "
 	},
 	"stores": {
-	    "title": "Stores",
+	    "title": "Points de vente",
 	    "new_stores": "New Stores",
 	    "coming_soon": "Coming Soon",
 	    "category": "Categories",
@@ -72,14 +72,14 @@
 	    "store_website": "Website"
 	},
 	"map": {
-	    "title": "Centre Map",
+	    "title": "Carte",
 	    "find_store": "Find A Store",
 	    "scroll_up": "Scroll Up",
 	    "scroll_down": "Scroll Down",
 	    "select": "Select a Store"
 	},
 	"news": {
-	    "title": "News",
+	    "title": "Actualités",
 	    "return": "Return to News",
 	    "posted": "Posted On:"
 	},
