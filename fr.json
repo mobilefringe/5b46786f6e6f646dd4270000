@@ -19,41 +19,41 @@
 		"news": "Actualités & événements",
 		"services": "Services",
 		"about": "À Propos",
-		"leasing": "Leasing",
+		"leasing": "Location",
 		"subnav": {
 			"directory": "Points de vente",
-	        "map": "Carte",
+	        "map": "Plan du centre",
 	        "news": "Actualités",
-			"events": "Events",
-		    "promos": "Deals",
-		    "careers": "Careers",
-		    "guest_services": "Guest Services",
-		    "gift_cards": "Gift Cards",
-		    "contact": "Contact Us",
-			"hours": "Hours",
+			"events": "Événements",
+		    "promos": "Aubaines",
+		    "careers": "Carrières",
+		    "guest_services": "Services à la clientèle",
+		    "gift_cards": "Chèques-cadeaux",
+		    "contact": "Nous joindre",
+			"hours": "Heures",
 			"about": "À Propos",
-			"directions": "Directions & Parking"
+			"directions": "Directions et stationnement"
 		}
 	},
 	"home": {
-		"insta": "Follow Us On Instagram",
-		"hours": "Shopping Hours",
-		"hours_link": "See More Hours"
+		"insta": "Suivez-nous sur Instagram",
+		"hours": "Heures d'ouverture",
+		"hours_link": "Voir plus d’heures"
 	},
 	"inside_page": {
 	    "header_tagline": "EXPLORE • ENJOY • SHOP",
-	    "mobile_menu": "Tap For More Options",
+	    "mobile_menu": "Cliquez pour avoir plus d’options",
 	    "stores": "Points de vente",
-	    "map": "Carte",
-	    "news": "News",
-	    "events": "Events",
-	    "deals": "Deals",
-	    "careers": "Careers",
-	    "guest_services": "Guest Services",
-	    "gift_cards": "Gift Cards",
-	    "contact": "Contact Us",
-	    "hours": "Hours",
-	    "about": "About Us",
+	    "map": "Plan du centre",
+	    "news": "Actualités",
+	    "events": "Événements",
+	    "deals": "Aubaines",
+	    "careers": "Carrières",
+	    "guest_services": "Services à la clientèle",
+	    "gift_cards": "Chèques-cadeaux",
+	    "contact": "Nous joindre",
+	    "hours": "Heures",
+	    "about": "À Propos",
 	    "directions": "Directions",
 	    "leasing": "Leasing",
 	    "share": "Share: "
@@ -66,13 +66,13 @@
 	    "categories_all": "All",
 	    "back_btn": "Back to Stores",
 	    "store_promo": "Promotions",
-	    "store_job": "Careers",
+	    "store_job": "Carrières",
 	    "store_details": "Visit Store Details",
 	    "store_phone": "Phone",
 	    "store_website": "Website"
 	},
 	"map": {
-	    "title": "Carte",
+	    "title": "Plan du centre",
 	    "find_store": "Find A Store",
 	    "scroll_up": "Scroll Up",
 	    "scroll_down": "Scroll Down",
@@ -84,28 +84,28 @@
 	    "posted": "Posted On:"
 	},
 	"events": {
-	    "title": "Events",
+	    "title": "Événements",
 	    "no_events": "There are no Events scheduled at this time. Please check back soon!",
 	    "return": "Return to Events"
 	},
 	"promos": {
-	    "title": "Deals",
+	    "title": "Aubaines",
 	    "no_deals": "There are no Deals scheduled at this time. Please check back soon!",
 	    "return": "Return to Deals"        
 	},
 	"jobs": {
-	    "title": "Careers",
+	    "title": "Carrières",
 	    "no_jobs": "There are no Job postings at this time. Please check back soon!",
 	    "return": "Return to Careers"    
 	},
 	"hours": {
-	    "title": "Centre Hours",
+	    "title": "Centre Directions et stationnement",
 	    "regular_hours": "Regular Hours",
 	    "reduced_hours": "Reduced Hours of Operation",
 	    "closed_hours": "Holiday Closures"
 	},
     "directions": {
-        "title": "Directions & Parking"    
+        "title": "Directions et stationnement"    
     },
     "newsletter": {
         "title": "Newsletter",
