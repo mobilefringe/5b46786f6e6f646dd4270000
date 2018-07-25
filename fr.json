@@ -15,15 +15,15 @@
 	},
 	"nav": {
 	    "menu": "Menu",
-		"stores": "Le Directoire",
-		"news": "Nouvelles et événements",
-		"services": "les services",
-		"about": "À propos de nous",
+		"stores": "Répertoire",
+		"news": "Actualités & événements",
+		"services": "Sevicess",
+		"about": "À Propos",
 		"leasing": "Location",
 		"subnav": {
-			"directory": "Magasins",
-	        "map": "Carte du Centre",
-	        "news": "Nouvelles",
+			"directory": "Points de vente",
+	        "map": "Carte",
+	        "news": "Actualités",
 			"events": "Événements",
 		    "promos": "Offres",
 		    "careers": "Carrières",
@@ -43,9 +43,9 @@
 	"inside_page": {
 	    "header_tagline": "FRENCH TAGLINE",
 	    "mobile_menu": "Appuyez sur pour plus d'options",
-	    "stores": "Magasins",
+	    "stores": "Points de vente",
 	    "map": "Carte du Centre",
-	    "news": "Nouvelles",
+	    "news": "Actualités",
 	    "events": "Événements",
 	    "deals": "Offres",
 	    "careers": "Carrières",
@@ -79,7 +79,7 @@
 	    "select": "French"
 	},
 	"news": {
-	    "title": "Nouvelles",
+	    "title": "Actualités",
 	    "return": "Retour aux nouvelles",
 	    "posted": "Posté sur:"
 	},
