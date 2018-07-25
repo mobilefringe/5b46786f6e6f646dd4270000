@@ -1,7 +1,7 @@
 {
 	"header": {
-	    "todays_hours": "Heures d'aujourd'hui",
-	    "check_hours": "Voir les heures de vacances"
+	    "todays_hours": "Heures",
+	    "check_hours": "Horaire des jours fériés"
 	},
 	"footer": {
 	    "newsletter_title": "Abonnez-vous pour recevoir nos mises à jour",
