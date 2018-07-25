@@ -6,114 +6,114 @@
 	"footer": {
 	    "newsletter_title": "Abonnez-vous pour recevoir nos nouveautés",
 	    "newsletter_tagline": "Mode • Événements • Soldes",
-	    "newsletter_submit": "S'inscrire",
+	    "newsletter_submit": "S’inscrire",
 	    "social_title": "Médias sociaux",
-	    "social_subtitle": "Suivez-nous sur les médias sociaux pour nos nouvelles OU actualités et activités.",
+	    "social_subtitle": "Suivez-nous sur les médias sociaux pour nos nouvelles.",
 	    "site_map": "Carte du site",
 	    "power": "Développé par",
 	    "contact": "Centre de services à la clientèle"
 	},
 	"nav": {
 	    "menu": "Menu",
-		"stores": "Répertoire",
-		"news": "Actualités & événements",
-		"services": "Sevicess",
-		"about": "À Propos",
-		"leasing": "Location",
+		"stores": "Directory",
+		"news": "News & Events",
+		"services": "Services",
+		"about": "About",
+		"leasing": "Leasing",
 		"subnav": {
-			"directory": "Points de vente",
-	        "map": "Carte",
-	        "news": "Actualités",
-			"events": "Événements",
-		    "promos": "Offres",
-		    "careers": "Carrières",
-		    "guest_services": "Services à la clientèle",
-		    "gift_cards": "Cartes cadeaux",
-		    "contact": "Contactez nous",
-			"hours": "Heures",
-			"about": "À propos de nous",
-			"directions": "Directions et stationnement"
+			"directory": "Stores",
+	        "map": "Centre Map",
+	        "news": "News",
+			"events": "Events",
+		    "promos": "Deals",
+		    "careers": "Careers",
+		    "guest_services": "Guest Services",
+		    "gift_cards": "Gift Cards",
+		    "contact": "Contact Us",
+			"hours": "Hours",
+			"about": "About Us",
+			"directions": "Directions & Parking"
 		}
 	},
 	"home": {
-		"insta": "Suis nous sur instagram",
-		"hours": "Heures de magasinage",
-		"hours_link": "Voir plus d'heures"
+		"insta": "Follow Us On Instagram",
+		"hours": "Shopping Hours",
+		"hours_link": "See More Hours"
 	},
 	"inside_page": {
-	    "header_tagline": "FRENCH TAGLINE",
-	    "mobile_menu": "Appuyez sur pour plus d'options",
-	    "stores": "Points de vente",
-	    "map": "Carte du Centre",
-	    "news": "Actualités",
-	    "events": "Événements",
-	    "deals": "Offres",
-	    "careers": "Carrières",
-	    "guest_services": "Services à la clientèle",
-	    "gift_cards": "Cartes cadeaux",
-	    "contact": "Contactez nous",
-	    "hours": "Heures",
-	    "about": "À propos de nous",
+	    "header_tagline": "EXPLORE • ENJOY • SHOP",
+	    "mobile_menu": "Tap For More Options",
+	    "stores": "Stores",
+	    "map": "Centre Map",
+	    "news": "News",
+	    "events": "Events",
+	    "deals": "Deals",
+	    "careers": "Careers",
+	    "guest_services": "Guest Services",
+	    "gift_cards": "Gift Cards",
+	    "contact": "Contact Us",
+	    "hours": "Hours",
+	    "about": "About Us",
 	    "directions": "Directions",
-	    "leasing": "Location",
+	    "leasing": "Leasing",
 	    "share": "Share: "
 	},
 	"stores": {
-	    "title": "Magasins",
-	    "new_stores": "Nouveaux magasins",
-	    "coming_soon": "Arrive bientôt",
-	    "category": "Catégories",
-	    "categories_all": "Toute",
-	    "back_btn": "Retour aux magasins",
-	    "store_promo": "les Soldes",
-	    "store_job": "Carrières",
-	    "store_details": "Store Details",
+	    "title": "Stores",
+	    "new_stores": "New Stores",
+	    "coming_soon": "Coming Soon",
+	    "category": "Categories",
+	    "categories_all": "All",
+	    "back_btn": "Back to Stores",
+	    "store_promo": "Promotions",
+	    "store_job": "Careers",
+	    "store_details": "Visit Store Details",
 	    "store_phone": "Phone",
 	    "store_website": "Website"
 	},
 	"map": {
-	    "title": "Carte du Centre",
-	    "find_store": "Trouver un magasin",
-	    "scroll_up": "faire remonter",
-	    "scroll_down": "faire descendre",
-	    "select": "French"
+	    "title": "Centre Map",
+	    "find_store": "Find A Store",
+	    "scroll_up": "Scroll Up",
+	    "scroll_down": "Scroll Down",
+	    "select": "Select a Store"
 	},
 	"news": {
-	    "title": "Actualités",
-	    "return": "Retour aux nouvelles",
-	    "posted": "Posté sur:"
+	    "title": "News",
+	    "return": "Return to News",
+	    "posted": "Posted On:"
 	},
 	"events": {
-	    "title": "Événements",
-	    "no_events": "Il n'y a pas d'évènements prévus pour le moment. S'il vous plaît revenez bientôt!",
-	    "return": "Retourner aux événements"
+	    "title": "Events",
+	    "no_events": "There are no Events scheduled at this time. Please check back soon!",
+	    "return": "Return to Events"
 	},
 	"promos": {
-	    "title": "Offres",
-	    "no_jobs": "Il n'y a pas d'offres planifiées pour le moment. S'il vous plaît revenez bientôt!",
-	    "return": "Retour aux offres"        
+	    "title": "Deals",
+	    "no_deals": "There are no Deals scheduled at this time. Please check back soon!",
+	    "return": "Return to Deals"        
 	},
 	"jobs": {
-	    "title": "Carrières",
-	    "no_jobs": "Il n'y a pas d'offres d'emploi en ce moment. S'il vous plaît revenez bientôt!",
-	    "return": "Retour aux carrières"    
+	    "title": "Careers",
+	    "no_jobs": "There are no Job postings at this time. Please check back soon!",
+	    "return": "Return to Careers"    
 	},
 	"hours": {
-	    "title": "Heures du Centre",
-	    "regular_hours": "Heures régulières",
-	    "reduced_hours": "Heures d'ouverture réduites",
-	    "closed_hours": "Fermetures de vacances"
+	    "title": "Centre Hours",
+	    "regular_hours": "Regular Hours",
+	    "reduced_hours": "Reduced Hours of Operation",
+	    "closed_hours": "Holiday Closures"
 	},
     "directions": {
-        "title": "Directions et stationnement"    
+        "title": "Directions & Parking"    
     },
     "newsletter": {
-        "title": "Bulletin",
-        "name": "Nom",
+        "title": "Newsletter",
+        "name": "Name",
         "email": "Email",
-        "agree": "J'accepte de recevoir des communications de Place Bathurst Mall.",
-        "subscribe": "Signer",
-        "thank_you": "Merci!",
-        "message": "Votre abonnement a été confirmé. Vous avez été ajouté à notre liste et nous entendrons bientôt."
+        "agree": "I agree to receive communications from Place Bathurst.",
+        "subscribe": "Subscribe",
+        "thank_you": "Thank you!",
+        "message": "Your subscription has been confirmed. You've been added to our list and will hear from us soon."
     }
 }
