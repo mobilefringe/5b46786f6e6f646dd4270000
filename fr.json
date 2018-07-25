@@ -55,33 +55,33 @@
 	    "hours": "Heures",
 	    "about": "À Propos",
 	    "directions": "Directions",
-	    "leasing": "Leasing",
-	    "share": "Share: "
+	    "leasing": "Location",
+	    "share": "Partager: "
 	},
 	"stores": {
 	    "title": "Points de vente",
-	    "new_stores": "New Stores",
-	    "coming_soon": "Coming Soon",
-	    "category": "Categories",
-	    "categories_all": "All",
-	    "back_btn": "Back to Stores",
-	    "store_promo": "Promotions",
+	    "new_stores": "Nouveaux  points de vente",
+	    "coming_soon": "À venir",
+	    "category": "Catégories",
+	    "categories_all": "Tout",
+	    "back_btn": "Retourner aux points de vente",
+	    "store_promo": "Aubaines",
 	    "store_job": "Carrières",
-	    "store_details": "Visit Store Details",
-	    "store_phone": "Phone",
-	    "store_website": "Website"
+	    "store_details": "View Store Details",
+	    "store_phone": "Téléphone",
+	    "store_website": "Site Internet"
 	},
 	"map": {
 	    "title": "Plan du centre",
-	    "find_store": "Find A Store",
-	    "scroll_up": "Scroll Up",
-	    "scroll_down": "Scroll Down",
+	    "find_store": "Trouver un point de vente",
+	    "scroll_up": "Défilez vers le haut",
+	    "scroll_down": "Défilez vers le bas",
 	    "select": "Select a Store"
 	},
 	"news": {
 	    "title": "Actualités",
-	    "return": "Return to News",
-	    "posted": "Posted On:"
+	    "return": "Retourner aux actualités",
+	    "posted": "Publié le:"
 	},
 	"events": {
 	    "title": "Événements",
