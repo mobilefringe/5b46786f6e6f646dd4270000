@@ -85,35 +85,35 @@
 	},
 	"events": {
 	    "title": "Événements",
-	    "no_events": "There are no Events scheduled at this time. Please check back soon!",
-	    "return": "Return to Events"
+	    "no_events": "Il n'y a aucun événement de planifié à l’heure actuelle. Veuillez revérifier sous peu.",
+	    "return": "Retourner aux événements"
 	},
 	"promos": {
 	    "title": "Aubaines",
-	    "no_deals": "There are no Deals scheduled at this time. Please check back soon!",
-	    "return": "Return to Deals"        
+	    "no_deals": "Il n'y a aucune aubaine de prévue pour le moment. Veuillez revérifier bientôt.",
+	    "return": "Retourner aux aubaines"        
 	},
 	"jobs": {
 	    "title": "Carrières",
-	    "no_jobs": "There are no Job postings at this time. Please check back soon!",
-	    "return": "Return to Careers"    
+	    "no_jobs": "Il n'y a actuellement aucune offre d’emploi de disponible. Veuillez revérifier bientôt.",
+	    "return": "Retourner aux offres d'emploi"    
 	},
 	"hours": {
-	    "title": "Centre Directions et stationnement",
-	    "regular_hours": "Regular Hours",
-	    "reduced_hours": "Reduced Hours of Operation",
-	    "closed_hours": "Holiday Closures"
+	    "title": "Heures d’ouverture",
+	    "regular_hours": "Heures normales",
+	    "reduced_hours": "Réduction des heures d’ouverture",
+	    "closed_hours": "Fermetures des jours fériés"
 	},
     "directions": {
         "title": "Directions et stationnement"    
     },
     "newsletter": {
-        "title": "Newsletter",
-        "name": "Name",
-        "email": "Email",
-        "agree": "I agree to receive communications from Place Bathurst.",
-        "subscribe": "Subscribe",
-        "thank_you": "Thank you!",
-        "message": "Your subscription has been confirmed. You've been added to our list and will hear from us soon."
+        "title": "Infolettre",
+        "name": "Nom et prénom",
+        "email": "Courriel",
+        "agree": "J’accepte de recevoir des courriels de Place Bathurst Mall.",
+        "subscribe": "S’abonner",
+        "thank_you": "Merci!",
+        "message": "Votre abonnement a été confirmée. Vous avez été ajouté à notre liste, nous vous contacterons bientôt."
     }
 }
