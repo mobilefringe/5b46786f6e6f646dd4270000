@@ -69,7 +69,7 @@
                                     </p>
                                     <div class="promo_list_desc">{{description_short_2}}</div>
                                     <a class="newsletter_btn animated_btn inside_btn" href="/posts/{{slug}}">
-                                        Détails des nouvelles <i class="fa fa-angle-right"></i>
+                                        Afficher les détails de la publication <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
