@@ -38,16 +38,12 @@
                     <label class="accessibility" for="store_mobile_conatiner" data-i18n="map.select"></label>
                     <select id="store_mobile_conatiner">
                         <script id="store_mobile_template">
-                            <option store_id="{{id}}" store_name="{{name}}" x_coordinate="{{x_coordinate}}" y_coordinate="{{y_coordinate}}">{{name}}</option>    
+                            <option store_id="{{id}}" store_name="{{name}}" x_coordinate="{{x_coordinate}}" y_coordinate="{{y_coordinate}}" data-svg="{{svgmap_region}}">{{name}}</option>    
                         </script>
                     </select>
                 </div>
                 <div class="map">
                     <div id="mapplic" class="mapplic"></div>
-    			 <!--   <div class="zoom_container" id="zoom_container_directory">-->
-        <!--			    <img alt="Centre Map" id="zoom_image" src=""/>-->
-    				<!--    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
-    				<!--</div>-->
                 </div>
             </div>
         </div>
