@@ -101,7 +101,7 @@
                             temp_val.category = val.categories[0];
                         }
                     }
-                    // temp_val.zoom = 2;
+                    temp_val.zoom = 2;
                     temp_val.link = "/stores/" + val.slug;
                     temp_val.pin = "hidden";
                    
