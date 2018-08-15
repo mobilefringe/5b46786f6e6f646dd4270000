@@ -212,7 +212,7 @@
                 selectedOption = selectedOption[0]
                 // selectedOption = selectedOption.attr('data-svg');
                 
-                 var svgmap_region = $(this).attr('data-svg');
+                 var svgmap_region = $(selectedOption).attr('data-svg');
                 console.log("selectedOption", selectedOption)
                 
                 console.log("svgmap_region", svgmap_region)
