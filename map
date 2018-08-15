@@ -29,7 +29,7 @@
                 <p class="category_header" data-i18n="map.find_store"></p>
                 <div id="stores_container">
                     <script id="stores_template" type="x-tmpl-mustache/text">
-                        <h5 class="category_name"><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a></h5>
+                        <h5 class="category_name"><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}" data-svg="{{svgmap_region}}">{{name}}</a></h5>
                     </script>
                 </div>
             </div> 
