@@ -42,7 +42,7 @@
                         </script>
                     </select>
                 </div>
-                <div > <!-- class="map" -->
+                <div class="map-container">
                     <div id="mapplic" class="mapplic"></div>
                 </div>
             </div>
