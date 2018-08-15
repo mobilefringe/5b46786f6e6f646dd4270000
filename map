@@ -204,6 +204,9 @@
                 dropPin(svgmap_region);
             });
             
+            $("#store_mobile_conatiner").change(function() {
+                console.log(this)
+            });
             
             show_content();
         }
