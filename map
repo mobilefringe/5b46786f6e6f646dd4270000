@@ -188,7 +188,8 @@
                                 self.updateLocation(val);
                             }
                         }
-                    } catch() {
+                    } catch(error) {
+                        console.error(error);
                         
                     }
                 }
