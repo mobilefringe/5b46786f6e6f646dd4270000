@@ -215,12 +215,11 @@
                     floor_1.id = value.id;
                     floor_1.title = value.title;
                     floor_1.map = value.map;
-    
                     floor_1.show = value.show;
                     floor_1.locations = [];
                     var stores_on_floors = _.filter(stores, function(o) {
                         return value.z_index === o.z_coordinate;
-                    }); // ['z_coordinate', value.z_index]);
+                    }); 
                     _.forEach(stores_on_floors, function(val, key) {
                         //for testing limiting the store numbers to vm
                         var temp_val = {};
@@ -234,11 +233,11 @@
                                 temp_val.category = val.categories[0];
                             }
                         }
+                        temp_val.zoom = 2;
                         temp_val.link = "/stores/" + val.slug;
                         temp_val.pin = "hidden";
     
-    
-                        //get svg's wifth/height by checking the map
+                        //get svg's width/height by checking the map
                         var svg_width = 2500;
                         var svg_height = 2500;
                         temp_val.x = val.x_coordinate / svg_width;
@@ -290,10 +289,9 @@
             _.forEach(svgList(), function(val, key) {
                 if (val !== null) {
                     try {
-                    var element = document.getElementById(val);
+                        var element = document.getElementById(val);
                         if (element) {
                             elBBox = element.getBoundingClientRect();
-    
                             var viewport_center_x = 0;
                             var viewport_center_y = 0;
                             viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right)) / 2;
@@ -323,7 +321,6 @@
                         }
                     } catch(error) {
                         console.error(error);
-                        
                     }
                 }
             });
