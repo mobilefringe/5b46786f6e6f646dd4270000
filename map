@@ -190,8 +190,6 @@
 				console.log('Map is ready!');
 				mapLoaded(map);
 			});
-            
-            // show_content();
         }
         
         function floorList () {
@@ -259,9 +257,8 @@
                 dropPin(svgmap_region);
             });
             
-            setTimeout(function() {
-                show_content();
-            }, 500);
+            
+            show_content();
         }
         
         loadMallDataCached(renderPageData);
