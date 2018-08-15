@@ -206,9 +206,10 @@
             
             $("#store_mobile_conatiner").bind("change", function(e) {
                 e.preventDefault()
-                    console.log(this)
+
         // var selectedOption = $("select.mapper").val().split(",");
-        // var selectedOptionName = $(".mapper option:selected").text();
+                var selectedOption = $("#store_mobile_conatiner option:selected");
+                console.log("selectedOption", selectedOption)
             });
             
             show_content();
