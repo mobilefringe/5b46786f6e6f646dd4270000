@@ -209,7 +209,7 @@
 
         // var selectedOption = $("select.mapper").val().split(",");
                 var selectedOption = $("#store_mobile_conatiner option:selected")
-                selectedOption = selectedOption[0]//.dataset;
+                selectedOption = selectedOption[0].attr('data-svg');
                 console.log("selectedOption", selectedOption)
             });
             
