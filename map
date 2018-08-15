@@ -58,13 +58,13 @@
     $(document).ready(function(e){
         init(e);
         function renderPageData(){
-            // var banner_repo = getRepoDetailsByName("Map Banner").images;
-            // if (banner_repo) {
-            //     var banner_image = banner_repo[0].image_url;
-            //     if (banner_image) {
-            //         $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
-            //     }
-            // }
+            var banner_repo = getRepoDetailsByName("Map Banner").images;
+            if (banner_repo) {
+                var banner_image = banner_repo[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
+                }
+            }
             
             var stores = getStoresList();
             renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
@@ -153,7 +153,6 @@
                         var element = document.getElementById(val);
                         if (element){
                             elBBox = element.getBoundingClientRect();
-                            
                             var viewport_center_x = 0;
                             var viewport_center_y = 0;
                             viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
