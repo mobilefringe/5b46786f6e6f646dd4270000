@@ -139,6 +139,22 @@
 			});
         }
         
+        function floorList() {
+            var floor_list = [];
+            var floor_1 = {};
+            floor_1.id = "first-floor";
+            floor_1.title = "Level One";
+            floor_1.map =  getSVGMapURL().split("?")[0];
+            floor_1.z_index = 1;
+            floor_1.show = true;
+            floor_list.push(floor_1);
+            return floor_list;
+        }
+    
+        function svgList() {
+            return _.map(getStoresList(), 'svgmap_region');
+        }
+
         function mapLoaded (map) {
             self = map.data('mapplic');
             var svg = document.getElementById('Layer_1');
