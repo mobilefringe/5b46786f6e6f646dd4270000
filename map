@@ -43,16 +43,75 @@
                     </select>
                 </div>
                 <div class="map">
-    			    <div class="zoom_container" id="zoom_container_directory">
-        			    <img alt="Centre Map" id="zoom_image" src=""/>
-    				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-    				</div>
+                    <div id="mapplic" class="mapplic"></div>
+    			 <!--   <div class="zoom_container" id="zoom_container_directory">-->
+        <!--			    <img alt="Centre Map" id="zoom_image" src=""/>-->
+    				<!--    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
+    				<!--</div>-->
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
+<style>
+    .mapplic-pin{
+        /*background-color: transparent!important;    */
+    }
+    /* INTERACTIVE ELEMENTS */
+    /* clickable elements */
+    .mapplic-clickable:not(g),
+    g.mapplic-clickable > * {
+    	opacity: 1!important;
+    	/*fill: #b7a6bd*/;
+    }
+    /* hovered elements */
+    .mapplic-clickable:not(g):hover,
+    g.mapplic-clickable:hover > * {
+    	opacity: 1;
+    	fill: #c2cfdf;
+    }
+    
+    /* active elements */
+    .mapplic-active,
+    a.mapplic-active > path,
+    g.mapplic-active > * {
+    	fill: #c2cfdf;
+    	opacity: 1.0 !important;
+    }
+    .mapplic-coordinates {
+        visibility: hidden;
+    }
+    .mapplic-container {
+        background: #fff;
+        height: 100%!important;
+    }
+    .mapplic-zoom-buttons{
+        bottom: initial!important;
+        top: 0!important;
+        left: initial!important;
+        right: 0!important;
+    }
+    .mapplic-popup-link {
+        float: left!important;
+    }
+    .mapplic-tooltip-content {
+        overflow: hidden;
+        overflow-y: hidden !important;
+    }
+    .mapplic-hovertip {
+        opacity:1!important;
+    }
+    #nopointer-unitnumbers {
+        display:none!important;
+    }
+</style>
+
+<link href="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/css/1522163605908/mapplic.css" rel="stylesheet">
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/javascript/1520366143656/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
@@ -70,52 +129,148 @@
             renderStoreList('#store_mobile_conatiner','#store_mobile_template', stores, "A", "Z");
             
             $("#store_mobile_conatiner").prepend('<option value="" disabled selected data-i18n="map.select"></option>')
-            
-            $("#zoom_image").attr("src", getPNGMapURL());
-    		$('#zoom_image').smoothZoom({
-    		    width: "100%",
-                height: "100%",
-    		    initial_ZOOM: 0,
-    			zoom_MIN: 0,
-    			zoom_MAX: 250,
-    			responsive: true,
-    		    responsive_maintain_ratio: true,
-    			zoom_BUTTONS_SHOW : 'YES',
-    			pan_BUTTONS_SHOW : 'NO',
-    			pan_LIMIT_BOUNDARY : 'NO',
-    			button_SIZE: 24,
-    			button_ALIGN: "top right",
-    			zoom_OUT_TO_FIT: "YES",
-    			container: 'zoom_container_directory'
-    		});
     
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var store_x_coordinate = $(this).attr('store_x_coordinate');
-        		var store_y_coordinate = $(this).attr('store_y_coordinate');
-                var pin_id = $(this).attr('store_id');
-                var store_name = $(this).attr('store_name');
+            var mall_json = {};
+            var landmarks = {};
+            mall_json.mapwidth = "1000";
+            mall_json.mapheight = "1000";
+            mall_json.categories = [];
+            mall_json.levels = [];
+            
+            // need to add the following for each floor we want to configure.
+            _.forEach(floorList(), function(value, key) { 
+                var floor_1 = {};
+                floor_1.id = value.id;
+                floor_1.title = value.title;
+                floor_1.map = value.map;
+                floor_1.show = value.show;
+                floor_1.locations = [];
+                var stores_on_floors =  _.filter(stores, function(o) {return value.z_index === o.z_coordinate;}); 
+                _.forEach(stores_on_floors, function(val, key) {
+                    //for testing limiting the store numbers to vm
+                    var temp_val = {};
+                    temp_val.id = val.svgmap_region;
+                    temp_val.title = val.name;
+                    temp_val.about = val.description.substring(0,200);
+                    if(val.categories != null) {
+                        if(val.categories.length > 1){
+                        temp_val.category = val.categories[1];
+                        } else {
+                            temp_val.category = val.categories[0];
+                        }
+                    }
+                    temp_val.link = "/stores/" + val.slug;
+                    temp_val.pin = "hidden";
+                   
+                    //get svg's wifth/height by checking the map
+                    var svg_width = 2500;
+                    var svg_height = 2500;
 
-                add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+                    temp_val.x = val.x_coordinate / svg_width;
+                    temp_val.y = val.y_coordinate / svg_height;
+                    floor_1.locations.push(temp_val);
+                });
+                mall_json.levels.push(floor_1);
             });
             
-            $("#store_mobile_conatiner").change(function(e) {
-                e.preventDefault();
-                var selected = $(this)[0].selectedOptions[0].attributes
-                if (selected != null) {
-                    var pin_id = selected[0].value;
-                    var store_name = selected[1].value;
-                    var store_x_coordinate = selected[2].value;
-            		var store_y_coordinate = selected[3].value;
-            		if (store_x_coordinate != undefined && store_y_coordinate != undefined) {
-            		    add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-            		}
-                }
+            map = $('#mapplic').mapplic({
+            	source: mall_json,
+            	height: 900,
+            	landmark : true,
+            	mapfill:true,
+            	minimap: false,
+            	sidebar: false,
+            	hovertip: true,
+            	developer: false,
+            	fullscreen : false,
+            	clearbutton: false,
+            	deeplinking: false,
+            	fillcolor : "none",
+            	maxscale: 6,
+            	skin: 'mapplic-dark',
+            	tooltiplabel : 'Info'
             });
             
-            show_content();
+            map.on('mapready', function(e, self) {
+				console.log('Map is ready!');
+				mapLoaded(map);
+			});
+            
+            // show_content();
         }
         
         loadMallDataCached(renderPageData);
+        
+        function floorList () {
+            var floor_list = [];
+            var floor_1 = {};
+            floor_1.id = "first-floor";
+            floor_1.title = "Level One";
+            floor_1.map =  getSVGMapURL().split("?")[0];
+            floor_1.z_index = 1;
+            floor_1.show = true;
+            floor_list.push(floor_1);
+            return floor_list;
+        }
+        
+        function svgList () {
+            return _.map(getStoresList(), 'svgmap_region');
+        }
+        
+        function mapLoaded (map) {
+            self = map.data('mapplic');
+            var svg = document.getElementById('Layer_1');
+            
+            //get floors to be visible 
+            $(".mapplic-layer").show();
+            //go through all the regions and recalculat the locations
+            _.forEach(svgList(), function(val, key) {
+                if(val !== null) {
+                    var element = document.getElementById(val);
+                    if (element){
+                        elBBox = element.getBoundingClientRect();
+                        
+                        var viewport_center_x = 0;
+                        var viewport_center_y = 0;
+                        viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
+                        viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
+                        pt = svg.createSVGPoint();
+                        pt.x = viewport_center_x;
+                        pt.y = viewport_center_y;
+                        var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+                        var new_x = svgP.x/ 2500;
+                        var new_y = svgP.y/ 2500;
+                        var location = self.getLocationData(val);
+                        if(location !== null && location.el){
+                            location.x = new_x;
+                            location.y =  new_y;
+                            self.updateLocation(val);
+                        }
+                    }
+                }
+            });
+            
+            //find which levels need to be hidden
+            hidden_level = _.filter(self.data.levels , function (o){ 
+                return o.show !== true;
+            });
+            
+            //doing it in a loop for future cases where there are more than two floors
+            _.forEach(hidden_level, function(val, key) {
+                $(".mapplic-layer[data-floor='"+val.id+"']").hide();
+            });
+            
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var svgmap_region = $(this).attr('data-svg');
+                dropPin(svgmap_region);
+            });
+            
+            setTimeout(function() {
+                show_content();
+            }, 500);
+        }
+        
+        loadMallDataCached(renderAll); 
     });
 </script>
