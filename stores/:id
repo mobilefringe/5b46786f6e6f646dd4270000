@@ -339,10 +339,5 @@
         loadMallDataCached(renderAll);
         
         show_content();
-		
-		function dropPin(svgmap_region) {
-        self = map.data('mapplic');
-        self.showLocation(svgmap_region);
-    }
     });
 </script>
