@@ -205,7 +205,7 @@
             });
             
             $("#store_mobile_conatiner").change(function() {
-                console.log(this)
+                console.log(this.selected)
             });
             
             show_content();
