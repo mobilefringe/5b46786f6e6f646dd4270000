@@ -117,7 +117,7 @@
             
             map = $('#mapplic').mapplic({
             	source: mall_json,
-            	height: 500,
+            	height: 432,
             	landmark : true,
             	mapfill:true,
             	minimap: false,
