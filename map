@@ -165,6 +165,7 @@
             console.log("svgList()", svgList())
             _.forEach(svgList(), function(val, key) {
                 if(val != null) {
+                    console.log("val", val)
                     var element = document.getElementById(val);
                     if (element){
                         elBBox = element.getBoundingClientRect();
