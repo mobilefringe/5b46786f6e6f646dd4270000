@@ -146,82 +146,87 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            renderStoreDetails("#store_container","#store_template", store_details, slug);
-            
-            // var banner_repo = getRepoDetailsByName("Directory Banner").images;
-            // if (banner_repo) {
-            //     var banner_image = banner_repo[0].image_url;
-            //     if (banner_image) {
-            //         $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
-            //     }
-            // }
-            
-            //PROMOS
-            var store_promo_ids = store_details.promotions
-            var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
-            var published_promos = [];
-            $.each( store_promos , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate) {
-                    published_promos.push(val)
-                } 
-            });
-            if( published_promos.length > 0){
-                renderPromotions("#promos_container","#promos_template", published_promos);
-                $('#promo_anchor span').text(published_promos.length)
+            if(store_details === undefined){
+                window.location = "/";
             } else {
-                $('#promos_main').hide()
-                $('#promo_anchor').hide()
+                
+                renderStoreDetails("#store_container","#store_template", store_details, slug);
+                
+                // var banner_repo = getRepoDetailsByName("Directory Banner").images;
+                // if (banner_repo) {
+                //     var banner_image = banner_repo[0].image_url;
+                //     if (banner_image) {
+                //         $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
+                //     }
+                // }
+                
+                //PROMOS
+                var store_promo_ids = store_details.promotions
+                var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+                var published_promos = [];
+                $.each( store_promos , function( key, val ){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    if (today >= webDate) {
+                        published_promos.push(val)
+                    } 
+                });
+                if( published_promos.length > 0){
+                    renderPromotions("#promos_container","#promos_template", published_promos);
+                    $('#promo_anchor span').text(published_promos.length)
+                } else {
+                    $('#promos_main').hide()
+                    $('#promo_anchor').hide()
+                }
+                
+                // JOBS
+                var store_job_ids = store_details.jobs
+                var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+                var published_jobs = [];
+                $.each( store_jobs , function( key, val ){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    if (today >= webDate) {
+                        published_jobs.push(val)
+                    } 
+                });
+                if( published_jobs.length > 0){
+                    renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                    $('#job_anchor span').text(published_jobs.length)
+                } else {
+                    $('#jobs_main').hide();
+                    $('#job_anchor').hide()
+                }
+                
+                show_content();
+                
+                //MAP  
+                if (store_details.x_coordinate != null && store_details.y_coordinate != null) {
+                    $("#zoom_image").attr("src", getPNGMapURL());
+            		$('#zoom_image').smoothZoom({
+            		    width: "100%",
+                        height: 465,
+            		    initial_ZOOM: 0,
+            			zoom_MIN: 0,
+            			zoom_MAX: 250,
+            			responsive: true,
+            		    responsive_maintain_ratio: true,
+            			zoom_BUTTONS_SHOW : 'YES',
+            			pan_BUTTONS_SHOW : 'NO',
+            			pan_LIMIT_BOUNDARY : 'NO',
+            			button_SIZE: 24,
+            			button_ALIGN: "top right",
+            			zoom_OUT_TO_FIT: "NO",
+            			container: 'zoom_container_store'
+            		});
+            		var store_x_coordinate = store_details.x_coordinate;
+            		var store_y_coordinate = store_details.y_coordinate;
+            		var pin_id = store_details.id; 
+            		var store_name = store_details.name;
+        		    add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+        		    $(".map").show();
+        		}
             }
-            
-            // JOBS
-            var store_job_ids = store_details.jobs
-            var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
-            var published_jobs = [];
-            $.each( store_jobs , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate) {
-                    published_jobs.push(val)
-                } 
-            });
-            if( published_jobs.length > 0){
-                renderJobs('#jobs_container', '#jobs_template', published_jobs);
-                $('#job_anchor span').text(published_jobs.length)
-            } else {
-                $('#jobs_main').hide();
-                $('#job_anchor').hide()
-            }
-            
-            show_content();
-            
-            //MAP  
-            if (store_details.x_coordinate != null && store_details.y_coordinate != null) {
-                $("#zoom_image").attr("src", getPNGMapURL());
-        		$('#zoom_image').smoothZoom({
-        		    width: "100%",
-                    height: 465,
-        		    initial_ZOOM: 0,
-        			zoom_MIN: 0,
-        			zoom_MAX: 250,
-        			responsive: true,
-        		    responsive_maintain_ratio: true,
-        			zoom_BUTTONS_SHOW : 'YES',
-        			pan_BUTTONS_SHOW : 'NO',
-        			pan_LIMIT_BOUNDARY : 'NO',
-        			button_SIZE: 24,
-        			button_ALIGN: "top right",
-        			zoom_OUT_TO_FIT: "NO",
-        			container: 'zoom_container_store'
-        		});
-        		var store_x_coordinate = store_details.x_coordinate;
-        		var store_y_coordinate = store_details.y_coordinate;
-        		var pin_id = store_details.id; 
-        		var store_name = store_details.name;
-    		    add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-    		    $(".map").show();
-    		}
         }
 		
 		loadMallDataCached(renderAll); 
