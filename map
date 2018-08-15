@@ -199,8 +199,6 @@
             // show_content();
         }
         
-        loadMallDataCached(renderPageData);
-        
         function floorList () {
             var floor_list = [];
             var floor_1 = {};
@@ -271,6 +269,6 @@
             }, 500);
         }
         
-        loadMallDataCached(renderAll); 
+        loadMallDataCached(renderPageData);
     });
 </script>
