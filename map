@@ -209,7 +209,8 @@
 
         // var selectedOption = $("select.mapper").val().split(",");
                 var selectedOption = $("#store_mobile_conatiner option:selected")
-                selectedOption = selectedOption[0].attr('data-svg');
+                selectedOption = selectedOption[0]
+                selectedOption = selectedOption.attr('data-svg');
                 console.log("selectedOption", selectedOption)
             });
             
