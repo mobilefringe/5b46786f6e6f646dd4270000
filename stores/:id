@@ -269,7 +269,10 @@
                 });
     
                 map.on('mapready', function(e, self) {
-                    setTimeout(function(){mapLoaded(map);},700)
+                    // setTimeout(function(){
+                        mapLoaded(map);
+                        
+                    // },700)
                 });
             }
         }
