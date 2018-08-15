@@ -194,21 +194,7 @@ function show_cat_stores(){
     
 }
 
-function drop_pin(id, map){
-    var coords = map.get_coords(id);
-    var height = parseInt(coords["height"])
-    var width = parseInt(coords["width"])
-    var x_offset = (parseInt(width) / 2);
-    var y_offset = (parseInt(height) /2);
-    map.setMarks([{ 
-        xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-        attrs: {
-            src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
-        }
-    }]);
-    // map.setViewBox(id);
-    map.selectRegion(id);
-}
+
     
 function getDay(day_of_week){
     var day;
@@ -265,58 +251,12 @@ function getDay(day_of_week){
     return day;
 }
 
-function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
-	var name = store_name;
-	var x_coordinate = store_x_coordinate;
-	var y_coordinate = store_y_coordinate;
-	var mark = "mark_store_" + pin_id;
-
-    // Remove existing landmark
-    $('#zoom_image').smoothZoom('removeLandmark');
-
-	// Add new landmark
-	$('#zoom_image').smoothZoom('addLandmark', 
-		[
-		'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coordinate + ',' + y_coordinate + '" id="' + mark + '">\
-			<div>\
-				<div class="text">\
-				<strong>' + name + '</strong>\
-			</div>\
-			<img src="//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png" width="40px" height="65px" alt="' + name +'" />\
-			</div>\
-		</div>'
-		]
-	);
-
-	// Focus on new landmark
-	$('#zoom_image').smoothZoom('focusTo',{
-		x: x_coordinate,
-		y: y_coordinate,
-		zoom: 120,
-		speed: 5
-	});
+function dropPin(svgmap_region) {
+    self = map.data('mapplic');
+    self.showLocation(svgmap_region);
+    $('.stores_table').hide();
 }
-	
-function getAssetURL(id){
-    var store_id = id;
-    var store_assets = "placebathurst.mallmaverick.com/api/v4/placebathurst/stores/" + store_id + "/store_files.json"
-    var store_front_image_url = "";    
-    $.ajax({
-        url: store_assets,
-        dataType: 'json',
-        async: false,
-        success: function(data) {
-            if(data.store_files.length > 0){
-                store_front_image_url = data.store_files[0].url;
-            }
-        },
-        error: function (data){
-            store_front_image_url = "";
-        }
-    });
-    
-    return store_front_image_url;
-}
+
 
 function setCurrentLocale(locale){
     Cookies.set('current_locale', locale);
