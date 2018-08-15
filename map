@@ -138,22 +138,6 @@
 				mapLoaded(map);
 			});
         }
-        
-        function floorList() {
-            var floor_list = [];
-            var floor_1 = {};
-            floor_1.id = "first-floor";
-            floor_1.title = "Level One";
-            floor_1.map =  getSVGMapURL().split("?")[0];
-            floor_1.z_index = 1;
-            floor_1.show = true;
-            floor_list.push(floor_1);
-            return floor_list;
-        }
-    
-        function svgList() {
-            return _.map(getStoresList(), 'svgmap_region');
-        }
 
         function mapLoaded (map) {
             self = map.data('mapplic');
@@ -162,9 +146,7 @@
             //get floors to be visible 
             $(".mapplic-layer").show();
             //go through all the regions and recalculate the locations
-            console.log("svgList()", svgList())
             _.forEach(svgList(), function(val, key) {
-                console.log("val", val)
                 if(val != null) {
                     try {
                         var element = document.getElementById(val);
