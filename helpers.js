@@ -273,7 +273,6 @@ function dropPin(svgmap_region) {
     $('.stores_table').hide();
 }
 
-
 function setCurrentLocale(locale){
     Cookies.set('current_locale', locale);
 }
