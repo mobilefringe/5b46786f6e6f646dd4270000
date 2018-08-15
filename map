@@ -206,14 +206,9 @@
             
             $("#store_mobile_conatiner").bind("change", function(e) {
                 e.preventDefault()
-
-        // var selectedOption = $("select.mapper").val().split(",");
                 var selectedOption = $("#store_mobile_conatiner option:selected")
                 selectedOption = selectedOption[0]
                 var svgmap_region = $(selectedOption).attr('data-svg');
-                console.log("selectedOption", selectedOption)
-                
-                console.log("svgmap_region", svgmap_region)
                 dropPin(svgmap_region);
             });
             
