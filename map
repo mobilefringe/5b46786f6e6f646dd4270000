@@ -204,8 +204,11 @@
                 dropPin(svgmap_region);
             });
             
-            $("#store_mobile_conatiner").change(function() {
-                console.log(this.val())
+            $("#store_mobile_conatiner").bind("change", function(e) {
+                e.preventDefault()
+                    console.log(this)
+        // var selectedOption = $("select.mapper").val().split(",");
+        // var selectedOptionName = $(".mapper option:selected").text();
             });
             
             show_content();
