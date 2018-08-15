@@ -130,7 +130,7 @@
             	fillcolor : "none",
             	maxscale: 6,
             	skin: 'mapplic-dark',
-            	tooltiplabel : 'Info'
+            	tooltiplabel : 'View Store Details'
             });
             
             map.on('mapready', function(e, self) {
