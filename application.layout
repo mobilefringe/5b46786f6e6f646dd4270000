@@ -45,7 +45,8 @@
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <script>
-        setEndPoint('//placebathurst.mallmaverick.com/api/v4/placebathurst/all.json');
+        // setEndPoint('//placebathurst.mallmaverick.com/api/v4/placebathurst/all.json');
+        setEndPoint('//svc.mallmaverick.com/api/v4/svc/all.json');
         setSocialEndPoint('//placebathurst.mallmaverick.com/api/v2/placebathurst/social.json');
         
         Cookies.set('primary_locale', 'en-CA');
