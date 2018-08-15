@@ -251,6 +251,22 @@ function getDay(day_of_week){
     return day;
 }
 
+function floorList() {
+    var floor_list = [];
+    var floor_1 = {};
+    floor_1.id = "first-floor";
+    floor_1.title = "Level One";
+    floor_1.map =  getSVGMapURL().split("?")[0];
+    floor_1.z_index = 1;
+    floor_1.show = true;
+    floor_list.push(floor_1);
+    return floor_list;
+}
+    
+function svgList() {
+    return _.map(getStoresList(), 'svgmap_region');
+}
+        
 function dropPin(svgmap_region) {
     self = map.data('mapplic');
     self.showLocation(svgmap_region);
