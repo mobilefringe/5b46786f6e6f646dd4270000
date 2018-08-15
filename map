@@ -208,7 +208,7 @@
                 e.preventDefault()
 
         // var selectedOption = $("select.mapper").val().split(",");
-                var selectedOption = $("#store_mobile_conatiner option:selected").dataset;
+                var selectedOption = $("#store_mobile_conatiner option:selected") //.dataset;
                 console.log("selectedOption", selectedOption)
             });
             
