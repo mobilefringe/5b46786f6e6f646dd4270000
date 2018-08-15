@@ -211,7 +211,11 @@
                 var selectedOption = $("#store_mobile_conatiner option:selected")
                 selectedOption = selectedOption[0]
                 // selectedOption = selectedOption.attr('data-svg');
+                
+                 var svgmap_region = $(this).attr('data-svg');
                 console.log("selectedOption", selectedOption)
+                
+                console.log("svgmap_region", svgmap_region)
             });
             
             show_content();
