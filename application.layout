@@ -17,7 +17,7 @@
     <title>{{meta_title}}</title>
 
     <!-- FAVICON -->
-    <link rel="icon" href="">
+    <link rel="icon" href="//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/vnd.microsoft.icon/1534445369000/favicon.ico">
 
     <!--CSS-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
