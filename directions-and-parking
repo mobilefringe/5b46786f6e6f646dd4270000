@@ -1,3 +1,10 @@
+<style>
+    @media(max-width: 425px){
+        .main_banner h2 {
+            padding-top: 38px;
+        }
+    }
+</style>
 <div class="main_banner text-center">
     <h2 data-i18n="directions.title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
