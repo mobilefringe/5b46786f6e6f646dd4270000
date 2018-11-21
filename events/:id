@@ -76,6 +76,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             promo_details = getEventDetailsBySlug(slug);
+            console.log("promo_details", promo_details)
             renderEventDetails('#promo_details_container', '#promo_details_template', promo_details, "Place Bathurst Mall");
             show_content();
         }
