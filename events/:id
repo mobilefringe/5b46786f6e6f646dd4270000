@@ -25,7 +25,7 @@
                         <div class="details_desc">{{{rich_description}}}</div>
                     </div>
                     <div class="secondary-locale">
-                        <img src="{{image_url}}" alt="Store Logo" class="details_image" style="{{show_img}}" />
+                        <img src="{{fr_event_image_url}}" alt="Store Logo" class="details_image" style="{{show_img}}" />
                         <h2 class="promo_list_name">{{name_2}}</h2>
                         <p class="promo_dates">{{dates}}</p>
                         <p class="show_phone promo_store">{{store_name}}</p>
