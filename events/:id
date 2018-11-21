@@ -19,7 +19,7 @@
                 <div class="col-md-8">
                     <div class="primary-locale">
                     {{ image_url }}
-                        <img src="{{event_image_url_abs}}" alt="Store Logo" class="details_image" />
+                        <img src="{{event_image_url}}" alt="Store Logo" class="details_image" />
                         <h2 class="promo_list_name">{{name}}</h2>
                         <p class="promo_dates">{{dates}}</p>
                         <p class="show_phone promo_store">{{store_name}}</p>
