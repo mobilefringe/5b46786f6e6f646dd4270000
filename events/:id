@@ -18,8 +18,7 @@
             <script id="promo_details_template" type="x-tmpl-mustache/text">
                 <div class="col-md-8">
                     <div class="primary-locale">
-                    {{ image_url }}
-                        <img src="{{event_image_url}}" alt="Store Logo" class="details_image" />
+                        <img src="{{event_image_url}}" alt="Store Logo" class="details_image" style="{{show_img}}"/>
                         <h2 class="promo_list_name">{{name}}</h2>
                         <p class="promo_dates">{{dates}}</p>
                         <p class="show_phone promo_store">{{store_name}}</p>
