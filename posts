@@ -94,7 +94,7 @@
             }
             
             var blog = getBlogDataBySlug("placebathurst-news").posts
-            if (blog.length > 0) {
+            if (blog > 0) {
             var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
             renderPosts('#post_container', '#post_template', posts);
             } else {
