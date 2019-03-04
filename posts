@@ -92,10 +92,13 @@
                     $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
                 }
             }
+            
             var blog = getBlogDataBySlug("placebathurst-news").posts
-            console.log(blog);
-            // var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
-            // renderPosts('#post_container', '#post_template', posts);
+            if (blog !== null) {
+            var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
+            renderPosts('#post_container', '#post_template', posts);
+            } 
+
             show_content();
         }
 		loadMallDataCached(renderAll); 
