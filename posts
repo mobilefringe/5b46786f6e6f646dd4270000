@@ -93,13 +93,10 @@
                 }
             }
             
-            var blog = getBlogDataBySlug("placebathurst-news").posts
-            if (blog > 0) {
-            var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
-            renderPosts('#post_container', '#post_template', posts);
-            } else {
-                return null;
-            }
+            // var blog = getBlogDataBySlug("placebathurst-news").posts
+            // var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
+            // renderPosts('#post_container', '#post_template', posts);
+
             show_content();
         }
 		loadMallDataCached(renderAll); 
