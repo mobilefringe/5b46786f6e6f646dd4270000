@@ -92,8 +92,9 @@
                     $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
                 }
             }
+            
+            var blog = getBlogDataBySlug("placebathurst-news").posts
             var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
-            var blog = getBlogDataBySlug("placebathurst-news").posts;
             renderPosts('#post_container', '#post_template', posts);
 
             show_content();
