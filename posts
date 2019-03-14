@@ -78,7 +78,7 @@
                 </div>    
             </div>
         </div>
-        <div class="row hidden_now" id="no_events">
+        <div class="row hidden_now" id="no_news">
             <div class="col-md-12">
                 <p data-i18n="events.no_events"></p>
             </div>
