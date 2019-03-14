@@ -80,7 +80,7 @@
         </div>
         <div class="row hidden_now" id="no_news">
             <div class="col-md-12">
-                <p data-i18n="events.no_events"></p>
+                <p data-i18n="news.no_news"></p>
             </div>
         </div>
     </div>
