@@ -1,5 +1,5 @@
 <div class="main_banner text-center">
-    <h3 data-i18n="stores.title"></h3>
+    <h2 data-i18n="stores.title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
 <div class="store_list_head main_container">
@@ -12,12 +12,23 @@
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
             <option value="/map" data-i18n="inside_page.map"></option>
         </select>
     </h5>
 </div>
+<div class="store_category_selector show_phone" >
+    <h5 class="text-center tap_here">SELECT CATEGORY
+    </h5>
+</div>
+<div class="hidden_now margin_25_across" id="category_selector_container">
+    <script id="category_selector_template" type="x-tmpl-mustache/text">
+        <p class="mobile_cat" cat_id="{{id}}">{{name}}</p>
+    </script>
+</div>
+<div class="padded_border"></div>
 <div class="content_container main_container position_relative">
     <div class="margin_25_across">
         <div class="row">
@@ -37,7 +48,7 @@
                     <p class="category_header" data-i18n="stores.new_stores"></p>
                     <div id="new_store_container">
                         <script id="new_store_template" type="x-tmpl-mustache/text">
-                            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    
+                            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>  
                         </script>
                     </div>
                 </div>
@@ -53,7 +64,7 @@
                 <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores" data-i18n="stores.categories_all"></a></h5>
                 <div id="category_container" class="hidden_phone">
                     <script id="category_template" type="x-tmpl-mustache/text">
-                        <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
+                        <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{cat_name}}</a></h5>
                     </script>
                 </div>
             </div>
@@ -74,7 +85,7 @@
             if (banner_repo) {
                 var banner_image = banner_repo[0].image_url;
                 if (banner_image) {
-                    $(".main_banner").css({ "backgroundImage": "url(" + banner_image + ")" });
+                    $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), #000 url(" + banner_image + ") center center" });
                 }
             }
             
@@ -90,20 +101,35 @@
                     category_list.push(val);
                 } 
             });
-            renderGeneral('#category_container', '#category_template', category_list);
-            renderGeneral('#mobile_cat_list', '#category_template2', category_list);
+            renderCategoryList('#category_container', '#category_template', category_list);
+            var mobile_cat_list = category_list;
+            var all_cat = {};
+            all_cat.name = "All Categories";
+            all_cat.id= 0;
+            mobile_cat_list.unshift(all_cat);
+            renderGeneral('#category_selector_container', '#category_selector_template', mobile_cat_list);
             
-            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
+            $(".store_category_selector").click(function(e){
+                $("#category_selector_container").slideToggle();
+                $(".padded_border").toggle()
+            })
+            $(".mobile_cat").click(function(e){
+                cat_id = $(this).attr('cat_id');
+                show_mobile_cat_stores(cat_id, $(this));
+                 $("#category_selector_container").slideToggle();
+                 $(".padded_border").toggle()
+            })
+            
             show_cat_stores();
-            var coming_soon_stores = getComingSoonList();
-            var new_stores = getNewStoresList();
             
+            var new_stores = getNewStoresList();
             if (new_stores.length > 0){
                 renderGeneral("#new_store_container","#new_store_template", new_stores);
             } else {
                 $('#new_stores').hide();
             }
             
+            var coming_soon_stores = getComingSoonList();
             if (coming_soon_stores.length > 0){
                 renderGeneral("#coming_soon_container","#coming_soon_template", coming_soon_stores);
             } else {
@@ -115,4 +141,41 @@
         
 		loadMallDataCached(renderAll); 
     })
+    function show_mobile_cat_stores(cat_id, el){
+        if(cat_id == 0){
+            $('.main_row .col-md-6').removeClass('full_width')
+            $('#no_promo_in_category').hide();
+            $('.active_cat').removeClass('active_cat');
+            el.addClass('active_cat');
+            var rows = $('.cats_row');
+            rows.show();
+            $.each($('.store_initial'), function(i, val){
+               if ($(val).text().length > 0){
+                   $(val).show();
+               } 
+            });
+            $('#cat_name_header').hide();
+        } else {
+            $('.main_row .col-md-6').addClass('full_width')
+            var visible_row = 0
+            $('.active_cat').removeClass('active_cat');
+            el.addClass('active_cat');
+            var rows = $('.cats_row');
+            rows.hide();
+            $('#no_promo_in_category').hide();
+            $('.store_initial').hide();
+            $('#cat_name_header').text(el.text());
+            $('#cat_name_header').css('display', 'block');
+            $.each(rows, function(i, val){
+                var cat_array = val.getAttribute('data-cat').split(',');
+                if ($.inArray(cat_id, cat_array) >= 0){
+                    $(val).show();
+                    visible_row++;
+                }
+            });
+            if(visible_row == 0){
+                $('#no_promo_in_category').show();
+            }
+        }
+    }
 </script>
