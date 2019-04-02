@@ -69,6 +69,19 @@
         ga('create', 'UA-115200481-7', 'auto');
         ga('send', 'pageview');
     </script>
+    <script>
+        /**
+        * Function that tracks a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon'
+            });
+        }
+    </script>
 </head>
 
 <body class="">
@@ -196,6 +209,11 @@
             <p class="newsletter_desc" data-i18n="footer.newsletter_tagline"></p>
             <a href="/newsletter" class="newsletter_btn animated_btn" data-i18n="footer.newsletter_submit"></a>
         </div>
+        <div class="trim_screen">
+            <a id="track_link" href="http://bit.ly/cyclone-idai-cushman-wakefield" target="_blank">
+                <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5af2ef146e6f6450e9160100/image/png/1554151834429/Idaix2_800x100_en.png" alt=“Humanitarian Campaign”/>
+            </a>
+        </div>
         <div class="site_map">
             <div class="row">
                 <div class="col-md-4">
@@ -267,6 +285,11 @@
         </div>
     </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield');
+        });
+    </script>
 </body>
 
 </html>
