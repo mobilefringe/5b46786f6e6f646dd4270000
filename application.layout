@@ -125,7 +125,8 @@
                     <ul class="sub_menu hidden_now">
                         <li><a href="/guest-services" data-i18n="nav.subnav.guest_services"></a></li>
                         <li><a href="/gift-cards" data-i18n="nav.subnav.gift_cards"></a></li>
-                        <li><a href="/pages/placebathurst-non-profit-groups" NON-PROFIT GROUPS></a></li>
+                        <li><a href="/pages/placebathurst-non-profit-groups" data-i18n="nav.subnav.non_profit"></a></li>
+                        
 					</ul>
                 </li>
                 <li>
