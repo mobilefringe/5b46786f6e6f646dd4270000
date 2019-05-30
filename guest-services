@@ -11,7 +11,7 @@
             <h5><a href="/gift-cards" data-i18n="inside_page.gift_cards"></a></h5>
         </div>
         <div class="col-md-4">
-            <h5><a href="/pages/placebathurst-non-profit-groups" data-i18n="inside_page.gift_cards"></a></h5>
+            <h5><a href="/pages/placebathurst-non-profit-groups" data-i18n="inside_page.non_profit"></a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -19,6 +19,7 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
             <option value="/gift-cards" data-i18n="inside_page.gift_cards"></option>
+            <option value="/pages/placebathurst-non-profit-groupss" data-i18n="inside_page.non_profit"></option>
         </select>
     </h5>
 </div>
