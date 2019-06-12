@@ -41,7 +41,6 @@
                         </div>
                     </script>
                 </div>
-                <h3 class="hours_heading" data-i18n="hours.regular_hours"></h3>
                 <div id="extra_hours"></div>
             </div>
             <div class="col-md-6">
