@@ -288,10 +288,10 @@
     </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
     <script>
-        $("#track_link").click( function() {
-            trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield');
-        });
-    </script>
+    $("#track_link").click( function() {
+        trackOutboundLink('https://www.wires.org.au/');
+    });
+</script>
 </body>
 
 </html>
