@@ -211,11 +211,11 @@
             <p class="newsletter_desc" data-i18n="footer.newsletter_tagline"></p>
             <a href="/newsletter" class="newsletter_btn animated_btn" data-i18n="footer.newsletter_submit"></a>
         </div>
-        <div class="trim_screen">
-            <a id="track_link" href="https://www.wires.org.au/" target="_blank">
-                <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/jpeg/1578946050000/940x500.jpg" alt=""/>
-            </a>
-        </div>
+        <!--<div class="trim_screen">-->
+        <!--    <a id="track_link" href="https://www.wires.org.au/" target="_blank">-->
+        <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5b46786f6e6f646dd4270000/image/jpeg/1578946050000/940x500.jpg" alt=""/>-->
+        <!--    </a>-->
+        <!--</div>-->
         <div class="site_map">
             <div class="row">
                 <div class="col-md-4">
