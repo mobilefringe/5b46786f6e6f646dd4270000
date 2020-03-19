@@ -6,7 +6,7 @@
 <div class="content_container main_container mobile_padding pages_text">
     <div class="row">
         <div class="col-md-12">
-        <div class="margin_20"></div>
+            <div class="margin_20"></div>
             <div id="mm_page_content"></div>
         </div>
     </div>
