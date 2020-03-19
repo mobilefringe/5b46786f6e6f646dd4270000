@@ -1,4 +1,4 @@
-<div class="inside_banner text-center">
+<div id="full_banner" class="inside_banner text-center">
     <h2 id="mm_page_title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
@@ -28,6 +28,9 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
+                if(slug.includes('placebathurst-covid-19-updates')) {
+                    ('#full_banner').hide();
+                }
                 if(Cookies.get('current_locale') == "en-CA"){
                     $('#mm_page_title').html(data.title.toUpperCase());
                     $('#mm_page_content').html(data.body);
