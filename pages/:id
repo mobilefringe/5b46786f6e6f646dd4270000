@@ -2,10 +2,11 @@
     <h2 id="mm_page_title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
-<div class="margin_20"></div>
+
 <div class="content_container main_container mobile_padding pages_text">
     <div class="row">
         <div class="col-md-12">
+        <div class="margin_20"></div>
             <div id="mm_page_content"></div>
         </div>
     </div>
