@@ -29,7 +29,7 @@
             var pages_json = prefix + "/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
                 if(slug.includes('placebathurst-covid-19-updates')) {
-                    ('#full_banner').hide();
+                    $('#full_banner').hide();
                 }
                 if(Cookies.get('current_locale') == "en-CA"){
                     $('#mm_page_title').html(data.title.toUpperCase());
